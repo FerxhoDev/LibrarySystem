@@ -60,10 +60,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Initial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial.Designer.cs">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial.resx">
+      <DependentUpon>Initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,9 +97,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\tablero-20 red.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Character-working-laptop-sitting-chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-20 grayL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros-20 grayL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prest-book-20 grayL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book-20 grayL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir-redondeado-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\más-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\más-24 v.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
