@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label1 = new System.Windows.Forms.Label();
             this.gTxtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.gTxtUser = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -60,6 +62,28 @@
             this.gunaElipsePanel1.Radius = 8;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(363, 469);
             this.gunaElipsePanel1.TabIndex = 0;
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
+            this.gunaPictureBox2.Location = new System.Drawing.Point(233, 154);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(85, 194);
+            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox2.TabIndex = 1;
+            this.gunaPictureBox2.TabStop = false;
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(3, 64);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(251, 249);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox1.TabIndex = 0;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // guna2Button1
             // 
@@ -120,7 +144,7 @@
             this.gTxtPass.FocusedState.Parent = this.gTxtPass;
             this.gTxtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtPass.HoverState.Parent = this.gTxtPass;
-            this.gTxtPass.IconLeft = global::CapaPresentacion.Properties.Resources.Lock;
+            this.gTxtPass.IconLeft = ((System.Drawing.Image)(resources.GetObject("gTxtPass.IconLeft")));
             this.gTxtPass.Location = new System.Drawing.Point(75, 229);
             this.gTxtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gTxtPass.Name = "gTxtPass";
@@ -147,7 +171,7 @@
             this.gTxtUser.FocusedState.Parent = this.gTxtUser;
             this.gTxtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtUser.HoverState.Parent = this.gTxtUser;
-            this.gTxtUser.IconLeft = global::CapaPresentacion.Properties.Resources.Contacts;
+            this.gTxtUser.IconLeft = ((System.Drawing.Image)(resources.GetObject("gTxtUser.IconLeft")));
             this.gTxtUser.Location = new System.Drawing.Point(75, 161);
             this.gTxtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gTxtUser.Name = "gTxtUser";
@@ -159,45 +183,24 @@
             this.gTxtUser.Size = new System.Drawing.Size(300, 47);
             this.gTxtUser.TabIndex = 18;
             // 
-            // gunaPictureBox2
+            // gunaCirclePictureBox1
             // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::CapaPresentacion.Properties.Resources.cactus;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(233, 154);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(85, 194);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox2.TabIndex = 1;
-            this.gunaPictureBox2.TabStop = false;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::CapaPresentacion.Properties.Resources.Character_working_laptop_sitting_chair;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(3, 64);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(251, 249);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(12, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(360, 37);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Biblioteca Comunitaria";
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(29, 12);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 19;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 468);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.gTxtUser);
             this.Controls.Add(this.gTxtPass);
             this.Controls.Add(this.label1);
@@ -211,6 +214,7 @@
             this.gunaElipsePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +231,7 @@
         private Guna.UI2.WinForms.Guna2TextBox gTxtUser;
         private Guna.UI2.WinForms.Guna2TextBox gTxtPass;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
     }
 }
 
