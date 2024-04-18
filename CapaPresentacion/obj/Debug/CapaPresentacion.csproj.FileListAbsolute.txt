@@ -24,3 +24,4 @@ C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debu
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Dashboard.resources

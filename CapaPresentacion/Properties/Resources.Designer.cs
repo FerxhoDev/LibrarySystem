@@ -63,6 +63,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Book_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Book Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Character_working_laptop_sitting_chair {
             get {
                 object obj = ResourceManager.GetObject("Character-working-laptop-sitting-chair", resourceCulture);
@@ -133,6 +143,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap notebook_dynamic_color {
+            get {
+                object obj = ResourceManager.GetObject("notebook-dynamic-color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prest_book_20_grayL {
             get {
                 object obj = ResourceManager.GetObject("prest-book-20 grayL", resourceCulture);
@@ -156,6 +176,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap salir_redondeado_34 {
             get {
                 object obj = ResourceManager.GetObject("salir-redondeado-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sammy_man_studying_analytics_on_laptop_1 {
+            get {
+                object obj = ResourceManager.GetObject("sammy-man-studying-analytics-on-laptop 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
