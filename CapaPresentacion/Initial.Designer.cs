@@ -50,6 +50,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pContainer = new System.Windows.Forms.Panel();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
@@ -336,12 +337,20 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Biblioteca Comunitaria Palestina. ";
             // 
+            // pContainer
+            // 
+            this.pContainer.Location = new System.Drawing.Point(298, 51);
+            this.pContainer.Name = "pContainer";
+            this.pContainer.Size = new System.Drawing.Size(1577, 919);
+            this.pContainer.TabIndex = 11;
+            // 
             // Initial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(1901, 998);
+            this.Controls.Add(this.pContainer);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -392,5 +401,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel pContainer;
     }
 }

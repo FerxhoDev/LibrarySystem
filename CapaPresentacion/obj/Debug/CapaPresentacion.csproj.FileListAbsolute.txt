@@ -12,3 +12,15 @@ F:\Library System\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 F:\Library System\LibrarySystem\CapaPresentacion\bin\Debug\Guna.UI.dll
 F:\Library System\LibrarySystem\CapaPresentacion\bin\Debug\Guna.UI2.dll
 F:\Library System\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Initial.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Initial.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
