@@ -31,10 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.DashBoard = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,15 +52,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pContainer = new System.Windows.Forms.Panel();
-            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.DashBoard = new Guna.UI2.WinForms.Guna2Button();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
@@ -82,6 +82,129 @@
             this.gunaElipsePanel1.Radius = 20;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(269, 598);
             this.gunaElipsePanel1.TabIndex = 0;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = global::CapaPresentacion.Properties.Resources.ajustes_25;
+            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button6.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 524);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(269, 57);
+            this.guna2Button6.TabIndex = 6;
+            this.guna2Button6.Text = "Mantenedor";
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Image = global::CapaPresentacion.Properties.Resources.return_book_20_grayL;
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 418);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(269, 57);
+            this.guna2Button4.TabIndex = 5;
+            this.guna2Button4.Text = "Devoluciones";
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Image = global::CapaPresentacion.Properties.Resources.prest_book_20_grayL;
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 353);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(269, 57);
+            this.guna2Button3.TabIndex = 4;
+            this.guna2Button3.Text = "Prestmos";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::CapaPresentacion.Properties.Resources.libros_20_grayL;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 289);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(269, 57);
+            this.guna2Button2.TabIndex = 3;
+            this.guna2Button2.Text = "Libros";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::CapaPresentacion.Properties.Resources.usuario_20_grayL;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 224);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(269, 57);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "Usuarios";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // DashBoard
+            // 
+            this.DashBoard.CheckedState.Parent = this.DashBoard;
+            this.DashBoard.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.DashBoard.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.DashBoard.CustomImages.Parent = this.DashBoard;
+            this.DashBoard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.DashBoard.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoard.ForeColor = System.Drawing.Color.White;
+            this.DashBoard.HoverState.Parent = this.DashBoard;
+            this.DashBoard.Image = global::CapaPresentacion.Properties.Resources.tablero_20_red;
+            this.DashBoard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoard.ImageOffset = new System.Drawing.Point(20, 0);
+            this.DashBoard.Location = new System.Drawing.Point(0, 161);
+            this.DashBoard.Name = "DashBoard";
+            this.DashBoard.ShadowDecoration.Parent = this.DashBoard;
+            this.DashBoard.Size = new System.Drawing.Size(269, 57);
+            this.DashBoard.TabIndex = 1;
+            this.DashBoard.Text = "DashBoard";
+            this.DashBoard.Click += new System.EventHandler(this.DashBoard_Click);
             // 
             // label2
             // 
@@ -129,6 +252,37 @@
             this.gunaElipsePanel3.Radius = 16;
             this.gunaElipsePanel3.Size = new System.Drawing.Size(269, 97);
             this.gunaElipsePanel3.TabIndex = 1;
+            // 
+            // gunaPictureBox3
+            // 
+            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox3.Image = global::CapaPresentacion.Properties.Resources.más_24_v;
+            this.gunaPictureBox3.Location = new System.Drawing.Point(235, 20);
+            this.gunaPictureBox3.Name = "gunaPictureBox3";
+            this.gunaPictureBox3.Size = new System.Drawing.Size(31, 36);
+            this.gunaPictureBox3.TabIndex = 3;
+            this.gunaPictureBox3.TabStop = false;
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Image = global::CapaPresentacion.Properties.Resources.llavero_40;
+            this.gunaPictureBox2.Location = new System.Drawing.Point(71, 40);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(47, 47);
+            this.gunaPictureBox2.TabIndex = 2;
+            this.gunaPictureBox2.TabStop = false;
+            this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPictureBox2_Click);
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = global::CapaPresentacion.Properties.Resources.salir_redondeado_34;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(23, 42);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(31, 36);
+            this.gunaPictureBox1.TabIndex = 1;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -219,159 +373,6 @@
             this.pContainer.Name = "pContainer";
             this.pContainer.Size = new System.Drawing.Size(1577, 919);
             this.pContainer.TabIndex = 11;
-            // 
-            // gunaPictureBox3
-            // 
-            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox3.Image = global::CapaPresentacion.Properties.Resources.más_24_v;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(235, 20);
-            this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(31, 36);
-            this.gunaPictureBox3.TabIndex = 3;
-            this.gunaPictureBox3.TabStop = false;
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::CapaPresentacion.Properties.Resources.llavero_40;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(71, 40);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(47, 47);
-            this.gunaPictureBox2.TabIndex = 2;
-            this.gunaPictureBox2.TabStop = false;
-            this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPictureBox2_Click);
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::CapaPresentacion.Properties.Resources.salir_redondeado_34;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(23, 42);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(31, 36);
-            this.gunaPictureBox1.TabIndex = 1;
-            this.gunaPictureBox1.TabStop = false;
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = global::CapaPresentacion.Properties.Resources.ajustes_25;
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2Button6.Location = new System.Drawing.Point(0, 524);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(269, 57);
-            this.guna2Button6.TabIndex = 6;
-            this.guna2Button6.Text = "Mantenedor";
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::CapaPresentacion.Properties.Resources.return_book_20_grayL;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 418);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(269, 57);
-            this.guna2Button4.TabIndex = 5;
-            this.guna2Button4.Text = "Devoluciones";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::CapaPresentacion.Properties.Resources.prest_book_20_grayL;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 353);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(269, 57);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Prestmos";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::CapaPresentacion.Properties.Resources.libros_20_grayL;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 289);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(269, 57);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Libros";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::CapaPresentacion.Properties.Resources.usuario_20_grayL;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 224);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(269, 57);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Usuarios";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // DashBoard
-            // 
-            this.DashBoard.CheckedState.Parent = this.DashBoard;
-            this.DashBoard.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.DashBoard.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.DashBoard.CustomImages.Parent = this.DashBoard;
-            this.DashBoard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.DashBoard.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashBoard.ForeColor = System.Drawing.Color.White;
-            this.DashBoard.HoverState.Parent = this.DashBoard;
-            this.DashBoard.Image = global::CapaPresentacion.Properties.Resources.tablero_20_red;
-            this.DashBoard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.DashBoard.ImageOffset = new System.Drawing.Point(20, 0);
-            this.DashBoard.Location = new System.Drawing.Point(0, 161);
-            this.DashBoard.Name = "DashBoard";
-            this.DashBoard.ShadowDecoration.Parent = this.DashBoard;
-            this.DashBoard.Size = new System.Drawing.Size(269, 57);
-            this.DashBoard.TabIndex = 1;
-            this.DashBoard.Text = "DashBoard";
-            this.DashBoard.Click += new System.EventHandler(this.DashBoard_Click);
             // 
             // Initial
             // 

@@ -75,5 +75,10 @@ namespace CapaPresentacion
             UsuarioAdmin form = new UsuarioAdmin();
             form.Show();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2Button)sender, new Libros());
+        }
     }
 }
