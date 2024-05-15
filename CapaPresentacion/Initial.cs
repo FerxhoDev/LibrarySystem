@@ -67,7 +67,7 @@ namespace CapaPresentacion
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2Button)sender, new Dashboard());
+            AbrirFormulario((Guna2Button)sender, new UsuarioAdmin());
         }
     }
 }

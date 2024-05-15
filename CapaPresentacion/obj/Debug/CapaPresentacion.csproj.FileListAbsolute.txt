@@ -25,3 +25,4 @@ C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debu
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Dashboard.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioAdmin.resources
