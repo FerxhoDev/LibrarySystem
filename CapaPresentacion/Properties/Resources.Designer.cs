@@ -63,6 +63,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ajustes_25 {
+            get {
+                object obj = ResourceManager.GetObject("ajustes-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Book_Icon {
             get {
                 object obj = ResourceManager.GetObject("Book Icon", resourceCulture);
@@ -116,6 +126,36 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap libros_20_grayL {
             get {
                 object obj = ResourceManager.GetObject("libros-20 grayL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llavero_25 {
+            get {
+                object obj = ResourceManager.GetObject("llavero-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llavero_35 {
+            get {
+                object obj = ResourceManager.GetObject("llavero-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llavero_40 {
+            get {
+                object obj = ResourceManager.GetObject("llavero-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap sammy_man_studying_analytics_on_laptop_1 {
             get {
                 object obj = ResourceManager.GetObject("sammy-man-studying-analytics-on-laptop 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_20 {
+            get {
+                object obj = ResourceManager.GetObject("settings-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

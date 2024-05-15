@@ -67,7 +67,13 @@ namespace CapaPresentacion
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2Button)sender, new UsuarioAdmin());
+            AbrirFormulario((Guna2Button)sender, new UsuarioPres());
+        }
+
+        private void gunaPictureBox2_Click(object sender, EventArgs e)
+        {
+            UsuarioAdmin form = new UsuarioAdmin();
+            form.Show();
         }
     }
 }
