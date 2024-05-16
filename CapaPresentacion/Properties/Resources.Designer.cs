@@ -83,6 +83,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carpeta_40 {
+            get {
+                object obj = ResourceManager.GetObject("carpeta-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Character_working_laptop_sitting_chair {
             get {
                 object obj = ResourceManager.GetObject("Character-working-laptop-sitting-chair", resourceCulture);
@@ -96,6 +106,26 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap Character_working_laptop_sitting_chair1 {
             get {
                 object obj = ResourceManager.GetObject("Character-working-laptop-sitting-chair1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colegio_40 {
+            get {
+                object obj = ResourceManager.GetObject("colegio-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap donación_40 {
+            get {
+                object obj = ResourceManager.GetObject("donación-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +223,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap place_marker_40 {
+            get {
+                object obj = ResourceManager.GetObject("place-marker-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prest_book_20_grayL {
             get {
                 object obj = ResourceManager.GetObject("prest-book-20 grayL", resourceCulture);
@@ -246,6 +286,26 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap tablero_20_red {
             get {
                 object obj = ResourceManager.GetObject("tablero-20 red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tall_fill_person_40 {
+            get {
+                object obj = ResourceManager.GetObject("tall-fill-person-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tall_person_40 {
+            get {
+                object obj = ResourceManager.GetObject("tall-person-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

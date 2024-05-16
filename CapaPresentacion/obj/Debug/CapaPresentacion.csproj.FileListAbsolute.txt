@@ -28,3 +28,4 @@ C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debu
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioAdmin.resources
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioPres.resources
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Libros.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Mantenedor.resources

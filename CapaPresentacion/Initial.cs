@@ -80,5 +80,10 @@ namespace CapaPresentacion
         {
             AbrirFormulario((Guna2Button)sender, new Libros());
         }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2Button)sender, new Mantenedor());
+        }
     }
 }
