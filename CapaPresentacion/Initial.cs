@@ -13,14 +13,18 @@ namespace CapaPresentacion
 {
     public partial class Initial : Form
     {
-        public Initial()
+        public Initial(string nombreUsuario)
         {
             InitializeComponent();
+            lblNombre.Text = nombreUsuario;
+            string nombre1Letra = nombreUsuario.First().ToString();
+            lblSingleLetterName.Text = nombre1Letra;
         }
         private static Form FormularioActivo = null;
         private static Guna2Button MenuActiv = null;
         private void Initial_Load(object sender, EventArgs e)
         {
+            
 
         }
         private void AbrirFormulario(Guna2Button menu, Form formulario)

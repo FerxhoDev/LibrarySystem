@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="librarydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="aldea">
+    <Key>
+      <PropertyRef Name="idAldea" />
+    </Key>
+    <Property Name="idAldea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="sectors" Relationship="Self.FK_sector_Aldea" FromRole="aldea" ToRole="sector" />
+  </EntityType>
+  <EntityType Name="categoria_Libro">
+    <Key>
+      <PropertyRef Name="idCategoria" />
+    </Key>
+    <Property Name="idCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="libroes" Relationship="Self.FK_libro_categoria_Libro" FromRole="categoria_Libro" ToRole="libro" />
+  </EntityType>
+  <EntityType Name="centroEducativo">
+    <Key>
+      <PropertyRef Name="idCentroEducativo" />
+    </Key>
+    <Property Name="idCentroEducativo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCentroEducativo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="usuariosPrestamistas" Relationship="Self.FK_usuariosPrestamistas_centroEducativo" FromRole="centroEducativo" ToRole="usuariosPrestamistas" />
+  </EntityType>
+  <EntityType Name="detalle_donacion">
+    <Key>
+      <PropertyRef Name="idDetalle_donacion" />
+    </Key>
+    <Property Name="idDetalle_donacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_donacion" Type="Int32" Nullable="false" />
+    <Property Name="id_libro" Type="Int32" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <Property Name="fehcaRegistro" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="donacion" Relationship="Self.FK_detalle_donacion_donacion" FromRole="detalle_donacion" ToRole="donacion" />
+    <NavigationProperty Name="libro" Relationship="Self.FK_detalle_donacion_libro" FromRole="detalle_donacion" ToRole="libro" />
+  </EntityType>
+  <EntityType Name="detalle_prestamo">
+    <Key>
+      <PropertyRef Name="idPrestamoDetalle" />
+    </Key>
+    <Property Name="idPrestamoDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_prestamo" Type="Int32" Nullable="false" />
+    <Property Name="id_estado" Type="Int32" Nullable="false" />
+    <Property Name="id_libro" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="estado" Relationship="Self.FK_detalle_prestamo_estados" FromRole="detalle_prestamo" ToRole="estados" />
+    <NavigationProperty Name="libro" Relationship="Self.FK_detalle_prestamo_libro" FromRole="detalle_prestamo" ToRole="libro" />
+    <NavigationProperty Name="prestamo" Relationship="Self.FK_detalle_prestamo_prestamo" FromRole="detalle_prestamo" ToRole="prestamo" />
+  </EntityType>
+  <EntityType Name="direccion">
+    <Key>
+      <PropertyRef Name="idDireccion" />
+    </Key>
+    <Property Name="idDireccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_sector" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sector" Relationship="Self.FK_direccion_sector" FromRole="direccion" ToRole="sector" />
+    <NavigationProperty Name="usuariosPrestamistas" Relationship="Self.FK_usuariosPrestamistas_direccion" FromRole="direccion" ToRole="usuariosPrestamistas" />
+  </EntityType>
+  <EntityType Name="donacion">
+    <Key>
+      <PropertyRef Name="idDonacion" />
+    </Key>
+    <Property Name="idDonacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_donante" Type="Int32" Nullable="false" />
+    <Property Name="id_admin" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="detalle_donacion" Relationship="Self.FK_detalle_donacion_donacion" FromRole="donacion" ToRole="detalle_donacion" />
+    <NavigationProperty Name="donate" Relationship="Self.FK_donacion_donates" FromRole="donacion" ToRole="donates" />
+    <NavigationProperty Name="usuarios_admin" Relationship="Self.FK_donacion_usuarios_admin" FromRole="donacion" ToRole="usuarios_admin" />
+  </EntityType>
+  <EntityType Name="donate">
+    <Key>
+      <PropertyRef Name="idDonante" />
+    </Key>
+    <Property Name="idDonante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="donacions" Relationship="Self.FK_donacion_donates" FromRole="donates" ToRole="donacion" />
+  </EntityType>
+  <EntityType Name="estado">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreEstado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="detalle_prestamo" Relationship="Self.FK_detalle_prestamo_estados" FromRole="estados" ToRole="detalle_prestamo" />
+    <NavigationProperty Name="prestamoes" Relationship="Self.FK_prestamo_estados" FromRole="estados" ToRole="prestamo" />
+  </EntityType>
+  <EntityType Name="libro">
+    <Key>
+      <PropertyRef Name="idLibro" />
+    </Key>
+    <Property Name="idLibro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="codigo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="id_categoria" Type="Int32" Nullable="false" />
+    <Property Name="stock" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="categoria_Libro" Relationship="Self.FK_libro_categoria_Libro" FromRole="libro" ToRole="categoria_Libro" />
+    <NavigationProperty Name="detalle_donacion" Relationship="Self.FK_detalle_donacion_libro" FromRole="libro" ToRole="detalle_donacion" />
+    <NavigationProperty Name="detalle_prestamo" Relationship="Self.FK_detalle_prestamo_libro" FromRole="libro" ToRole="detalle_prestamo" />
+  </EntityType>
+  <EntityType Name="prestamo">
+    <Key>
+      <PropertyRef Name="idPrestamo" />
+    </Key>
+    <Property Name="idPrestamo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="Int32" Nullable="false" />
+    <Property Name="id_usario_admin" Type="Int32" Nullable="false" />
+    <Property Name="fecha_prestamo" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="fecha_devolucion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="id_estado" Type="Int32" />
+    <NavigationProperty Name="detalle_prestamo" Relationship="Self.FK_detalle_prestamo_prestamo" FromRole="prestamo" ToRole="detalle_prestamo" />
+    <NavigationProperty Name="estado" Relationship="Self.FK_prestamo_estados" FromRole="prestamo" ToRole="estados" />
+    <NavigationProperty Name="usuariosPrestamista" Relationship="Self.FK_prestamo_usuarios" FromRole="prestamo" ToRole="usuariosPrestamistas" />
+    <NavigationProperty Name="usuarios_admin" Relationship="Self.FK_prestamo_usuarios_admin" FromRole="prestamo" ToRole="usuarios_admin" />
+  </EntityType>
+  <EntityType Name="responsable">
+    <Key>
+      <PropertyRef Name="idResponsable" />
+    </Key>
+    <Property Name="idResponsable" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreResponsable" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="telefono" Type="Int32" Nullable="false" />
+    <Property Name="cui" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="usuariosPrestamistas" Relationship="Self.FK_usuariosPrestamistas_responsable" FromRole="responsable" ToRole="usuariosPrestamistas" />
+  </EntityType>
+  <EntityType Name="sector">
+    <Key>
+      <PropertyRef Name="idSector" />
+    </Key>
+    <Property Name="idSector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="id_aldea" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="aldea" Relationship="Self.FK_sector_Aldea" FromRole="sector" ToRole="aldea" />
+    <NavigationProperty Name="direccions" Relationship="Self.FK_direccion_sector" FromRole="sector" ToRole="direccion" />
+  </EntityType>
+  <EntityType Name="usuarios_admin">
+    <Key>
+      <PropertyRef Name="idUsuario_Admin" />
+    </Key>
+    <Property Name="idUsuario_Admin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pass" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="telefono" Type="Int32" />
+    <NavigationProperty Name="donacions" Relationship="Self.FK_donacion_usuarios_admin" FromRole="usuarios_admin" ToRole="donacion" />
+    <NavigationProperty Name="prestamoes" Relationship="Self.FK_prestamo_usuarios_admin" FromRole="usuarios_admin" ToRole="prestamo" />
+  </EntityType>
+  <EntityType Name="usuariosPrestamista">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_direccion" Type="Int32" Nullable="false" />
+    <Property Name="id_centroEducativo" Type="Int32" Nullable="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="genero" Type="Boolean" Nullable="false" />
+    <Property Name="id_responsable" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="centroEducativo" Relationship="Self.FK_usuariosPrestamistas_centroEducativo" FromRole="usuariosPrestamistas" ToRole="centroEducativo" />
+    <NavigationProperty Name="direccion" Relationship="Self.FK_usuariosPrestamistas_direccion" FromRole="usuariosPrestamistas" ToRole="direccion" />
+    <NavigationProperty Name="prestamoes" Relationship="Self.FK_prestamo_usuarios" FromRole="usuariosPrestamistas" ToRole="prestamo" />
+    <NavigationProperty Name="responsable" Relationship="Self.FK_usuariosPrestamistas_responsable" FromRole="usuariosPrestamistas" ToRole="responsable" />
+  </EntityType>
+  <Association Name="FK_sector_Aldea">
+    <End Role="aldea" Type="Self.aldea" Multiplicity="1" />
+    <End Role="sector" Type="Self.sector" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aldea">
+        <PropertyRef Name="idAldea" />
+      </Principal>
+      <Dependent Role="sector">
+        <PropertyRef Name="id_aldea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_libro_categoria_Libro">
+    <End Role="categoria_Libro" Type="Self.categoria_Libro" Multiplicity="1" />
+    <End Role="libro" Type="Self.libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categoria_Libro">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="libro">
+        <PropertyRef Name="id_categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuariosPrestamistas_centroEducativo">
+    <End Role="centroEducativo" Type="Self.centroEducativo" Multiplicity="1" />
+    <End Role="usuariosPrestamistas" Type="Self.usuariosPrestamista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="centroEducativo">
+        <PropertyRef Name="idCentroEducativo" />
+      </Principal>
+      <Dependent Role="usuariosPrestamistas">
+        <PropertyRef Name="id_centroEducativo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_donacion_donacion">
+    <End Role="donacion" Type="Self.donacion" Multiplicity="1" />
+    <End Role="detalle_donacion" Type="Self.detalle_donacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="donacion">
+        <PropertyRef Name="idDonacion" />
+      </Principal>
+      <Dependent Role="detalle_donacion">
+        <PropertyRef Name="id_donacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_donacion_libro">
+    <End Role="libro" Type="Self.libro" Multiplicity="1" />
+    <End Role="detalle_donacion" Type="Self.detalle_donacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="libro">
+        <PropertyRef Name="idLibro" />
+      </Principal>
+      <Dependent Role="detalle_donacion">
+        <PropertyRef Name="id_libro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_prestamo_estados">
+    <End Role="estados" Type="Self.estado" Multiplicity="1" />
+    <End Role="detalle_prestamo" Type="Self.detalle_prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="detalle_prestamo">
+        <PropertyRef Name="id_estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_prestamo_libro">
+    <End Role="libro" Type="Self.libro" Multiplicity="1" />
+    <End Role="detalle_prestamo" Type="Self.detalle_prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="libro">
+        <PropertyRef Name="idLibro" />
+      </Principal>
+      <Dependent Role="detalle_prestamo">
+        <PropertyRef Name="id_libro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_prestamo_prestamo">
+    <End Role="prestamo" Type="Self.prestamo" Multiplicity="1" />
+    <End Role="detalle_prestamo" Type="Self.detalle_prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="prestamo">
+        <PropertyRef Name="idPrestamo" />
+      </Principal>
+      <Dependent Role="detalle_prestamo">
+        <PropertyRef Name="id_prestamo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_direccion_sector">
+    <End Role="sector" Type="Self.sector" Multiplicity="1" />
+    <End Role="direccion" Type="Self.direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sector">
+        <PropertyRef Name="idSector" />
+      </Principal>
+      <Dependent Role="direccion">
+        <PropertyRef Name="id_sector" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuariosPrestamistas_direccion">
+    <End Role="direccion" Type="Self.direccion" Multiplicity="1" />
+    <End Role="usuariosPrestamistas" Type="Self.usuariosPrestamista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="direccion">
+        <PropertyRef Name="idDireccion" />
+      </Principal>
+      <Dependent Role="usuariosPrestamistas">
+        <PropertyRef Name="id_direccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_donacion_donates">
+    <End Role="donates" Type="Self.donate" Multiplicity="1" />
+    <End Role="donacion" Type="Self.donacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="donates">
+        <PropertyRef Name="idDonante" />
+      </Principal>
+      <Dependent Role="donacion">
+        <PropertyRef Name="id_donante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_donacion_usuarios_admin">
+    <End Role="usuarios_admin" Type="Self.usuarios_admin" Multiplicity="1" />
+    <End Role="donacion" Type="Self.donacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios_admin">
+        <PropertyRef Name="idUsuario_Admin" />
+      </Principal>
+      <Dependent Role="donacion">
+        <PropertyRef Name="id_admin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_prestamo_estados">
+    <End Role="estados" Type="Self.estado" Multiplicity="0..1" />
+    <End Role="prestamo" Type="Self.prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="prestamo">
+        <PropertyRef Name="id_estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_prestamo_usuarios">
+    <End Role="usuariosPrestamistas" Type="Self.usuariosPrestamista" Multiplicity="1" />
+    <End Role="prestamo" Type="Self.prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuariosPrestamistas">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="prestamo">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_prestamo_usuarios_admin">
+    <End Role="usuarios_admin" Type="Self.usuarios_admin" Multiplicity="1" />
+    <End Role="prestamo" Type="Self.prestamo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios_admin">
+        <PropertyRef Name="idUsuario_Admin" />
+      </Principal>
+      <Dependent Role="prestamo">
+        <PropertyRef Name="id_usario_admin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuariosPrestamistas_responsable">
+    <End Role="responsable" Type="Self.responsable" Multiplicity="1" />
+    <End Role="usuariosPrestamistas" Type="Self.usuariosPrestamista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="responsable">
+        <PropertyRef Name="idResponsable" />
+      </Principal>
+      <Dependent Role="usuariosPrestamistas">
+        <PropertyRef Name="id_responsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="librarydbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="aldeas" EntityType="Self.aldea" />
+    <EntitySet Name="categoria_Libro" EntityType="Self.categoria_Libro" />
+    <EntitySet Name="centroEducativoes" EntityType="Self.centroEducativo" />
+    <EntitySet Name="detalle_donacion" EntityType="Self.detalle_donacion" />
+    <EntitySet Name="detalle_prestamo" EntityType="Self.detalle_prestamo" />
+    <EntitySet Name="direccions" EntityType="Self.direccion" />
+    <EntitySet Name="donacions" EntityType="Self.donacion" />
+    <EntitySet Name="donates" EntityType="Self.donate" />
+    <EntitySet Name="estados" EntityType="Self.estado" />
+    <EntitySet Name="libroes" EntityType="Self.libro" />
+    <EntitySet Name="prestamoes" EntityType="Self.prestamo" />
+    <EntitySet Name="responsables" EntityType="Self.responsable" />
+    <EntitySet Name="sectors" EntityType="Self.sector" />
+    <EntitySet Name="usuarios_admin" EntityType="Self.usuarios_admin" />
+    <EntitySet Name="usuariosPrestamistas" EntityType="Self.usuariosPrestamista" />
+    <AssociationSet Name="FK_sector_Aldea" Association="Self.FK_sector_Aldea">
+      <End Role="aldea" EntitySet="aldeas" />
+      <End Role="sector" EntitySet="sectors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_libro_categoria_Libro" Association="Self.FK_libro_categoria_Libro">
+      <End Role="categoria_Libro" EntitySet="categoria_Libro" />
+      <End Role="libro" EntitySet="libroes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuariosPrestamistas_centroEducativo" Association="Self.FK_usuariosPrestamistas_centroEducativo">
+      <End Role="centroEducativo" EntitySet="centroEducativoes" />
+      <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_donacion_donacion" Association="Self.FK_detalle_donacion_donacion">
+      <End Role="donacion" EntitySet="donacions" />
+      <End Role="detalle_donacion" EntitySet="detalle_donacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_donacion_libro" Association="Self.FK_detalle_donacion_libro">
+      <End Role="libro" EntitySet="libroes" />
+      <End Role="detalle_donacion" EntitySet="detalle_donacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_prestamo_estados" Association="Self.FK_detalle_prestamo_estados">
+      <End Role="estados" EntitySet="estados" />
+      <End Role="detalle_prestamo" EntitySet="detalle_prestamo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_prestamo_libro" Association="Self.FK_detalle_prestamo_libro">
+      <End Role="libro" EntitySet="libroes" />
+      <End Role="detalle_prestamo" EntitySet="detalle_prestamo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_prestamo_prestamo" Association="Self.FK_detalle_prestamo_prestamo">
+      <End Role="prestamo" EntitySet="prestamoes" />
+      <End Role="detalle_prestamo" EntitySet="detalle_prestamo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_direccion_sector" Association="Self.FK_direccion_sector">
+      <End Role="sector" EntitySet="sectors" />
+      <End Role="direccion" EntitySet="direccions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuariosPrestamistas_direccion" Association="Self.FK_usuariosPrestamistas_direccion">
+      <End Role="direccion" EntitySet="direccions" />
+      <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_donacion_donates" Association="Self.FK_donacion_donates">
+      <End Role="donates" EntitySet="donates" />
+      <End Role="donacion" EntitySet="donacions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_donacion_usuarios_admin" Association="Self.FK_donacion_usuarios_admin">
+      <End Role="usuarios_admin" EntitySet="usuarios_admin" />
+      <End Role="donacion" EntitySet="donacions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_prestamo_estados" Association="Self.FK_prestamo_estados">
+      <End Role="estados" EntitySet="estados" />
+      <End Role="prestamo" EntitySet="prestamoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_prestamo_usuarios" Association="Self.FK_prestamo_usuarios">
+      <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
+      <End Role="prestamo" EntitySet="prestamoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_prestamo_usuarios_admin" Association="Self.FK_prestamo_usuarios_admin">
+      <End Role="usuarios_admin" EntitySet="usuarios_admin" />
+      <End Role="prestamo" EntitySet="prestamoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuariosPrestamistas_responsable" Association="Self.FK_usuariosPrestamistas_responsable">
+      <End Role="responsable" EntitySet="responsables" />
+      <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
+    </AssociationSet>
+    <FunctionImport Name="sp_deleteAldea">
+      <Parameter Name="idAldea" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteCategoriaLibro">
+      <Parameter Name="idCategoriaLibro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteCentroEducativo">
+      <Parameter Name="idCentro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteDetalleDonacion">
+      <Parameter Name="idDetalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteDetallePrestamo">
+      <Parameter Name="idDetalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteDireccion">
+      <Parameter Name="idDireccion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteDonacion">
+      <Parameter Name="idDonacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteDonantes">
+      <Parameter Name="idDonante" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteEstados">
+      <Parameter Name="idEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteLibro">
+      <Parameter Name="idLibro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deletePrestamo">
+      <Parameter Name="idPrestamo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteResponsable">
+      <Parameter Name="idResponsable" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteSector">
+      <Parameter Name="idSector" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteUsuarios_admin">
+      <Parameter Name="idUsuario_admin" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_deleteUsuarios_Prestamista">
+      <Parameter Name="idUsuario_prestamista" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertAldea">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertarLibro">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="codigo" Mode="In" Type="String" />
+      <Parameter Name="id_categoria" Mode="In" Type="Int32" />
+      <Parameter Name="stock" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertCategoria_Libro">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertCentro_Educativo">
+      <Parameter Name="nombreCentro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertDetalle_Donacion">
+      <Parameter Name="id_donacion" Mode="In" Type="Int32" />
+      <Parameter Name="id_libro" Mode="In" Type="Int32" />
+      <Parameter Name="cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertDetalle_Prestamo">
+      <Parameter Name="id_prestamo" Mode="In" Type="Int32" />
+      <Parameter Name="id_estado" Mode="In" Type="Int32" />
+      <Parameter Name="id_libro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertDireccion">
+      <Parameter Name="id_sector" Mode="In" Type="Int32" />
+      <Parameter Name="descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertDonacion">
+      <Parameter Name="id_donante" Mode="In" Type="Int32" />
+      <Parameter Name="id_admin" Mode="In" Type="Int32" />
+      <Parameter Name="fecha" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertDonantes">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertEstado">
+      <Parameter Name="nombreEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertLibro">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="codigo" Mode="In" Type="String" />
+      <Parameter Name="id_categoria" Mode="In" Type="Int32" />
+      <Parameter Name="stock" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertPrestamo">
+      <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+      <Parameter Name="id_usuario_admin" Mode="In" Type="Int32" />
+      <Parameter Name="fecha_prestamo" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_devolucion" Mode="In" Type="DateTime" />
+      <Parameter Name="id_estado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertResponsable">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="telefono" Mode="In" Type="Int32" />
+      <Parameter Name="cui" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertSector">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="id_aldea" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertUsuario_Admin">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido" Mode="In" Type="String" />
+      <Parameter Name="pass" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_insertUsuario_Prestamista">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido" Mode="In" Type="String" />
+      <Parameter Name="id_direccion" Mode="In" Type="Int32" />
+      <Parameter Name="id_centroEducativo" Mode="In" Type="Int32" />
+      <Parameter Name="fechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="genero" Mode="In" Type="Boolean" />
+      <Parameter Name="id_responsable" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_SelectAllAldeas" ReturnType="Collection(librarydbModel.sp_SelectAllAldeas_Result)" />
+    <FunctionImport Name="sp_selectAllCatLibro" ReturnType="Collection(librarydbModel.sp_selectAllCatLibro_Result)" />
+    <FunctionImport Name="sp_selectAllCentroEduca" ReturnType="Collection(librarydbModel.sp_selectAllCentroEduca_Result)" />
+    <FunctionImport Name="sp_selectAllDetallePrestamo" ReturnType="Collection(librarydbModel.sp_selectAllDetallePrestamo_Result)" />
+    <FunctionImport Name="sp_selectAllDirecciones" ReturnType="Collection(librarydbModel.sp_selectAllDirecciones_Result)" />
+    <FunctionImport Name="sp_selectAllDonacion" ReturnType="Collection(librarydbModel.sp_selectAllDonacion_Result)" />
+    <FunctionImport Name="sp_selectAllDonantes" ReturnType="Collection(librarydbModel.sp_selectAllDonantes_Result)" />
+    <FunctionImport Name="sp_selectAllestados" ReturnType="Collection(librarydbModel.sp_selectAllestados_Result)" />
+    <FunctionImport Name="sp_selectAllLibros" ReturnType="Collection(librarydbModel.sp_selectAllLibros_Result)" />
+    <FunctionImport Name="sp_selectAllPrestamos" ReturnType="Collection(librarydbModel.sp_selectAllPrestamos_Result)" />
+    <FunctionImport Name="sp_selectAllResponsables" ReturnType="Collection(librarydbModel.sp_selectAllResponsables_Result)" />
+    <FunctionImport Name="sp_selectAllSectores" ReturnType="Collection(librarydbModel.sp_selectAllSectores_Result)" />
+    <FunctionImport Name="sp_selectAllUsuarios_Admin" ReturnType="Collection(librarydbModel.sp_selectAllUsuarios_Admin_Result)" />
+    <FunctionImport Name="sp_selectAllUsuarios_Prestamistas" ReturnType="Collection(librarydbModel.sp_selectAllUsuarios_Prestamistas_Result)" />
+    <FunctionImport Name="sp_selectUsuarioAdmin_byUser" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdmin_byUser_Result)">
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateAldea">
+      <Parameter Name="idAldea" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateCategoriaLibro">
+      <Parameter Name="idCategoria" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateCentroEducativo">
+      <Parameter Name="IdCentroEducativo" Mode="In" Type="Int32" />
+      <Parameter Name="NombreCentroEducativo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateDetalleDonacion">
+      <Parameter Name="IdDetalleDonacion" Mode="In" Type="Int32" />
+      <Parameter Name="IdDonacion" Mode="In" Type="Int32" />
+      <Parameter Name="IdLibro" Mode="In" Type="Int32" />
+      <Parameter Name="Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="FechaRegistro" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateDetallePrestamo">
+      <Parameter Name="IdPrestamoDetalle" Mode="In" Type="Int32" />
+      <Parameter Name="IdPrestamo" Mode="In" Type="Int32" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="IdLibro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateDireccion">
+      <Parameter Name="idDireccion" Mode="In" Type="Int32" />
+      <Parameter Name="id_sector" Mode="In" Type="Int32" />
+      <Parameter Name="descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateDonacion">
+      <Parameter Name="IdDonacion" Mode="In" Type="Int32" />
+      <Parameter Name="IdDonante" Mode="In" Type="Int32" />
+      <Parameter Name="IdAdmin" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateDonante">
+      <Parameter Name="IdDonante" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateEstado">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="NombreEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateLibro">
+      <Parameter Name="IdLibro" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Codigo" Mode="In" Type="String" />
+      <Parameter Name="IdCategoria" Mode="In" Type="Int32" />
+      <Parameter Name="Stock" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updatePrestamo">
+      <Parameter Name="IdPrestamo" Mode="In" Type="Int32" />
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="IdUsuarioAdmin" Mode="In" Type="Int32" />
+      <Parameter Name="FechaPrestamo" Mode="In" Type="DateTime" />
+      <Parameter Name="FechaDevolucion" Mode="In" Type="DateTime" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateResponsable">
+      <Parameter Name="IdResponsable" Mode="In" Type="Int32" />
+      <Parameter Name="NombreResponsable" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="Int32" />
+      <Parameter Name="Cui" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateSector">
+      <Parameter Name="idSector" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="idAldea" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateUsuarioAdmin">
+      <Parameter Name="IdUsuarioAdmin" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Apellido" Mode="In" Type="String" />
+      <Parameter Name="Pass" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateUsuarioPrestamista">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Apellido" Mode="In" Type="String" />
+      <Parameter Name="id_Direccion" Mode="In" Type="Int32" />
+      <Parameter Name="IdCentroEducativo" Mode="In" Type="Int32" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="Genero" Mode="In" Type="Boolean" />
+      <Parameter Name="IdResponsable" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_selectUsuarioAdminbyUsuario" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdminbyUsuario_Result)">
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_SelectAllAldeas_Result">
+    <Property Type="Int32" Name="idAldea" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllCatLibro_Result">
+    <Property Type="Int32" Name="idCategoria" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllCentroEduca_Result">
+    <Property Type="Int32" Name="idCentroEducativo" Nullable="false" />
+    <Property Type="String" Name="nombreCentroEducativo" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllDetallePrestamo_Result">
+    <Property Type="Int32" Name="idPrestamoDetalle" Nullable="false" />
+    <Property Type="Int32" Name="id_prestamo" Nullable="false" />
+    <Property Type="Int32" Name="id_estado" Nullable="false" />
+    <Property Type="Int32" Name="id_libro" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllDirecciones_Result">
+    <Property Type="Int32" Name="idDireccion" Nullable="false" />
+    <Property Type="Int32" Name="id_sector" Nullable="false" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllDonacion_Result">
+    <Property Type="Int32" Name="idDonacion" Nullable="false" />
+    <Property Type="Int32" Name="id_donante" Nullable="false" />
+    <Property Type="Int32" Name="id_admin" Nullable="false" />
+    <Property Type="DateTime" Name="fecha" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllDonantes_Result">
+    <Property Type="Int32" Name="idDonante" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllestados_Result">
+    <Property Type="Int32" Name="idEstado" Nullable="false" />
+    <Property Type="String" Name="nombreEstado" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllLibros_Result">
+    <Property Type="Int32" Name="idLibro" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="codigo" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="id_categoria" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllPrestamos_Result">
+    <Property Type="Int32" Name="idPrestamo" Nullable="false" />
+    <Property Type="Int32" Name="id_usuario" Nullable="false" />
+    <Property Type="Int32" Name="id_usario_admin" Nullable="false" />
+    <Property Type="DateTime" Name="fecha_prestamo" Nullable="false" />
+    <Property Type="DateTime" Name="fecha_devolucion" Nullable="false" />
+    <Property Type="Int32" Name="id_estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllResponsables_Result">
+    <Property Type="Int32" Name="idResponsable" Nullable="false" />
+    <Property Type="String" Name="nombreResponsable" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="telefono" Nullable="false" />
+    <Property Type="String" Name="cui" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllSectores_Result">
+    <Property Type="Int32" Name="idSector" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="id_aldea" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllUsuarios_Admin_Result">
+    <Property Type="Int32" Name="idUsuario_Admin" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="telefono" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_selectAllUsuarios_Prestamistas_Result">
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="id_direccion" Nullable="false" />
+    <Property Type="Int32" Name="id_centroEducativo" Nullable="false" />
+    <Property Type="DateTime" Name="fechaNacimiento" Nullable="false" />
+    <Property Type="Boolean" Name="genero" Nullable="false" />
+    <Property Type="Int32" Name="id_responsable" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_selectUsuarioAdmin_byUser_Result">
+    <Property Type="Int32" Name="idUsuario_Admin" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="telefono" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_selectUsuarioAdminbyUsuario_Result">
+    <Property Type="Int32" Name="idUsuario_Admin" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="telefono" Nullable="true" />
+  </ComplexType>
+</Schema>

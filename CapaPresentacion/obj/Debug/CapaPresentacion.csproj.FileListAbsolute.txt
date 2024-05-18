@@ -29,3 +29,25 @@ C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debu
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioPres.resources
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Libros.resources
 C:\Users\Ferdy Ramírez Cardon\Documents\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Mantenedor.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\EntityFramework.xml
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Dashboard.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Initial.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Libros.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Mantenedor.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioAdmin.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.UsuarioPres.resources
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
