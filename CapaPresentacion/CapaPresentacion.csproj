@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +36,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>C:\Users\Usuario\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -41,8 +50,11 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +66,111 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseDatos\aldea.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\categoria_Libro.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\centroEducativo.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\detalle_donacion.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\detalle_prestamo.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\direccion.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\donacion.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\donate.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\estado.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\libraryDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\libraryDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\libraryDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\libro.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\prestamo.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\responsable.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sector.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_SelectAllAldeas_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllCatLibro_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllCentroEduca_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDetallePrestamo_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDirecciones_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDonacion_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDonantes_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllestados_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllLibros_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllPrestamos_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllResponsables_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllSectores_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllUsuarios_Admin_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllUsuarios_Prestamistas_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectUsuarioAdmin_byUser_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\usuariosPrestamista.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\usuarios_admin.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +242,14 @@
     <EmbeddedResource Include="UsuarioPres.resx">
       <DependentUpon>UsuarioPres.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="BaseDatos\libraryDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>libraryDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BaseDatos\libraryDBModel.edmx.diagram">
+      <DependentUpon>libraryDBModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,5 +340,29 @@
   <ItemGroup>
     <None Include="Resources\carpeta-40.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="BaseDatos\libraryDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>libraryDBModel.edmx</DependentUpon>
+      <LastGenOutput>libraryDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BaseDatos\libraryDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>libraryDBModel.edmx</DependentUpon>
+      <LastGenOutput>libraryDBModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
