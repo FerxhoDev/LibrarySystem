@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="librarydbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="librarydbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="aldea">
           <Key>
             <PropertyRef Name="idAldea" />
@@ -471,6 +471,9 @@
         <Function Name="sp_selectUsuarioAdmin_byUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Usuario" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="sp_selectUsuarioAdminbyUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="sp_updateAldea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idAldea" Type="int" Mode="In" />
           <Parameter Name="nombre" Type="nvarchar" Mode="In" />
@@ -640,8 +643,7 @@
             <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="librarydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1083,52 +1085,52 @@
             <End Role="usuariosPrestamistas" EntitySet="usuariosPrestamistas" />
           </AssociationSet>
           <FunctionImport Name="sp_deleteAldea">
-            <Parameter Name="idAldea" Mode="In" Type="Int32" />
+          <Parameter Name="idAldea" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteCategoriaLibro">
-            <Parameter Name="idCategoriaLibro" Mode="In" Type="Int32" />
+          <Parameter Name="idCategoriaLibro" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteCentroEducativo">
-            <Parameter Name="idCentro" Mode="In" Type="Int32" />
+          <Parameter Name="idCentro" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteDetalleDonacion">
-            <Parameter Name="idDetalle" Mode="In" Type="Int32" />
+          <Parameter Name="idDetalle" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteDetallePrestamo">
-            <Parameter Name="idDetalle" Mode="In" Type="Int32" />
+          <Parameter Name="idDetalle" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteDireccion">
-            <Parameter Name="idDireccion" Mode="In" Type="Int32" />
+          <Parameter Name="idDireccion" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteDonacion">
-            <Parameter Name="idDonacion" Mode="In" Type="Int32" />
+          <Parameter Name="idDonacion" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteDonantes">
-            <Parameter Name="idDonante" Mode="In" Type="Int32" />
+          <Parameter Name="idDonante" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteEstados">
-            <Parameter Name="idEstado" Mode="In" Type="Int32" />
+          <Parameter Name="idEstado" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteLibro">
-            <Parameter Name="idLibro" Mode="In" Type="Int32" />
+          <Parameter Name="idLibro" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deletePrestamo">
-            <Parameter Name="idPrestamo" Mode="In" Type="Int32" />
+          <Parameter Name="idPrestamo" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteResponsable">
-            <Parameter Name="idResponsable" Mode="In" Type="Int32" />
+          <Parameter Name="idResponsable" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteSector">
-            <Parameter Name="idSector" Mode="In" Type="Int32" />
+          <Parameter Name="idSector" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteUsuarios_admin">
-            <Parameter Name="idUsuario_admin" Mode="In" Type="Int32" />
+          <Parameter Name="idUsuario_admin" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_deleteUsuarios_Prestamista">
-            <Parameter Name="idUsuario_prestamista" Mode="In" Type="Int32" />
+          <Parameter Name="idUsuario_prestamista" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_InsertAldea">
-            <Parameter Name="nombre" Mode="In" Type="String" />
+          <Parameter Name="nombre" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_InsertarLibro">
             <Parameter Name="nombre" Mode="In" Type="String" />
@@ -1137,10 +1139,10 @@
             <Parameter Name="stock" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_insertCategoria_Libro">
-            <Parameter Name="nombre" Mode="In" Type="String" />
+          <Parameter Name="nombre" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_insertCentro_Educativo">
-            <Parameter Name="nombreCentro" Mode="In" Type="String" />
+          <Parameter Name="nombreCentro" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_insertDetalle_Donacion">
             <Parameter Name="id_donacion" Mode="In" Type="Int32" />
@@ -1163,10 +1165,10 @@
             <Parameter Name="fecha" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="sp_insertDonantes">
-            <Parameter Name="nombre" Mode="In" Type="String" />
+          <Parameter Name="nombre" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_insertEstado">
-            <Parameter Name="nombreEstado" Mode="In" Type="String" />
+          <Parameter Name="nombreEstado" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_insertLibro">
             <Parameter Name="nombre" Mode="In" Type="String" />
@@ -1221,7 +1223,7 @@
           <FunctionImport Name="sp_selectAllUsuarios_Admin" ReturnType="Collection(librarydbModel.sp_selectAllUsuarios_Admin_Result)" />
           <FunctionImport Name="sp_selectAllUsuarios_Prestamistas" ReturnType="Collection(librarydbModel.sp_selectAllUsuarios_Prestamistas_Result)" />
           <FunctionImport Name="sp_selectUsuarioAdmin_byUser" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdmin_byUser_Result)">
-            <Parameter Name="Usuario" Mode="In" Type="String" />
+          <Parameter Name="Usuario" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_updateAldea">
             <Parameter Name="idAldea" Mode="In" Type="Int32" />
@@ -1311,6 +1313,9 @@
             <Parameter Name="Genero" Mode="In" Type="Boolean" />
             <Parameter Name="IdResponsable" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="sp_selectUsuarioAdminbyUsuario" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdminbyUsuario_Result)">
+            <Parameter Name="usuario" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="sp_SelectAllAldeas_Result">
           <Property Type="Int32" Name="idAldea" Nullable="false" />
@@ -1394,6 +1399,14 @@
           <Property Type="Int32" Name="id_responsable" Nullable="false" />
         </ComplexType>
         <ComplexType Name="sp_selectUsuarioAdmin_byUser_Result">
+          <Property Type="Int32" Name="idUsuario_Admin" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="telefono" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_selectUsuarioAdminbyUsuario_Result">
           <Property Type="Int32" Name="idUsuario_Admin" Nullable="false" />
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
           <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
@@ -1750,6 +1763,18 @@
           <FunctionImportMapping FunctionImportName="sp_updateSector" FunctionName="librarydbModel.Store.sp_updateSector" />
           <FunctionImportMapping FunctionImportName="sp_updateUsuarioAdmin" FunctionName="librarydbModel.Store.sp_updateUsuarioAdmin" />
           <FunctionImportMapping FunctionImportName="sp_updateUsuarioPrestamista" FunctionName="librarydbModel.Store.sp_updateUsuarioPrestamista" />
+          <FunctionImportMapping FunctionImportName="sp_selectUsuarioAdminbyUsuario" FunctionName="librarydbModel.Store.sp_selectUsuarioAdminbyUsuario">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectUsuarioAdminbyUsuario_Result">
+                <ScalarProperty Name="idUsuario_Admin" ColumnName="idUsuario_Admin" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

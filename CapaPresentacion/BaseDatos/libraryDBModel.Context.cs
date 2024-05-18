@@ -831,5 +831,14 @@ namespace CapaPresentacion.BaseDatos
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_updateUsuarioPrestamista", idUsuarioParameter, nombreParameter, apellidoParameter, id_DireccionParameter, idCentroEducativoParameter, fechaNacimientoParameter, generoParameter, idResponsableParameter);
         }
+    
+        public virtual ObjectResult<sp_selectUsuarioAdminbyUsuario_Result> sp_selectUsuarioAdminbyUsuario(string usuario)
+        {
+            var usuarioParameter = usuario != null ?
+                new ObjectParameter("usuario", usuario) :
+                new ObjectParameter("usuario", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectUsuarioAdminbyUsuario_Result>("sp_selectUsuarioAdminbyUsuario", usuarioParameter);
+        }
     }
 }
