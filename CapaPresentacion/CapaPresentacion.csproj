@@ -162,6 +162,9 @@
     <Compile Include="BaseDatos\sp_selectAllUsuarios_Prestamistas_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectUsuarioAdminbyUsuario_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectUsuarioAdmin_byUser_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
