@@ -364,6 +364,9 @@
       <DependentUpon>libraryDBModel.edmx</DependentUpon>
       <LastGenOutput>libraryDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\más-40.png" />
+    <None Include="Resources\lista-40.png" />
+    <None Include="Resources\peoplesD-40.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

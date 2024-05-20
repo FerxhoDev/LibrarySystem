@@ -163,6 +163,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lista_40 {
+            get {
+                object obj = ResourceManager.GetObject("lista-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap llavero_25 {
             get {
                 object obj = ResourceManager.GetObject("llavero-25", resourceCulture);
@@ -213,9 +223,29 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap más_40 {
+            get {
+                object obj = ResourceManager.GetObject("más-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap notebook_dynamic_color {
             get {
                 object obj = ResourceManager.GetObject("notebook-dynamic-color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap peoplesD_40 {
+            get {
+                object obj = ResourceManager.GetObject("peoplesD-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

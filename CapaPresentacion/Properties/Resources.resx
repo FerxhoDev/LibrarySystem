@@ -118,35 +118,53 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="llavero-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\llavero-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salir-redondeado-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salir-redondeado-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Book Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Book Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="prest-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prest-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Character-working-laptop-sitting-chair" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="return-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\return-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Final Logo B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Final Logo B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notebook-dynamic-color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notebook-dynamic-color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="place-marker-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\place-marker-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="llavero-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llavero-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="más-24 v" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\más-24 v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lista-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lista-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="llavero-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llavero-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="libros-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\libros-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sammy-man-studying-analytics-on-laptop 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sammy-man-studying-analytics-on-laptop 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Book Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Book Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tall-person-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tall-person-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="donación-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donación-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carpeta-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carpeta-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salir-redondeado-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salir-redondeado-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tall-fill-person-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tall-fill-person-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peoplesD-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peoplesD-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tablero-20 red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tablero-20 red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="llavero-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\llavero-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,46 +172,37 @@
   <data name="ajustes-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajustes-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="prest-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prest-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tablero-20 red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tablero-20 red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="return-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\return-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="libros-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\libros-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Character-working-laptop-sitting-chair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="llavero-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\llavero-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="más-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\más-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Final Logo B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Final Logo B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sammy-man-studying-analytics-on-laptop 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sammy-man-studying-analytics-on-laptop 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="place-marker-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\place-marker-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="colegio-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colegio-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="donación-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\donación-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tall-person-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tall-person-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="más-24 v" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\más-24 v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="llavero-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\llavero-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Character-working-laptop-sitting-chair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carpeta-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carpeta-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Character-working-laptop-sitting-chair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="más-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\más-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="más-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\más-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -42,7 +42,7 @@
             // 
             this.pContainerM.Location = new System.Drawing.Point(12, 86);
             this.pContainerM.Name = "pContainerM";
-            this.pContainerM.Size = new System.Drawing.Size(1554, 817);
+            this.pContainerM.Size = new System.Drawing.Size(1554, 837);
             this.pContainerM.TabIndex = 0;
             // 
             // gunaElipsePanel1
@@ -156,8 +156,8 @@
             this.gBtnCategoria.BorderRadius = 5;
             this.gBtnCategoria.CheckedState.Parent = this.gBtnCategoria;
             this.gBtnCategoria.CustomImages.Parent = this.gBtnCategoria;
-            this.gBtnCategoria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.gBtnCategoria.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
+            this.gBtnCategoria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.gBtnCategoria.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.gBtnCategoria.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBtnCategoria.ForeColor = System.Drawing.Color.LightGray;
             this.gBtnCategoria.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
@@ -173,13 +173,14 @@
             this.gBtnCategoria.TabIndex = 2;
             this.gBtnCategoria.Text = "DONACIONES";
             this.gBtnCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gBtnCategoria.Click += new System.EventHandler(this.gBtnCategoria_Click);
             // 
             // Mantenedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1578, 915);
+            this.ClientSize = new System.Drawing.Size(1578, 948);
             this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.pContainerM);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

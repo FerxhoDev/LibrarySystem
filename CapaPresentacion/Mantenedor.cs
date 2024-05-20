@@ -20,25 +20,20 @@ namespace CapaPresentacion
         }
 
         private static Form FormularioActivo = null;
-        private static Guna2Button MenuActiv = null;
+        private static Guna2GradientButton MenuActiv = null;
 
-        private void AbrirFormulario(Guna2Button menu, Form formulario)
+        private void AbrirFormulario(Guna2GradientButton menu, Form formulario)
         {
             // Restablecer el estilo del botón anteriormente activo
             if (MenuActiv != null)
             {
                 MenuActiv.FillColor = Color.FromArgb(1, 43, 47, 51);
-                MenuActiv.CustomBorderColor = Color.FromArgb(1, 43, 47, 51);
-                Padding defaultBorderThickness = new Padding(0);
-                MenuActiv.CustomBorderThickness = defaultBorderThickness;
+                MenuActiv.FillColor2 = Color.FromArgb(1, 43, 47, 51);
             }
 
             // Establecer el estilo del botón actual
-            menu.CustomBorderColor = Color.FromArgb(255, 197, 63, 0);
-            Padding newBorderThickness = menu.CustomBorderThickness;
-            newBorderThickness.Right = 4;
-            menu.CustomBorderThickness = newBorderThickness;
-            menu.FillColor = Color.FromArgb(255, 33, 37, 36);
+            menu.FillColor = Color.FromArgb(1, 33, 37, 36);
+            menu.FillColor2 = Color.FromArgb(1, 33, 37, 36);
 
             // Asignar el botón actual a MenuActiv
             MenuActiv = menu;
@@ -57,6 +52,11 @@ namespace CapaPresentacion
 
             pContainerM.Controls.Add(formulario);
             formulario.Show();
+        }
+
+        private void gBtnCategoria_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2GradientButton)sender, new Donaciones());
         }
     }
 }

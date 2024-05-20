@@ -64,7 +64,7 @@ namespace CapaPresentacion
 
                 }catch(Exception ex)
                 {
-                    MessageBox.Show("No se ha podido encontrar usuarios");
+                    MessageBox.Show("No se ha podido encontrar usuarios" + ex);
                 }
             }
         }
