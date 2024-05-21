@@ -77,3 +77,5 @@ C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresent
 C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 >>>>>>> 7b3362bda03db508117b35f3faccde912cdd57b5
 C:\Users\lgabr\source\repos\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.Donaciones.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\Proyecto\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.DonacionPersona.resources
+C:\Users\Ferdy Ramírez Cardon\Documents\Proyecto\LibrarySystem\CapaPresentacion\obj\Debug\CapaPresentacion.DonacionList.resources
