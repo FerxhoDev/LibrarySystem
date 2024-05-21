@@ -463,6 +463,7 @@
         <Function Name="sp_selectAllDonantes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllestados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllLibros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_selectallLibrosCategorias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllPrestamos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllResponsables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllSectores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
@@ -1314,8 +1315,9 @@
             <Parameter Name="IdResponsable" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_selectUsuarioAdminbyUsuario" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdminbyUsuario_Result)">
-            <Parameter Name="usuario" Mode="In" Type="String" />
+          <Parameter Name="usuario" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="sp_selectallLibrosCategorias" ReturnType="Collection(librarydbModel.sp_selectallLibrosCategorias_Result)" />
         </EntityContainer>
         <ComplexType Name="sp_SelectAllAldeas_Result">
           <Property Type="Int32" Name="idAldea" Nullable="false" />
@@ -1413,6 +1415,14 @@
           <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
           <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
           <Property Type="Int32" Name="telefono" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_selectallLibrosCategorias_Result">
+          <Property Type="Int32" Name="idLibro" Nullable="false" />
+          <Property Type="String" Name="NombreLibro" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="codigo" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="id_categoria" Nullable="false" />
+          <Property Type="Int32" Name="stock" Nullable="false" />
+          <Property Type="String" Name="NombreCategoria" Nullable="false" MaxLength="50" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1772,6 +1782,18 @@
                 <ScalarProperty Name="pass" ColumnName="pass" />
                 <ScalarProperty Name="usuario" ColumnName="usuario" />
                 <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectallLibrosCategorias" FunctionName="librarydbModel.Store.sp_selectallLibrosCategorias">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectallLibrosCategorias_Result">
+                <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+                <ScalarProperty Name="NombreLibro" ColumnName="NombreLibro" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+                <ScalarProperty Name="stock" ColumnName="stock" />
+                <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

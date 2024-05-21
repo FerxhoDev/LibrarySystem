@@ -40,7 +40,6 @@
             this.gTxtId = new Guna.UI2.WinForms.Guna2TextBox();
             this.gBtnLimpiar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.gBtnEliminar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gBtnGuardar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,12 +54,13 @@
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.gTxtStock = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CentoEducativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gCmbBusquedaCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,10 +79,11 @@
             this.gCmbCategoria.HoverState.Parent = this.gCmbCategoria;
             this.gCmbCategoria.ItemHeight = 30;
             this.gCmbCategoria.ItemsAppearance.Parent = this.gCmbCategoria;
-            this.gCmbCategoria.Location = new System.Drawing.Point(1213, 332);
+            this.gCmbCategoria.Location = new System.Drawing.Point(809, 216);
+            this.gCmbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gCmbCategoria.Name = "gCmbCategoria";
             this.gCmbCategoria.ShadowDecoration.Parent = this.gCmbCategoria;
-            this.gCmbCategoria.Size = new System.Drawing.Size(300, 36);
+            this.gCmbCategoria.Size = new System.Drawing.Size(201, 36);
             this.gCmbCategoria.TabIndex = 113;
             // 
             // gTxtCodigo
@@ -98,14 +99,13 @@
             this.gTxtCodigo.FocusedState.Parent = this.gTxtCodigo;
             this.gTxtCodigo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtCodigo.HoverState.Parent = this.gTxtCodigo;
-            this.gTxtCodigo.Location = new System.Drawing.Point(1213, 247);
-            this.gTxtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtCodigo.Location = new System.Drawing.Point(809, 161);
             this.gTxtCodigo.Name = "gTxtCodigo";
             this.gTxtCodigo.PasswordChar = '\0';
             this.gTxtCodigo.PlaceholderText = "";
             this.gTxtCodigo.SelectedText = "";
             this.gTxtCodigo.ShadowDecoration.Parent = this.gTxtCodigo;
-            this.gTxtCodigo.Size = new System.Drawing.Size(300, 39);
+            this.gTxtCodigo.Size = new System.Drawing.Size(200, 25);
             this.gTxtCodigo.TabIndex = 100;
             // 
             // label1
@@ -113,9 +113,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(59, 47);
+            this.label1.Location = new System.Drawing.Point(39, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 45);
+            this.label1.Size = new System.Drawing.Size(76, 30);
             this.label1.TabIndex = 112;
             this.label1.Text = "Libros";
             // 
@@ -132,15 +133,14 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(1448, 83);
-            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtIndice.Location = new System.Drawing.Point(965, 54);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
+            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
             this.gTxtIndice.TabIndex = 111;
             this.gTxtIndice.Visible = false;
             // 
@@ -157,15 +157,14 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1491, 83);
-            this.gTxtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtId.Location = new System.Drawing.Point(994, 54);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(35, 32);
+            this.gTxtId.Size = new System.Drawing.Size(23, 21);
             this.gTxtId.TabIndex = 110;
             this.gTxtId.Visible = false;
             // 
@@ -179,40 +178,26 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(1279, 791);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(853, 514);
+            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
             this.gBtnLimpiar.TabIndex = 109;
             this.gBtnLimpiar.Text = "Limpiar";
+            this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1202, 47);
+            this.label7.Location = new System.Drawing.Point(801, 31);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(222, 45);
+            this.label7.Size = new System.Drawing.Size(152, 30);
             this.label7.TabIndex = 106;
             this.label7.Text = "Detalle Libro";
-            // 
-            // gBtnEliminar
-            // 
-            this.gBtnEliminar.BorderRadius = 3;
-            this.gBtnEliminar.CheckedState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.CustomImages.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(3)))), ((int)(((byte)(15)))));
-            this.gBtnEliminar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(3)))), ((int)(((byte)(15)))));
-            this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(1279, 842);
-            this.gBtnEliminar.Name = "gBtnEliminar";
-            this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
-            this.gBtnEliminar.TabIndex = 105;
-            this.gBtnEliminar.Text = "Eliminar";
             // 
             // gBtnGuardar
             // 
@@ -224,21 +209,24 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(1279, 740);
+            this.gBtnGuardar.Location = new System.Drawing.Point(853, 481);
+            this.gBtnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnGuardar.Size = new System.Drawing.Size(136, 29);
             this.gBtnGuardar.TabIndex = 104;
             this.gBtnGuardar.Text = "Guardar";
+            this.gBtnGuardar.Click += new System.EventHandler(this.gBtnGuardar_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1208, 390);
+            this.label5.Location = new System.Drawing.Point(805, 253);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 38);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 103;
             this.label5.Text = "Stock";
             // 
@@ -247,9 +235,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(1208, 304);
+            this.label4.Location = new System.Drawing.Point(805, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 38);
+            this.label4.Size = new System.Drawing.Size(57, 15);
             this.label4.TabIndex = 102;
             this.label4.Text = "Categoría";
             // 
@@ -258,9 +247,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1205, 217);
+            this.label3.Location = new System.Drawing.Point(803, 141);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 38);
+            this.label3.Size = new System.Drawing.Size(45, 15);
             this.label3.TabIndex = 101;
             this.label3.Text = "Código";
             // 
@@ -269,9 +259,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1208, 126);
+            this.label2.Location = new System.Drawing.Point(805, 82);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 99;
             this.label2.Text = "Nombre";
             // 
@@ -288,14 +279,13 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(1213, 156);
-            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtNombre.Location = new System.Drawing.Point(809, 101);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.PlaceholderText = "";
             this.gTxtNombre.SelectedText = "";
             this.gTxtNombre.ShadowDecoration.Parent = this.gTxtNombre;
-            this.gTxtNombre.Size = new System.Drawing.Size(300, 39);
+            this.gTxtNombre.Size = new System.Drawing.Size(200, 25);
             this.gTxtNombre.TabIndex = 98;
             // 
             // gBtnLimpiarBusc
@@ -308,12 +298,14 @@
             this.gBtnLimpiarBusc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiarBusc.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiarBusc.HoverState.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(952, 816);
+            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(635, 530);
+            this.gBtnLimpiarBusc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnLimpiarBusc.Name = "gBtnLimpiarBusc";
             this.gBtnLimpiarBusc.ShadowDecoration.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(112, 45);
+            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(75, 29);
             this.gBtnLimpiarBusc.TabIndex = 97;
             this.gBtnLimpiarBusc.Text = "Limpiar";
+            this.gBtnLimpiarBusc.Click += new System.EventHandler(this.gBtnLimpiarBusc_Click);
             // 
             // gBtnBuscar
             // 
@@ -325,12 +317,14 @@
             this.gBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnBuscar.ForeColor = System.Drawing.Color.White;
             this.gBtnBuscar.HoverState.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Location = new System.Drawing.Point(807, 816);
+            this.gBtnBuscar.Location = new System.Drawing.Point(538, 530);
+            this.gBtnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnBuscar.Name = "gBtnBuscar";
             this.gBtnBuscar.ShadowDecoration.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Size = new System.Drawing.Size(130, 45);
+            this.gBtnBuscar.Size = new System.Drawing.Size(87, 29);
             this.gBtnBuscar.TabIndex = 96;
             this.gBtnBuscar.Text = "Buscar";
+            this.gBtnBuscar.Click += new System.EventHandler(this.gBtnBuscar_Click);
             // 
             // gTxtBusqueda
             // 
@@ -345,14 +339,13 @@
             this.gTxtBusqueda.FocusedState.Parent = this.gTxtBusqueda;
             this.gTxtBusqueda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtBusqueda.HoverState.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Location = new System.Drawing.Point(497, 816);
-            this.gTxtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtBusqueda.Location = new System.Drawing.Point(331, 530);
             this.gTxtBusqueda.Name = "gTxtBusqueda";
             this.gTxtBusqueda.PasswordChar = '\0';
             this.gTxtBusqueda.PlaceholderText = "";
             this.gTxtBusqueda.SelectedText = "";
             this.gTxtBusqueda.ShadowDecoration.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Size = new System.Drawing.Size(273, 39);
+            this.gTxtBusqueda.Size = new System.Drawing.Size(182, 25);
             this.gTxtBusqueda.TabIndex = 95;
             // 
             // gCmbBusqueda
@@ -370,20 +363,23 @@
             this.gCmbBusqueda.HoverState.Parent = this.gCmbBusqueda;
             this.gCmbBusqueda.ItemHeight = 30;
             this.gCmbBusqueda.ItemsAppearance.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Location = new System.Drawing.Point(260, 819);
+            this.gCmbBusqueda.Location = new System.Drawing.Point(173, 532);
+            this.gCmbBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gCmbBusqueda.Name = "gCmbBusqueda";
             this.gCmbBusqueda.ShadowDecoration.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Size = new System.Drawing.Size(226, 36);
+            this.gCmbBusqueda.Size = new System.Drawing.Size(152, 36);
             this.gCmbBusqueda.TabIndex = 94;
+            this.gCmbBusqueda.SelectedIndexChanged += new System.EventHandler(this.gCmbBusqueda_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(109, 820);
+            this.label12.Location = new System.Drawing.Point(73, 533);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 32);
+            this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 93;
             this.label12.Text = "Buscar por:";
             // 
@@ -410,12 +406,12 @@
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
-            this.Id,
-            this.Nombre,
-            this.Codigo,
-            this.IdCategoria,
-            this.Categoria,
-            this.CentoEducativo});
+            this.idLibro,
+            this.nombre,
+            this.codigo,
+            this.id_categoria,
+            this.categoria,
+            this.stock});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -426,7 +422,8 @@
             this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(48, 126);
+            this.gDgvData.Location = new System.Drawing.Point(32, 82);
+            this.gDgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
@@ -444,7 +441,7 @@
             this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(1106, 634);
+            this.gDgvData.Size = new System.Drawing.Size(737, 412);
             this.gDgvData.TabIndex = 92;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -468,6 +465,8 @@
             this.gDgvData.ThemeStyle.RowsStyle.Height = 28;
             this.gDgvData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridButtom_CellContectClick);
+            this.gDgvData.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gDgvData_CellFormatting);
             // 
             // gTxtStock
             // 
@@ -482,14 +481,13 @@
             this.gTxtStock.FocusedState.Parent = this.gTxtStock;
             this.gTxtStock.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtStock.HoverState.Parent = this.gTxtStock;
-            this.gTxtStock.Location = new System.Drawing.Point(1213, 417);
-            this.gTxtStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtStock.Location = new System.Drawing.Point(809, 271);
             this.gTxtStock.Name = "gTxtStock";
             this.gTxtStock.PasswordChar = '\0';
             this.gTxtStock.PlaceholderText = "";
             this.gTxtStock.SelectedText = "";
             this.gTxtStock.ShadowDecoration.Parent = this.gTxtStock;
-            this.gTxtStock.Size = new System.Drawing.Size(133, 39);
+            this.gTxtStock.Size = new System.Drawing.Size(89, 25);
             this.gTxtStock.TabIndex = 114;
             // 
             // btnSeleccionar
@@ -500,59 +498,89 @@
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.ReadOnly = true;
             // 
-            // Id
+            // idLibro
             // 
-            this.Id.FillWeight = 79.54546F;
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 30;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
+            this.idLibro.DataPropertyName = "idLibro";
+            this.idLibro.FillWeight = 79.54546F;
+            this.idLibro.HeaderText = "Id";
+            this.idLibro.MinimumWidth = 30;
+            this.idLibro.Name = "idLibro";
+            this.idLibro.ReadOnly = true;
+            this.idLibro.Visible = false;
             // 
-            // Nombre
+            // nombre
             // 
-            this.Nombre.FillWeight = 355.9276F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 300;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
+            this.nombre.DataPropertyName = "NombreLibro";
+            this.nombre.FillWeight = 355.9276F;
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 300;
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             // 
-            // Codigo
+            // codigo
             // 
-            this.Codigo.FillWeight = 10.32773F;
-            this.Codigo.HeaderText = "Código";
-            this.Codigo.MinimumWidth = 300;
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
+            this.codigo.DataPropertyName = "codigo";
+            this.codigo.FillWeight = 10.32773F;
+            this.codigo.HeaderText = "Código";
+            this.codigo.MinimumWidth = 300;
+            this.codigo.Name = "codigo";
+            this.codigo.ReadOnly = true;
             // 
-            // IdCategoria
+            // id_categoria
             // 
-            this.IdCategoria.HeaderText = "IdCategoria";
-            this.IdCategoria.MinimumWidth = 8;
-            this.IdCategoria.Name = "IdCategoria";
-            this.IdCategoria.ReadOnly = true;
-            this.IdCategoria.Visible = false;
+            this.id_categoria.DataPropertyName = "id_categoria";
+            this.id_categoria.HeaderText = "IdCategoria";
+            this.id_categoria.MinimumWidth = 8;
+            this.id_categoria.Name = "id_categoria";
+            this.id_categoria.ReadOnly = true;
+            this.id_categoria.Visible = false;
             // 
-            // Categoria
+            // categoria
             // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.MinimumWidth = 250;
-            this.Categoria.Name = "Categoria";
-            this.Categoria.ReadOnly = true;
+            this.categoria.DataPropertyName = "NombreCategoria";
+            this.categoria.HeaderText = "Categoria";
+            this.categoria.MinimumWidth = 250;
+            this.categoria.Name = "categoria";
+            this.categoria.ReadOnly = true;
             // 
-            // CentoEducativo
+            // stock
             // 
-            this.CentoEducativo.HeaderText = "Stock";
-            this.CentoEducativo.MinimumWidth = 150;
-            this.CentoEducativo.Name = "CentoEducativo";
-            this.CentoEducativo.ReadOnly = true;
+            this.stock.DataPropertyName = "stock";
+            this.stock.HeaderText = "Stock";
+            this.stock.MinimumWidth = 150;
+            this.stock.Name = "stock";
+            this.stock.ReadOnly = true;
+            // 
+            // gCmbBusquedaCategoria
+            // 
+            this.gCmbBusquedaCategoria.Animated = true;
+            this.gCmbBusquedaCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbBusquedaCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbBusquedaCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbBusquedaCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbBusquedaCategoria.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbBusquedaCategoria.FocusedState.Parent = this.gCmbBusquedaCategoria;
+            this.gCmbBusquedaCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbBusquedaCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbBusquedaCategoria.FormattingEnabled = true;
+            this.gCmbBusquedaCategoria.HoverState.Parent = this.gCmbBusquedaCategoria;
+            this.gCmbBusquedaCategoria.ItemHeight = 30;
+            this.gCmbBusquedaCategoria.ItemsAppearance.Parent = this.gCmbBusquedaCategoria;
+            this.gCmbBusquedaCategoria.Location = new System.Drawing.Point(347, 530);
+            this.gCmbBusquedaCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbBusquedaCategoria.Name = "gCmbBusquedaCategoria";
+            this.gCmbBusquedaCategoria.ShadowDecoration.Parent = this.gCmbBusquedaCategoria;
+            this.gCmbBusquedaCategoria.Size = new System.Drawing.Size(152, 36);
+            this.gCmbBusquedaCategoria.TabIndex = 115;
+            this.gCmbBusquedaCategoria.Visible = false;
             // 
             // Libros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1575, 920);
+            this.ClientSize = new System.Drawing.Size(1050, 598);
+            this.Controls.Add(this.gCmbBusquedaCategoria);
             this.Controls.Add(this.gTxtStock);
             this.Controls.Add(this.gCmbCategoria);
             this.Controls.Add(this.gTxtCodigo);
@@ -561,7 +589,6 @@
             this.Controls.Add(this.gTxtId);
             this.Controls.Add(this.gBtnLimpiar);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.gBtnEliminar);
             this.Controls.Add(this.gBtnGuardar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -575,6 +602,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gDgvData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Libros";
             this.Text = "Libros";
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).EndInit();
@@ -591,7 +619,6 @@
         private Guna.UI2.WinForms.Guna2TextBox gTxtId;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnLimpiar;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2GradientButton gBtnEliminar;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnGuardar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -606,11 +633,12 @@
         private Guna.UI2.WinForms.Guna2DataGridView gDgvData;
         private Guna.UI2.WinForms.Guna2TextBox gTxtStock;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCategoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CentoEducativo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
+        private Guna.UI2.WinForms.Guna2ComboBox gCmbBusquedaCategoria;
     }
 }

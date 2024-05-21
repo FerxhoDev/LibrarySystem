@@ -144,6 +144,9 @@
     <Compile Include="BaseDatos\sp_selectAllestados_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectallLibrosCategorias_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllLibros_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
