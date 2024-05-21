@@ -669,6 +669,7 @@
     <FunctionImport Name="sp_selectUsuarioAdminbyUsuario" ReturnType="Collection(librarydbModel.sp_selectUsuarioAdminbyUsuario_Result)">
       <Parameter Name="usuario" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="sp_selectallLibrosCategorias" ReturnType="Collection(librarydbModel.sp_selectallLibrosCategorias_Result)" />
   </EntityContainer>
   <ComplexType Name="sp_SelectAllAldeas_Result">
     <Property Type="Int32" Name="idAldea" Nullable="false" />
@@ -766,5 +767,13 @@
     <Property Type="String" Name="pass" Nullable="false" MaxLength="25" />
     <Property Type="String" Name="usuario" Nullable="false" MaxLength="50" />
     <Property Type="Int32" Name="telefono" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_selectallLibrosCategorias_Result">
+    <Property Type="Int32" Name="idLibro" Nullable="false" />
+    <Property Type="String" Name="NombreLibro" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="codigo" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="id_categoria" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+    <Property Type="String" Name="NombreCategoria" Nullable="false" MaxLength="50" />
   </ComplexType>
 </Schema>

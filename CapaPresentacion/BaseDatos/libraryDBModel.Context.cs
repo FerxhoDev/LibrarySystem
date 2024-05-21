@@ -840,5 +840,10 @@ namespace CapaPresentacion.BaseDatos
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectUsuarioAdminbyUsuario_Result>("sp_selectUsuarioAdminbyUsuario", usuarioParameter);
         }
+    
+        public virtual ObjectResult<sp_selectallLibrosCategorias_Result> sp_selectallLibrosCategorias()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectallLibrosCategorias_Result>("sp_selectallLibrosCategorias");
+        }
     }
 }

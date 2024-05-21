@@ -356,5 +356,17 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_selectallLibrosCategorias" FunctionName="librarydbModel.Store.sp_selectallLibrosCategorias">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="librarydbModel.sp_selectallLibrosCategorias_Result">
+          <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+          <ScalarProperty Name="NombreLibro" ColumnName="NombreLibro" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>
