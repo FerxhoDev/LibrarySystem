@@ -107,7 +107,8 @@
             this.gDgvData.DefaultCellStyle = dataGridViewCellStyle18;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(70, 119);
+            this.gDgvData.Location = new System.Drawing.Point(47, 77);
+            this.gDgvData.Margin = new System.Windows.Forms.Padding(2);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
@@ -125,7 +126,7 @@
             this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(1034, 634);
+            this.gDgvData.Size = new System.Drawing.Size(689, 412);
             this.gDgvData.TabIndex = 2;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -149,6 +150,7 @@
             this.gDgvData.ThemeStyle.RowsStyle.Height = 28;
             this.gDgvData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             // 
             // btnSeleccionar
             // 
@@ -160,6 +162,7 @@
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "idUsuario_Admin";
             this.Id.FillWeight = 79.54546F;
             this.Id.HeaderText = "Id";
             this.Id.MinimumWidth = 30;
@@ -169,6 +172,7 @@
             // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "nombre";
             this.Nombre.FillWeight = 355.9276F;
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.MinimumWidth = 150;
@@ -177,6 +181,7 @@
             // 
             // Apellido
             // 
+            this.Apellido.DataPropertyName = "apellido";
             this.Apellido.FillWeight = 10.32773F;
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.MinimumWidth = 300;
@@ -185,6 +190,7 @@
             // 
             // Usuario
             // 
+            this.Usuario.DataPropertyName = "usuario";
             this.Usuario.FillWeight = 31.52491F;
             this.Usuario.HeaderText = "Usuario";
             this.Usuario.MinimumWidth = 200;
@@ -193,6 +199,7 @@
             // 
             // Telefono
             // 
+            this.Telefono.DataPropertyName = "telefono";
             this.Telefono.FillWeight = 204.3646F;
             this.Telefono.HeaderText = "Teléfono";
             this.Telefono.MinimumWidth = 80;
@@ -201,6 +208,7 @@
             // 
             // Pass
             // 
+            this.Pass.DataPropertyName = "pass";
             this.Pass.HeaderText = "Contraseña";
             this.Pass.MinimumWidth = 8;
             this.Pass.Name = "Pass";
@@ -217,12 +225,14 @@
             this.gBtnLimpiarBusc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiarBusc.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiarBusc.HoverState.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(947, 803);
+            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(631, 522);
+            this.gBtnLimpiarBusc.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnLimpiarBusc.Name = "gBtnLimpiarBusc";
             this.gBtnLimpiarBusc.ShadowDecoration.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(112, 45);
+            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(75, 29);
             this.gBtnLimpiarBusc.TabIndex = 35;
             this.gBtnLimpiarBusc.Text = "Limpiar";
+            this.gBtnLimpiarBusc.Click += new System.EventHandler(this.gBtnLimpiarBusc_Click);
             // 
             // gTxtBusqueda
             // 
@@ -237,14 +247,13 @@
             this.gTxtBusqueda.FocusedState.Parent = this.gTxtBusqueda;
             this.gTxtBusqueda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtBusqueda.HoverState.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Location = new System.Drawing.Point(492, 803);
-            this.gTxtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtBusqueda.Location = new System.Drawing.Point(328, 522);
             this.gTxtBusqueda.Name = "gTxtBusqueda";
             this.gTxtBusqueda.PasswordChar = '\0';
             this.gTxtBusqueda.PlaceholderText = "";
             this.gTxtBusqueda.SelectedText = "";
             this.gTxtBusqueda.ShadowDecoration.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Size = new System.Drawing.Size(273, 39);
+            this.gTxtBusqueda.Size = new System.Drawing.Size(182, 25);
             this.gTxtBusqueda.TabIndex = 33;
             // 
             // gCmbBusqueda
@@ -262,10 +271,11 @@
             this.gCmbBusqueda.HoverState.Parent = this.gCmbBusqueda;
             this.gCmbBusqueda.ItemHeight = 30;
             this.gCmbBusqueda.ItemsAppearance.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Location = new System.Drawing.Point(255, 806);
+            this.gCmbBusqueda.Location = new System.Drawing.Point(170, 524);
+            this.gCmbBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.gCmbBusqueda.Name = "gCmbBusqueda";
             this.gCmbBusqueda.ShadowDecoration.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Size = new System.Drawing.Size(226, 36);
+            this.gCmbBusqueda.Size = new System.Drawing.Size(152, 36);
             this.gCmbBusqueda.TabIndex = 32;
             // 
             // label12
@@ -273,9 +283,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(104, 807);
+            this.label12.Location = new System.Drawing.Point(69, 525);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 32);
+            this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 31;
             this.label12.Text = "Buscar por:";
             // 
@@ -292,15 +303,14 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(1445, 119);
-            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtIndice.Location = new System.Drawing.Point(963, 77);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
+            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
             this.gTxtIndice.TabIndex = 59;
             this.gTxtIndice.Visible = false;
             // 
@@ -317,15 +327,14 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1488, 119);
-            this.gTxtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtId.Location = new System.Drawing.Point(992, 77);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(35, 32);
+            this.gTxtId.Size = new System.Drawing.Size(23, 21);
             this.gTxtId.TabIndex = 58;
             this.gTxtId.Visible = false;
             // 
@@ -339,21 +348,24 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(1274, 778);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(849, 506);
+            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
             this.gBtnLimpiar.TabIndex = 57;
             this.gBtnLimpiar.Text = "Limpiar";
+            this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1200, 602);
+            this.label11.Location = new System.Drawing.Point(800, 391);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(191, 25);
+            this.label11.Size = new System.Drawing.Size(121, 15);
             this.label11.TabIndex = 56;
             this.label11.Text = "Confirmar contraseña";
             // 
@@ -370,14 +382,13 @@
             this.gTxtConfPass.FocusedState.Parent = this.gTxtConfPass;
             this.gTxtConfPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtConfPass.HoverState.Parent = this.gTxtConfPass;
-            this.gTxtConfPass.Location = new System.Drawing.Point(1208, 632);
-            this.gTxtConfPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtConfPass.Location = new System.Drawing.Point(805, 411);
             this.gTxtConfPass.Name = "gTxtConfPass";
             this.gTxtConfPass.PasswordChar = '*';
             this.gTxtConfPass.PlaceholderText = "";
             this.gTxtConfPass.SelectedText = "";
             this.gTxtConfPass.ShadowDecoration.Parent = this.gTxtConfPass;
-            this.gTxtConfPass.Size = new System.Drawing.Size(300, 39);
+            this.gTxtConfPass.Size = new System.Drawing.Size(200, 25);
             this.gTxtConfPass.TabIndex = 55;
             // 
             // label10
@@ -385,9 +396,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(1203, 513);
+            this.label10.Location = new System.Drawing.Point(802, 333);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 25);
+            this.label10.Size = new System.Drawing.Size(62, 15);
             this.label10.TabIndex = 54;
             this.label10.Text = "Contaseña";
             // 
@@ -404,14 +416,13 @@
             this.gTxtPass.FocusedState.Parent = this.gTxtPass;
             this.gTxtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtPass.HoverState.Parent = this.gTxtPass;
-            this.gTxtPass.Location = new System.Drawing.Point(1208, 543);
-            this.gTxtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtPass.Location = new System.Drawing.Point(805, 353);
             this.gTxtPass.Name = "gTxtPass";
             this.gTxtPass.PasswordChar = '*';
             this.gTxtPass.PlaceholderText = "";
             this.gTxtPass.SelectedText = "";
             this.gTxtPass.ShadowDecoration.Parent = this.gTxtPass;
-            this.gTxtPass.Size = new System.Drawing.Size(300, 39);
+            this.gTxtPass.Size = new System.Drawing.Size(200, 25);
             this.gTxtPass.TabIndex = 53;
             // 
             // label7
@@ -419,9 +430,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1126, 69);
+            this.label7.Location = new System.Drawing.Point(751, 45);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(370, 45);
+            this.label7.Size = new System.Drawing.Size(255, 30);
             this.label7.TabIndex = 47;
             this.label7.Text = "Detalle Administrador";
             // 
@@ -435,10 +447,11 @@
             this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
             this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(1274, 829);
+            this.gBtnEliminar.Location = new System.Drawing.Point(849, 539);
+            this.gBtnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnEliminar.Name = "gBtnEliminar";
             this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnEliminar.Size = new System.Drawing.Size(136, 29);
             this.gBtnEliminar.TabIndex = 46;
             this.gBtnEliminar.Text = "Eliminar";
             // 
@@ -452,21 +465,24 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(1274, 727);
+            this.gBtnGuardar.Location = new System.Drawing.Point(849, 473);
+            this.gBtnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnGuardar.Size = new System.Drawing.Size(136, 29);
             this.gBtnGuardar.TabIndex = 45;
             this.gBtnGuardar.Text = "Guardar";
+            this.gBtnGuardar.Click += new System.EventHandler(this.gBtnGuardar_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1203, 425);
+            this.label5.Location = new System.Drawing.Point(802, 276);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 25);
+            this.label5.Size = new System.Drawing.Size(53, 15);
             this.label5.TabIndex = 43;
             this.label5.Text = "Telefono";
             // 
@@ -475,9 +491,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(1203, 339);
+            this.label4.Location = new System.Drawing.Point(802, 220);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 25);
+            this.label4.Size = new System.Drawing.Size(47, 15);
             this.label4.TabIndex = 41;
             this.label4.Text = "Usuario";
             // 
@@ -486,9 +503,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1200, 252);
+            this.label3.Location = new System.Drawing.Point(800, 164);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 25);
+            this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 39;
             this.label3.Text = "Apellido";
             // 
@@ -505,14 +523,13 @@
             this.gTxtApellido.FocusedState.Parent = this.gTxtApellido;
             this.gTxtApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtApellido.HoverState.Parent = this.gTxtApellido;
-            this.gTxtApellido.Location = new System.Drawing.Point(1208, 282);
-            this.gTxtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtApellido.Location = new System.Drawing.Point(805, 183);
             this.gTxtApellido.Name = "gTxtApellido";
             this.gTxtApellido.PasswordChar = '\0';
             this.gTxtApellido.PlaceholderText = "";
             this.gTxtApellido.SelectedText = "";
             this.gTxtApellido.ShadowDecoration.Parent = this.gTxtApellido;
-            this.gTxtApellido.Size = new System.Drawing.Size(300, 39);
+            this.gTxtApellido.Size = new System.Drawing.Size(200, 25);
             this.gTxtApellido.TabIndex = 38;
             // 
             // label2
@@ -520,9 +537,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1203, 161);
+            this.label2.Location = new System.Drawing.Point(802, 105);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 37;
             this.label2.Text = "Nombre";
             // 
@@ -539,14 +557,13 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(1208, 191);
-            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtNombre.Location = new System.Drawing.Point(805, 124);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.PlaceholderText = "";
             this.gTxtNombre.SelectedText = "";
             this.gTxtNombre.ShadowDecoration.Parent = this.gTxtNombre;
-            this.gTxtNombre.Size = new System.Drawing.Size(300, 39);
+            this.gTxtNombre.Size = new System.Drawing.Size(200, 25);
             this.gTxtNombre.TabIndex = 36;
             // 
             // label1
@@ -554,9 +571,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(83, 38);
+            this.label1.Location = new System.Drawing.Point(55, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 68);
+            this.label1.Size = new System.Drawing.Size(185, 30);
             this.label1.TabIndex = 60;
             this.label1.Text = "Administradores";
             // 
@@ -570,12 +588,14 @@
             this.gBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnBuscar.ForeColor = System.Drawing.Color.White;
             this.gBtnBuscar.HoverState.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Location = new System.Drawing.Point(802, 803);
+            this.gBtnBuscar.Location = new System.Drawing.Point(535, 522);
+            this.gBtnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnBuscar.Name = "gBtnBuscar";
             this.gBtnBuscar.ShadowDecoration.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Size = new System.Drawing.Size(130, 45);
+            this.gBtnBuscar.Size = new System.Drawing.Size(87, 29);
             this.gBtnBuscar.TabIndex = 34;
             this.gBtnBuscar.Text = "Buscar";
+            this.gBtnBuscar.Click += new System.EventHandler(this.gBtnBuscar_Click);
             // 
             // gTxtUsuario
             // 
@@ -590,14 +610,13 @@
             this.gTxtUsuario.FocusedState.Parent = this.gTxtUsuario;
             this.gTxtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtUsuario.HoverState.Parent = this.gTxtUsuario;
-            this.gTxtUsuario.Location = new System.Drawing.Point(1208, 369);
-            this.gTxtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtUsuario.Location = new System.Drawing.Point(805, 240);
             this.gTxtUsuario.Name = "gTxtUsuario";
             this.gTxtUsuario.PasswordChar = '\0';
             this.gTxtUsuario.PlaceholderText = "";
             this.gTxtUsuario.SelectedText = "";
             this.gTxtUsuario.ShadowDecoration.Parent = this.gTxtUsuario;
-            this.gTxtUsuario.Size = new System.Drawing.Size(300, 39);
+            this.gTxtUsuario.Size = new System.Drawing.Size(200, 25);
             this.gTxtUsuario.TabIndex = 40;
             // 
             // gTxtTelefono
@@ -613,22 +632,21 @@
             this.gTxtTelefono.FocusedState.Parent = this.gTxtTelefono;
             this.gTxtTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtTelefono.HoverState.Parent = this.gTxtTelefono;
-            this.gTxtTelefono.Location = new System.Drawing.Point(1208, 455);
-            this.gTxtTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtTelefono.Location = new System.Drawing.Point(805, 296);
             this.gTxtTelefono.Name = "gTxtTelefono";
             this.gTxtTelefono.PasswordChar = '\0';
             this.gTxtTelefono.PlaceholderText = "";
             this.gTxtTelefono.SelectedText = "";
             this.gTxtTelefono.ShadowDecoration.Parent = this.gTxtTelefono;
-            this.gTxtTelefono.Size = new System.Drawing.Size(300, 39);
+            this.gTxtTelefono.Size = new System.Drawing.Size(200, 25);
             this.gTxtTelefono.TabIndex = 42;
             // 
             // UsuarioAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1578, 918);
+            this.ClientSize = new System.Drawing.Size(1052, 597);
             this.Controls.Add(this.gTxtTelefono);
             this.Controls.Add(this.gTxtUsuario);
             this.Controls.Add(this.gTxtApellido);
@@ -655,6 +673,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gDgvData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UsuarioAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsuarioAdmin";
