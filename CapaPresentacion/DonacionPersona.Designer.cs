@@ -41,10 +41,10 @@
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gBtnGuardar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label7 = new System.Windows.Forms.Label();
             this.gTxtIndice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gTxtId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -225,17 +225,6 @@
             this.gBtnGuardar.TabIndex = 98;
             this.gBtnGuardar.Text = "Guardar";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(81, 49);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 45);
-            this.label7.TabIndex = 92;
-            this.label7.Text = "Personas";
-            // 
             // gTxtIndice
             // 
             this.gTxtIndice.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -297,18 +286,29 @@
             this.gTxtId.TabIndex = 96;
             this.gTxtId.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(47, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(371, 45);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "Personas / Instituciones";
+            // 
             // DonacionPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1444, 705);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.gTxtNombre);
             this.Controls.Add(this.gBtnLimpiar);
             this.Controls.Add(this.gBtnEliminar);
             this.Controls.Add(this.gDgvData);
             this.Controls.Add(this.gBtnGuardar);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.gTxtIndice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gTxtId);
@@ -331,9 +331,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnGuardar;
-        private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox gTxtIndice;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox gTxtId;
+        private System.Windows.Forms.Label label1;
     }
 }

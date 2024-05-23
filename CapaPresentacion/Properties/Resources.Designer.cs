@@ -123,6 +123,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrar_30 {
+            get {
+                object obj = ResourceManager.GetObject("cerrar-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Character_working_laptop_sitting_chair {
             get {
                 object obj = ResourceManager.GetObject("Character-working-laptop-sitting-chair", resourceCulture);
@@ -266,6 +276,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap más_40 {
             get {
                 object obj = ResourceManager.GetObject("más-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar_30 {
+            get {
+                object obj = ResourceManager.GetObject("minimizar-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

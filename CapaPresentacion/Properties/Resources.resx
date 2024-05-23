@@ -136,6 +136,9 @@
   <data name="llavero-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llavero-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cerrar-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="libros-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\libros-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="Book Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Book Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caja-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caja-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tall-person-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tall-person-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +220,7 @@
   <data name="caja-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caja-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="caja-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\caja-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimizar-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
