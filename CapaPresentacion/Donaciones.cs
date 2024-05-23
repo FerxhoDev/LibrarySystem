@@ -71,7 +71,7 @@ namespace CapaPresentacion
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2GradientButton)sender, new DonacionList());
+            AbrirFormulario((Guna2GradientButton)sender, new DonacionAdd());
         }
     }
 }

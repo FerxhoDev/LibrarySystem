@@ -189,11 +189,11 @@
     <Compile Include="Donaciones.Designer.cs">
       <DependentUpon>Donaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonacionList.cs">
+    <Compile Include="DonacionAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonacionList.Designer.cs">
-      <DependentUpon>DonacionList.cs</DependentUpon>
+    <Compile Include="DonacionAdd.Designer.cs">
+      <DependentUpon>DonacionAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="DonacionPersona.cs">
       <SubType>Form</SubType>
@@ -246,8 +246,8 @@
     <EmbeddedResource Include="Donaciones.resx">
       <DependentUpon>Donaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonacionList.resx">
-      <DependentUpon>DonacionList.cs</DependentUpon>
+    <EmbeddedResource Include="DonacionAdd.resx">
+      <DependentUpon>DonacionAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DonacionPersona.resx">
       <DependentUpon>DonacionPersona.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class DonacionList
+    partial class DonacionAdd
     {
         /// <summary>
         /// Required designer variable.
