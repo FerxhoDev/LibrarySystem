@@ -97,12 +97,12 @@
             this.guna2GradientButton3.Image = global::CapaPresentacion.Properties.Resources.place_marker_40;
             this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2GradientButton3.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton3.Location = new System.Drawing.Point(712, -1);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(706, -1);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Size = new System.Drawing.Size(235, 74);
             this.guna2GradientButton3.TabIndex = 5;
-            this.guna2GradientButton3.Text = "DIRECCION";
+            this.guna2GradientButton3.Text = "Dirección";
             this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2GradientButton2
@@ -120,12 +120,12 @@
             this.guna2GradientButton2.Image = global::CapaPresentacion.Properties.Resources.colegio_40;
             this.guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2GradientButton2.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton2.Location = new System.Drawing.Point(471, -1);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(465, -1);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.Size = new System.Drawing.Size(235, 74);
             this.guna2GradientButton2.TabIndex = 4;
-            this.guna2GradientButton2.Text = "CENTROS EDU";
+            this.guna2GradientButton2.Text = "Centros educa";
             this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2GradientButton1
@@ -143,13 +143,14 @@
             this.guna2GradientButton1.Image = global::CapaPresentacion.Properties.Resources.tall_fill_person_40;
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(232, -1);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(231, -1);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(235, 74);
             this.guna2GradientButton1.TabIndex = 3;
-            this.guna2GradientButton1.Text = "RESPONSABLES";
+            this.guna2GradientButton1.Text = "Responsables";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // gBtnCategoria
             // 
@@ -171,7 +172,7 @@
             this.gBtnCategoria.ShadowDecoration.Parent = this.gBtnCategoria;
             this.gBtnCategoria.Size = new System.Drawing.Size(235, 81);
             this.gBtnCategoria.TabIndex = 2;
-            this.gBtnCategoria.Text = "DONACIONES";
+            this.gBtnCategoria.Text = "Donaciones";
             this.gBtnCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gBtnCategoria.Click += new System.EventHandler(this.gBtnCategoria_Click);
             // 
