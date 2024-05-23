@@ -177,6 +177,12 @@
     <Compile Include="BaseDatos\usuarios_admin.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CentrosEducativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentrosEducativos.Designer.cs">
+      <DependentUpon>CentrosEducativos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +264,9 @@
       <DependentUpon>UsuarioPres.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilidades\OpcionCombo.cs" />
+    <EmbeddedResource Include="CentrosEducativos.resx">
+      <DependentUpon>CentrosEducativos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
