@@ -16,5 +16,11 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void gBtnDetalle_Click(object sender, EventArgs e)
+        {
+            ModDetalleDonacion detalledon = new ModDetalleDonacion();
+            detalledon.Show();
+        }
     }
 }
