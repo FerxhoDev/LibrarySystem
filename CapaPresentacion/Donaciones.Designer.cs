@@ -68,7 +68,7 @@
             this.gBtnPersonas.HoverState.Parent = this.gBtnPersonas;
             this.gBtnPersonas.Image = global::CapaPresentacion.Properties.Resources.peoplesD_40;
             this.gBtnPersonas.ImageSize = new System.Drawing.Size(35, 35);
-            this.gBtnPersonas.Location = new System.Drawing.Point(11, 575);
+            this.gBtnPersonas.Location = new System.Drawing.Point(11, 577);
             this.gBtnPersonas.Name = "gBtnPersonas";
             this.gBtnPersonas.ShadowDecoration.Parent = this.gBtnPersonas;
             this.gBtnPersonas.Size = new System.Drawing.Size(76, 74);
@@ -90,7 +90,7 @@
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Image = global::CapaPresentacion.Properties.Resources.lista_40;
             this.guna2GradientButton4.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton4.Location = new System.Drawing.Point(12, 646);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(12, 648);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(75, 74);

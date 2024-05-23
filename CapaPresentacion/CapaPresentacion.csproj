@@ -385,6 +385,10 @@
       <DependentUpon>libraryDBModel.edmx</DependentUpon>
       <LastGenOutput>libraryDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\caja-50.png" />
+    <None Include="Resources\etiqueta-50.png" />
+    <None Include="Resources\caja-20.png" />
+    <None Include="Resources\búsqueda-20.png" />
     <None Include="Resources\más-40.png" />
     <None Include="Resources\lista-40.png" />
     <None Include="Resources\peoplesD-40.png" />

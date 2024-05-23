@@ -24,8 +24,10 @@ namespace CapaPresentacion
             // Restablecer el estilo del botón anteriormente activo
             if (MenuActiv != null)
             {
-                MenuActiv.FillColor = Color.FromArgb(1, 33, 37, 36);
-                MenuActiv.FillColor2 = Color.FromArgb(1, 33, 37, 36);
+                MenuActiv.FillColor = Color.FromArgb(255, 43, 47, 51);
+                MenuActiv.FillColor2 = Color.FromArgb(255, 43, 47, 51);
+                //MenuActiv.FillColor = Color.Aqua;
+                //MenuActiv.FillColor2 = Color.Aquamarine;
                 MenuActiv.CustomBorderColor = Color.FromArgb(1, 43, 47, 51);
                 Padding defaultBorderThickness = new Padding(0);
                 MenuActiv.CustomBorderThickness = defaultBorderThickness;

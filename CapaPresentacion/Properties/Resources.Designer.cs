@@ -83,6 +83,36 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap búsqueda_20 {
+            get {
+                object obj = ResourceManager.GetObject("búsqueda-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caja_20 {
+            get {
+                object obj = ResourceManager.GetObject("caja-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caja_50 {
+            get {
+                object obj = ResourceManager.GetObject("caja-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carpeta_40 {
             get {
                 object obj = ResourceManager.GetObject("carpeta-40", resourceCulture);
@@ -126,6 +156,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap donación_40 {
             get {
                 object obj = ResourceManager.GetObject("donación-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap etiqueta_50 {
+            get {
+                object obj = ResourceManager.GetObject("etiqueta-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

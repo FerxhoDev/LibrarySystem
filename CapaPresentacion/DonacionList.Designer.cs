@@ -38,33 +38,27 @@
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtIdPr = new System.Windows.Forms.TextBox();
-            this.gBtnBuscarPr = new Guna.UI.WinForms.GunaCircleButton();
-            this.txtNombrePr = new System.Windows.Forms.TextBox();
+            this.txtIdDn = new System.Windows.Forms.TextBox();
+            this.txtNombreDn = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gTxtCantidad = new Guna.UI.WinForms.GunaNumeric();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCosto = new System.Windows.Forms.TextBox();
-            this.txtidProd = new System.Windows.Forms.TextBox();
-            this.gBtnBuscarProd = new Guna.UI.WinForms.GunaCircleButton();
-            this.txtProd = new System.Windows.Forms.TextBox();
-            this.txtCodProd = new System.Windows.Forms.TextBox();
+            this.txtidLib = new System.Windows.Forms.TextBox();
+            this.txtLibro = new System.Windows.Forms.TextBox();
+            this.txtCodLib = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.gBtnAddtoCar = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Idproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Libro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gBtnAddCompra = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.gBtnAddtoCar = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.gBtnBuscarLib = new Guna.UI.WinForms.GunaCircleButton();
+            this.gBtnBuscarDn = new Guna.UI.WinForms.GunaCircleButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -93,7 +87,7 @@
             this.groupBox1.Size = new System.Drawing.Size(261, 122);
             this.groupBox1.TabIndex = 81;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Información Compra";
+            this.groupBox1.Text = "Información Donación";
             // 
             // txtFecha
             // 
@@ -113,9 +107,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtIdPr);
-            this.groupBox2.Controls.Add(this.gBtnBuscarPr);
-            this.groupBox2.Controls.Add(this.txtNombrePr);
+            this.groupBox2.Controls.Add(this.txtIdDn);
+            this.groupBox2.Controls.Add(this.gBtnBuscarDn);
+            this.groupBox2.Controls.Add(this.txtNombreDn);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -126,41 +120,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información Donador";
             // 
-            // txtIdPr
+            // txtIdDn
             // 
-            this.txtIdPr.Location = new System.Drawing.Point(263, 23);
-            this.txtIdPr.Name = "txtIdPr";
-            this.txtIdPr.Size = new System.Drawing.Size(36, 31);
-            this.txtIdPr.TabIndex = 6;
+            this.txtIdDn.Location = new System.Drawing.Point(263, 23);
+            this.txtIdDn.Name = "txtIdDn";
+            this.txtIdDn.Size = new System.Drawing.Size(36, 31);
+            this.txtIdDn.TabIndex = 6;
             // 
-            // gBtnBuscarPr
+            // txtNombreDn
             // 
-            this.gBtnBuscarPr.AnimationHoverSpeed = 0.07F;
-            this.gBtnBuscarPr.AnimationSpeed = 0.03F;
-            this.gBtnBuscarPr.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.gBtnBuscarPr.BorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gBtnBuscarPr.FocusedColor = System.Drawing.Color.Empty;
-            this.gBtnBuscarPr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnBuscarPr.ForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarPr.Image = null;
-            this.gBtnBuscarPr.ImageSize = new System.Drawing.Size(28, 28);
-            this.gBtnBuscarPr.Location = new System.Drawing.Point(321, 55);
-            this.gBtnBuscarPr.Name = "gBtnBuscarPr";
-            this.gBtnBuscarPr.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnBuscarPr.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.OnHoverForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarPr.OnHoverImage = null;
-            this.gBtnBuscarPr.OnPressedColor = System.Drawing.Color.Black;
-            this.gBtnBuscarPr.Size = new System.Drawing.Size(43, 43);
-            this.gBtnBuscarPr.TabIndex = 5;
-            // 
-            // txtNombrePr
-            // 
-            this.txtNombrePr.Location = new System.Drawing.Point(11, 67);
-            this.txtNombrePr.Name = "txtNombrePr";
-            this.txtNombrePr.Size = new System.Drawing.Size(211, 31);
-            this.txtNombrePr.TabIndex = 2;
+            this.txtNombreDn.Location = new System.Drawing.Point(11, 67);
+            this.txtNombreDn.Name = "txtNombreDn";
+            this.txtNombreDn.Size = new System.Drawing.Size(211, 31);
+            this.txtNombreDn.TabIndex = 2;
             // 
             // label5
             // 
@@ -175,14 +147,10 @@
             // 
             this.groupBox3.Controls.Add(this.gTxtCantidad);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.txtPrecio);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.txtCosto);
-            this.groupBox3.Controls.Add(this.txtidProd);
-            this.groupBox3.Controls.Add(this.gBtnBuscarProd);
-            this.groupBox3.Controls.Add(this.txtProd);
-            this.groupBox3.Controls.Add(this.txtCodProd);
+            this.groupBox3.Controls.Add(this.txtidLib);
+            this.groupBox3.Controls.Add(this.gBtnBuscarLib);
+            this.groupBox3.Controls.Add(this.txtLibro);
+            this.groupBox3.Controls.Add(this.txtCodLib);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,7 +160,7 @@
             this.groupBox3.Size = new System.Drawing.Size(1227, 122);
             this.groupBox3.TabIndex = 83;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Información Producto";
+            this.groupBox3.Text = "Información Libro";
             // 
             // gTxtCantidad
             // 
@@ -203,7 +171,7 @@
             this.gTxtCantidad.ButtonForeColor = System.Drawing.Color.White;
             this.gTxtCantidad.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gTxtCantidad.ForeColor = System.Drawing.Color.Black;
-            this.gTxtCantidad.Location = new System.Drawing.Point(952, 67);
+            this.gTxtCantidad.Location = new System.Drawing.Point(1039, 66);
             this.gTxtCantidad.Maximum = ((long)(9999999));
             this.gTxtCantidad.Minimum = ((long)(0));
             this.gTxtCantidad.Name = "gTxtCantidad";
@@ -216,123 +184,50 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(947, 27);
+            this.label10.Location = new System.Drawing.Point(1034, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 25);
             this.label10.TabIndex = 11;
             this.label10.Text = "Cantidad";
             // 
-            // label9
+            // txtidLib
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(762, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 25);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Precio";
+            this.txtidLib.Location = new System.Drawing.Point(201, 26);
+            this.txtidLib.Name = "txtidLib";
+            this.txtidLib.Size = new System.Drawing.Size(36, 31);
+            this.txtidLib.TabIndex = 6;
             // 
-            // txtPrecio
+            // txtLibro
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(767, 67);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(102, 31);
-            this.txtPrecio.TabIndex = 9;
+            this.txtLibro.Location = new System.Drawing.Point(485, 65);
+            this.txtLibro.Name = "txtLibro";
+            this.txtLibro.Size = new System.Drawing.Size(412, 31);
+            this.txtLibro.TabIndex = 3;
             // 
-            // label8
+            // txtCodLib
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(633, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 25);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Costo";
-            // 
-            // txtCosto
-            // 
-            this.txtCosto.Location = new System.Drawing.Point(638, 67);
-            this.txtCosto.Name = "txtCosto";
-            this.txtCosto.Size = new System.Drawing.Size(102, 31);
-            this.txtCosto.TabIndex = 7;
-            // 
-            // txtidProd
-            // 
-            this.txtidProd.Location = new System.Drawing.Point(201, 26);
-            this.txtidProd.Name = "txtidProd";
-            this.txtidProd.Size = new System.Drawing.Size(36, 31);
-            this.txtidProd.TabIndex = 6;
-            // 
-            // gBtnBuscarProd
-            // 
-            this.gBtnBuscarProd.AnimationHoverSpeed = 0.07F;
-            this.gBtnBuscarProd.AnimationSpeed = 0.03F;
-            this.gBtnBuscarProd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.gBtnBuscarProd.BorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gBtnBuscarProd.FocusedColor = System.Drawing.Color.Empty;
-            this.gBtnBuscarProd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnBuscarProd.ForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarProd.Image = null;
-            this.gBtnBuscarProd.ImageSize = new System.Drawing.Size(28, 28);
-            this.gBtnBuscarProd.Location = new System.Drawing.Point(243, 58);
-            this.gBtnBuscarProd.Name = "gBtnBuscarProd";
-            this.gBtnBuscarProd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnBuscarProd.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.OnHoverForeColor = System.Drawing.Color.White;
-            this.gBtnBuscarProd.OnHoverImage = null;
-            this.gBtnBuscarProd.OnPressedColor = System.Drawing.Color.Black;
-            this.gBtnBuscarProd.Size = new System.Drawing.Size(43, 43);
-            this.gBtnBuscarProd.TabIndex = 5;
-            // 
-            // txtProd
-            // 
-            this.txtProd.Location = new System.Drawing.Point(313, 70);
-            this.txtProd.Name = "txtProd";
-            this.txtProd.Size = new System.Drawing.Size(283, 31);
-            this.txtProd.TabIndex = 3;
-            // 
-            // txtCodProd
-            // 
-            this.txtCodProd.Location = new System.Drawing.Point(11, 67);
-            this.txtCodProd.Name = "txtCodProd";
-            this.txtCodProd.Size = new System.Drawing.Size(211, 31);
-            this.txtCodProd.TabIndex = 2;
+            this.txtCodLib.Location = new System.Drawing.Point(11, 65);
+            this.txtCodLib.Name = "txtCodLib";
+            this.txtCodLib.Size = new System.Drawing.Size(362, 31);
+            this.txtCodLib.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(312, 32);
+            this.label6.Location = new System.Drawing.Point(480, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 25);
+            this.label6.Size = new System.Drawing.Size(55, 25);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Producto";
+            this.label6.Text = "Libro";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 25);
+            this.label7.Size = new System.Drawing.Size(93, 25);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Cod Producto";
-            // 
-            // gBtnAddtoCar
-            // 
-            this.gBtnAddtoCar.BorderRadius = 10;
-            this.gBtnAddtoCar.CheckedState.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.CustomImages.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.gBtnAddtoCar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.gBtnAddtoCar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gBtnAddtoCar.ForeColor = System.Drawing.Color.White;
-            this.gBtnAddtoCar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
-            this.gBtnAddtoCar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
-            this.gBtnAddtoCar.HoverState.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.Location = new System.Drawing.Point(1273, 200);
-            this.gBtnAddtoCar.Name = "gBtnAddtoCar";
-            this.gBtnAddtoCar.ShadowDecoration.Parent = this.gBtnAddtoCar;
-            this.gBtnAddtoCar.Size = new System.Drawing.Size(136, 81);
-            this.gBtnAddtoCar.TabIndex = 84;
-            this.gBtnAddtoCar.Text = "Agregar";
+            this.label7.Text = "Cod Libro";
             // 
             // gDgvData
             // 
@@ -357,11 +252,9 @@
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Idproducto,
-            this.Producto,
-            this.Costo,
-            this.Precio,
+            this.Codigo,
+            this.Libro,
             this.Cantidad,
-            this.SubTotal,
             this.btnEliminar});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -425,29 +318,21 @@
             this.Idproducto.ReadOnly = true;
             this.Idproducto.Visible = false;
             // 
-            // Producto
+            // Codigo
             // 
-            this.Producto.FillWeight = 355.9276F;
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 150;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
+            this.Codigo.FillWeight = 355.9276F;
+            this.Codigo.HeaderText = "Código";
+            this.Codigo.MinimumWidth = 150;
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
             // 
-            // Costo
+            // Libro
             // 
-            this.Costo.FillWeight = 204.3646F;
-            this.Costo.HeaderText = "Costo";
-            this.Costo.MinimumWidth = 80;
-            this.Costo.Name = "Costo";
-            this.Costo.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.FillWeight = 10.32773F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 300;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
+            this.Libro.FillWeight = 204.3646F;
+            this.Libro.HeaderText = "Libro";
+            this.Libro.MinimumWidth = 400;
+            this.Libro.Name = "Libro";
+            this.Libro.ReadOnly = true;
             // 
             // Cantidad
             // 
@@ -456,13 +341,6 @@
             this.Cantidad.MinimumWidth = 200;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.MinimumWidth = 200;
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
             // 
             // btnEliminar
             // 
@@ -484,12 +362,77 @@
             this.gBtnAddCompra.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
             this.gBtnAddCompra.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
             this.gBtnAddCompra.HoverState.Parent = this.gBtnAddCompra;
-            this.gBtnAddCompra.Location = new System.Drawing.Point(1273, 576);
+            this.gBtnAddCompra.Image = global::CapaPresentacion.Properties.Resources.etiqueta_50;
+            this.gBtnAddCompra.Location = new System.Drawing.Point(1273, 598);
             this.gBtnAddCompra.Name = "gBtnAddCompra";
             this.gBtnAddCompra.ShadowDecoration.Parent = this.gBtnAddCompra;
             this.gBtnAddCompra.Size = new System.Drawing.Size(136, 96);
             this.gBtnAddCompra.TabIndex = 86;
             this.gBtnAddCompra.Text = "Agregar";
+            // 
+            // gBtnAddtoCar
+            // 
+            this.gBtnAddtoCar.BorderRadius = 10;
+            this.gBtnAddtoCar.CheckedState.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.CustomImages.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.gBtnAddtoCar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.gBtnAddtoCar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnAddtoCar.ForeColor = System.Drawing.Color.White;
+            this.gBtnAddtoCar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            this.gBtnAddtoCar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnAddtoCar.HoverState.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.Image = global::CapaPresentacion.Properties.Resources.caja_50;
+            this.gBtnAddtoCar.Location = new System.Drawing.Point(1273, 200);
+            this.gBtnAddtoCar.Name = "gBtnAddtoCar";
+            this.gBtnAddtoCar.ShadowDecoration.Parent = this.gBtnAddtoCar;
+            this.gBtnAddtoCar.Size = new System.Drawing.Size(136, 81);
+            this.gBtnAddtoCar.TabIndex = 84;
+            this.gBtnAddtoCar.Text = "Agregar";
+            // 
+            // gBtnBuscarLib
+            // 
+            this.gBtnBuscarLib.AnimationHoverSpeed = 0.07F;
+            this.gBtnBuscarLib.AnimationSpeed = 0.03F;
+            this.gBtnBuscarLib.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.gBtnBuscarLib.BorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarLib.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnBuscarLib.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnBuscarLib.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnBuscarLib.ForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarLib.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
+            this.gBtnBuscarLib.ImageSize = new System.Drawing.Size(28, 28);
+            this.gBtnBuscarLib.Location = new System.Drawing.Point(397, 53);
+            this.gBtnBuscarLib.Name = "gBtnBuscarLib";
+            this.gBtnBuscarLib.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnBuscarLib.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarLib.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarLib.OnHoverImage = null;
+            this.gBtnBuscarLib.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnBuscarLib.Size = new System.Drawing.Size(43, 43);
+            this.gBtnBuscarLib.TabIndex = 5;
+            // 
+            // gBtnBuscarDn
+            // 
+            this.gBtnBuscarDn.AnimationHoverSpeed = 0.07F;
+            this.gBtnBuscarDn.AnimationSpeed = 0.03F;
+            this.gBtnBuscarDn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.gBtnBuscarDn.BorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarDn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnBuscarDn.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnBuscarDn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gBtnBuscarDn.ForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarDn.Image = global::CapaPresentacion.Properties.Resources.búsqueda_20;
+            this.gBtnBuscarDn.ImageSize = new System.Drawing.Size(28, 28);
+            this.gBtnBuscarDn.Location = new System.Drawing.Point(321, 55);
+            this.gBtnBuscarDn.Name = "gBtnBuscarDn";
+            this.gBtnBuscarDn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(138)))), ((int)(((byte)(166)))));
+            this.gBtnBuscarDn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gBtnBuscarDn.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnBuscarDn.OnHoverImage = null;
+            this.gBtnBuscarDn.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnBuscarDn.Size = new System.Drawing.Size(43, 43);
+            this.gBtnBuscarDn.TabIndex = 5;
             // 
             // DonacionList
             // 
@@ -526,32 +469,26 @@
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtIdPr;
-        private Guna.UI.WinForms.GunaCircleButton gBtnBuscarPr;
-        private System.Windows.Forms.TextBox txtNombrePr;
+        private System.Windows.Forms.TextBox txtIdDn;
+        private Guna.UI.WinForms.GunaCircleButton gBtnBuscarDn;
+        private System.Windows.Forms.TextBox txtNombreDn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private Guna.UI.WinForms.GunaNumeric gTxtCantidad;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCosto;
-        private System.Windows.Forms.TextBox txtidProd;
-        private Guna.UI.WinForms.GunaCircleButton gBtnBuscarProd;
-        private System.Windows.Forms.TextBox txtProd;
-        private System.Windows.Forms.TextBox txtCodProd;
+        private System.Windows.Forms.TextBox txtidLib;
+        private Guna.UI.WinForms.GunaCircleButton gBtnBuscarLib;
+        private System.Windows.Forms.TextBox txtLibro;
+        private System.Windows.Forms.TextBox txtCodLib;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2GradientTileButton gBtnAddtoCar;
         private Guna.UI2.WinForms.Guna2DataGridView gDgvData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Idproducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
-        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
         private Guna.UI2.WinForms.Guna2GradientTileButton gBtnAddCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Idproducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Libro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
     }
 }

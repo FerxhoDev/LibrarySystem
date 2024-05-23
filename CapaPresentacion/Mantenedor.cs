@@ -27,13 +27,13 @@ namespace CapaPresentacion
             // Restablecer el estilo del botón anteriormente activo
             if (MenuActiv != null)
             {
-                MenuActiv.FillColor = Color.FromArgb(1, 43, 47, 51);
-                MenuActiv.FillColor2 = Color.FromArgb(1, 43, 47, 51);
+                MenuActiv.FillColor = Color.FromArgb(255, 43, 47, 51);
+                MenuActiv.FillColor2 = Color.FromArgb(255, 43, 47, 51);
             }
 
             // Establecer el estilo del botón actual
-            menu.FillColor = Color.FromArgb(1, 33, 37, 36);
-            menu.FillColor2 = Color.FromArgb(1, 33, 37, 36);
+            menu.FillColor = Color.FromArgb(255, 33, 37, 36);
+            menu.FillColor2 = Color.FromArgb(255, 33, 37, 36);
 
             // Asignar el botón actual a MenuActiv
             MenuActiv = menu;

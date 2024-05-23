@@ -61,7 +61,7 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(89, 268);
+            this.gTxtNombre.Location = new System.Drawing.Point(67, 198);
             this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
@@ -81,7 +81,7 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(146, 400);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(67, 463);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
             this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
@@ -98,7 +98,7 @@
             this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
             this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(146, 451);
+            this.gBtnEliminar.Location = new System.Drawing.Point(67, 514);
             this.gBtnEliminar.Name = "gBtnEliminar";
             this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
             this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
@@ -140,7 +140,7 @@
             this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(450, 124);
+            this.gDgvData.Location = new System.Drawing.Point(496, 88);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
@@ -218,7 +218,7 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(146, 349);
+            this.gBtnGuardar.Location = new System.Drawing.Point(67, 412);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
             this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
@@ -266,7 +266,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(84, 238);
+            this.label2.Location = new System.Drawing.Point(62, 168);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 25);
             this.label2.TabIndex = 95;
