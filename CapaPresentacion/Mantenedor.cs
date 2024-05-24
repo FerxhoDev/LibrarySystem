@@ -68,5 +68,10 @@ namespace CapaPresentacion
         {
             AbrirFormulario((Guna2GradientButton)sender, new CentrosEducativos());
         }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2GradientButton)sender, new Direcciones());
+        }
     }
 }

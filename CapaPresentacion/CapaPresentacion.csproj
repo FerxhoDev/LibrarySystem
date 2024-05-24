@@ -189,6 +189,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Direcciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Direcciones.Designer.cs">
+      <DependentUpon>Direcciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Direcciones.resx">
+      <DependentUpon>Direcciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donaciones.resx">
       <DependentUpon>Donaciones.cs</DependentUpon>

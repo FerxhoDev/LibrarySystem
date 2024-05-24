@@ -97,13 +97,14 @@
             this.guna2GradientButton3.Image = global::CapaPresentacion.Properties.Resources.place_marker_40;
             this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2GradientButton3.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2GradientButton3.Location = new System.Drawing.Point(701, -1);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(699, -1);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Size = new System.Drawing.Size(235, 74);
             this.guna2GradientButton3.TabIndex = 5;
             this.guna2GradientButton3.Text = "Dirección";
             this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton2
             // 
