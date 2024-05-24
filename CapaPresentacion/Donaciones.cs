@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace CapaPresentacion
 {
@@ -77,6 +78,35 @@ namespace CapaPresentacion
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
             AbrirFormulario((Guna2GradientButton)sender, new DonacionList());
+        }
+
+        private void Donaciones_Load(object sender, EventArgs e)
+        {
+
+            gBtnPersonas.CustomBorderColor = Color.FromArgb(255, 197, 63, 0);
+            Padding newBorderThickness = gBtnPersonas.CustomBorderThickness;
+            newBorderThickness.Right = 4;
+            gBtnPersonas.CustomBorderThickness = newBorderThickness;
+            gBtnPersonas.FillColor = Color.FromArgb(255, 33, 37, 36);
+
+            // Asignar el botón actual a MenuActiv
+            MenuActiv = gBtnPersonas;
+
+            DonacionPersona donaciones = new DonacionPersona();
+
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+
+            FormularioActivo = donaciones;
+
+            donaciones.TopLevel = false;
+            donaciones.FormBorderStyle = FormBorderStyle.None;
+            donaciones.Dock = DockStyle.Fill;
+
+            pContainer.Controls.Add(donaciones);
+            donaciones.Show();
         }
     }
 }

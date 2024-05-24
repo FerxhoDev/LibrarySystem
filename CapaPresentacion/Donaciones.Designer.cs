@@ -134,6 +134,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Donaciones";
             this.Text = "Donaciones";
+            this.Load += new System.EventHandler(this.Donaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaPresentacion
 {
@@ -24,8 +25,31 @@ namespace CapaPresentacion
         private static Guna2Button MenuActiv = null;
         private void Initial_Load(object sender, EventArgs e)
         {
-            
 
+            BtnDashBoard.CustomBorderColor = Color.FromArgb(255, 197, 63, 0);
+            Padding newBorderThickness = BtnDashBoard.CustomBorderThickness;
+            newBorderThickness.Right = 4;
+            BtnDashBoard.CustomBorderThickness = newBorderThickness;
+            BtnDashBoard.FillColor = Color.FromArgb(255, 33, 37, 36);
+
+            // Asignar el botón actual a MenuActiv
+            MenuActiv = BtnDashBoard;
+
+
+            Dashboard dashboard = new Dashboard();
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+
+            FormularioActivo = dashboard;
+
+            dashboard.TopLevel = false;
+            dashboard.FormBorderStyle = FormBorderStyle.None;
+            dashboard.Dock = DockStyle.Fill;
+
+            pContainer.Controls.Add(dashboard);
+            dashboard.Show();
         }
         private void AbrirFormulario(Guna2Button menu, Form formulario)
         {

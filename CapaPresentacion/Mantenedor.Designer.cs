@@ -34,7 +34,7 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gBtnCategoria = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gBtnDonaciones = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaElipsePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.gunaElipsePanel1.Controls.Add(this.guna2GradientButton3);
             this.gunaElipsePanel1.Controls.Add(this.guna2GradientButton2);
             this.gunaElipsePanel1.Controls.Add(this.guna2GradientButton1);
-            this.gunaElipsePanel1.Controls.Add(this.gBtnCategoria);
+            this.gunaElipsePanel1.Controls.Add(this.gBtnDonaciones);
             this.gunaElipsePanel1.Location = new System.Drawing.Point(12, 12);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Size = new System.Drawing.Size(1554, 72);
@@ -154,29 +154,29 @@
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // gBtnCategoria
+            // gBtnDonaciones
             // 
-            this.gBtnCategoria.BorderRadius = 5;
-            this.gBtnCategoria.CheckedState.Parent = this.gBtnCategoria;
-            this.gBtnCategoria.CustomImages.Parent = this.gBtnCategoria;
-            this.gBtnCategoria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.gBtnCategoria.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.gBtnCategoria.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBtnCategoria.ForeColor = System.Drawing.Color.LightGray;
-            this.gBtnCategoria.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.gBtnCategoria.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.gBtnCategoria.HoverState.Parent = this.gBtnCategoria;
-            this.gBtnCategoria.Image = global::CapaPresentacion.Properties.Resources.donación_40;
-            this.gBtnCategoria.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gBtnCategoria.ImageSize = new System.Drawing.Size(35, 35);
-            this.gBtnCategoria.Location = new System.Drawing.Point(-1, -1);
-            this.gBtnCategoria.Name = "gBtnCategoria";
-            this.gBtnCategoria.ShadowDecoration.Parent = this.gBtnCategoria;
-            this.gBtnCategoria.Size = new System.Drawing.Size(235, 81);
-            this.gBtnCategoria.TabIndex = 2;
-            this.gBtnCategoria.Text = "Donaciones";
-            this.gBtnCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gBtnCategoria.Click += new System.EventHandler(this.gBtnCategoria_Click);
+            this.gBtnDonaciones.BorderRadius = 5;
+            this.gBtnDonaciones.CheckedState.Parent = this.gBtnDonaciones;
+            this.gBtnDonaciones.CustomImages.Parent = this.gBtnDonaciones;
+            this.gBtnDonaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.gBtnDonaciones.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.gBtnDonaciones.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBtnDonaciones.ForeColor = System.Drawing.Color.LightGray;
+            this.gBtnDonaciones.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
+            this.gBtnDonaciones.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
+            this.gBtnDonaciones.HoverState.Parent = this.gBtnDonaciones;
+            this.gBtnDonaciones.Image = global::CapaPresentacion.Properties.Resources.donación_40;
+            this.gBtnDonaciones.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gBtnDonaciones.ImageSize = new System.Drawing.Size(35, 35);
+            this.gBtnDonaciones.Location = new System.Drawing.Point(-1, -1);
+            this.gBtnDonaciones.Name = "gBtnDonaciones";
+            this.gBtnDonaciones.ShadowDecoration.Parent = this.gBtnDonaciones;
+            this.gBtnDonaciones.Size = new System.Drawing.Size(235, 81);
+            this.gBtnDonaciones.TabIndex = 2;
+            this.gBtnDonaciones.Text = "Donaciones";
+            this.gBtnDonaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gBtnDonaciones.Click += new System.EventHandler(this.gBtnCategoria_Click);
             // 
             // Mantenedor
             // 
@@ -189,6 +189,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Mantenedor";
             this.Text = "Mantenedor";
+            this.Load += new System.EventHandler(this.Mantenedor_Load);
             this.gunaElipsePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -197,7 +198,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pContainerM;
-        private Guna.UI2.WinForms.Guna2GradientButton gBtnCategoria;
+        private Guna.UI2.WinForms.Guna2GradientButton gBtnDonaciones;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaPresentacion
 {
@@ -72,6 +73,33 @@ namespace CapaPresentacion
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
             AbrirFormulario((Guna2GradientButton)sender, new Direcciones());
+        }
+
+        private void Mantenedor_Load(object sender, EventArgs e)
+        {
+            
+            gBtnDonaciones.FillColor = Color.FromArgb(255, 33, 37, 36);
+            gBtnDonaciones.FillColor2 = Color.FromArgb(255, 33, 37, 36);
+
+            // Asignar el botón actual a MenuActiv
+            MenuActiv = gBtnDonaciones;
+
+            Donaciones donaciones = new Donaciones();
+
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+
+            FormularioActivo = donaciones;
+
+            donaciones.TopLevel = false;
+            donaciones.FormBorderStyle = FormBorderStyle.None;
+            donaciones.Dock = DockStyle.Fill;
+
+            pContainerM.Controls.Add(donaciones);
+            donaciones.Show();
+
         }
     }
 }
