@@ -81,6 +81,7 @@
             this.guna2GradientButton4.TabIndex = 6;
             this.guna2GradientButton4.Text = "CATEGORIAS";
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton3
             // 
