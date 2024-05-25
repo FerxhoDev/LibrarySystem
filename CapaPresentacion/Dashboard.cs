@@ -16,5 +16,11 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            gPbTotPres.Maximum = 600;
+            gPbTotPres.Value = 100;
+        }
     }
 }

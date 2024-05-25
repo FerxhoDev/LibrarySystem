@@ -181,6 +181,9 @@
   <data name="etiqueta-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etiqueta-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="idea-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idea-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ajustes-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajustes-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,6 +199,9 @@
   <data name="colegio-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colegio-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="inventario-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inventario-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="más-24 v" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\más-24 v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,6 +210,9 @@
   </data>
   <data name="Character-working-laptop-sitting-chair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gps-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gps-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="más-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\más-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +226,13 @@
   <data name="info-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="minimizar-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="caja-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caja-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimizar-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimizar-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="team-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\team-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -193,9 +193,39 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gps_64 {
+            get {
+                object obj = ResourceManager.GetObject("gps-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap idea_64 {
+            get {
+                object obj = ResourceManager.GetObject("idea-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info_34 {
             get {
                 object obj = ResourceManager.GetObject("info-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inventario_64 {
+            get {
+                object obj = ResourceManager.GetObject("inventario-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +426,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap tall_person_40 {
             get {
                 object obj = ResourceManager.GetObject("tall-person-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap team_64 {
+            get {
+                object obj = ResourceManager.GetObject("team-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -439,6 +439,10 @@
       <DependentUpon>libraryDBModel.edmx</DependentUpon>
       <LastGenOutput>libraryDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\team-64.png" />
+    <None Include="Resources\gps-64.png" />
+    <None Include="Resources\inventario-64.png" />
+    <None Include="Resources\idea-64.png" />
     <None Include="Resources\minimizar-30.png" />
     <None Include="Resources\cerrar-30.png" />
     <None Include="Resources\caja-50.png" />
