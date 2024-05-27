@@ -22,5 +22,10 @@ namespace CapaPresentacion
             gPbTotPres.Maximum = 600;
             gPbTotPres.Value = 100;
         }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

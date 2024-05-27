@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,14 +60,10 @@
             this.gPbTotPres = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.ChartPrestamo = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -70,8 +78,10 @@
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel5.SuspendLayout();
             this.gunaElipsePanel7.SuspendLayout();
+            this.gunaElipsePanel6.SuspendLayout();
             this.gunaElipsePanel10.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
@@ -163,6 +173,53 @@
             this.gunaElipsePanel4.Size = new System.Drawing.Size(368, 236);
             this.gunaElipsePanel4.TabIndex = 3;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(123, 71);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(175, 21);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Direcciones agregadas";
+            // 
+            // guna2ProgressBar3
+            // 
+            this.guna2ProgressBar3.BorderRadius = 12;
+            this.guna2ProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
+            this.guna2ProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.guna2ProgressBar3.Location = new System.Drawing.Point(48, 153);
+            this.guna2ProgressBar3.Name = "guna2ProgressBar3";
+            this.guna2ProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2ProgressBar3.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2ProgressBar3.ShadowDecoration.Parent = this.guna2ProgressBar3;
+            this.guna2ProgressBar3.Size = new System.Drawing.Size(300, 30);
+            this.guna2ProgressBar3.TabIndex = 27;
+            this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
+            this.label14.Location = new System.Drawing.Point(121, 29);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(147, 32);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Direcciones";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(71, 188);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(97, 25);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Total: 350";
+            // 
             // gunaElipsePanel5
             // 
             this.gunaElipsePanel5.BackColor = System.Drawing.Color.Transparent;
@@ -178,6 +235,53 @@
             this.gunaElipsePanel5.Radius = 20;
             this.gunaElipsePanel5.Size = new System.Drawing.Size(368, 239);
             this.gunaElipsePanel5.TabIndex = 4;
+            // 
+            // guna2ProgressBar2
+            // 
+            this.guna2ProgressBar2.BorderRadius = 12;
+            this.guna2ProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            this.guna2ProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.guna2ProgressBar2.Location = new System.Drawing.Point(35, 154);
+            this.guna2ProgressBar2.Name = "guna2ProgressBar2";
+            this.guna2ProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2ProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2ProgressBar2.ShadowDecoration.Parent = this.guna2ProgressBar2;
+            this.guna2ProgressBar2.Size = new System.Drawing.Size(300, 30);
+            this.guna2ProgressBar2.TabIndex = 21;
+            this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(58, 189);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 25);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Total: 350";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(110, 72);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(175, 21);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Direcciones agregadas";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            this.label10.Location = new System.Drawing.Point(108, 30);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(147, 32);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Direcciones";
             // 
             // gunaElipsePanel7
             // 
@@ -246,6 +350,10 @@
             // 
             this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.gunaElipsePanel6.Controls.Add(this.gunaImageButton1);
+            this.gunaElipsePanel6.Controls.Add(this.guna2DateTimePicker2);
+            this.gunaElipsePanel6.Controls.Add(this.ChartPrestamo);
+            this.gunaElipsePanel6.Controls.Add(this.guna2DateTimePicker1);
             this.gunaElipsePanel6.Location = new System.Drawing.Point(803, 550);
             this.gunaElipsePanel6.Name = "gunaElipsePanel6";
             this.gunaElipsePanel6.Radius = 20;
@@ -335,99 +443,96 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Total Prestamos";
             // 
-            // guna2ProgressBar2
+            // ChartPrestamo
             // 
-            this.guna2ProgressBar2.BorderRadius = 12;
-            this.guna2ProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
-            this.guna2ProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar2.Location = new System.Drawing.Point(35, 154);
-            this.guna2ProgressBar2.Name = "guna2ProgressBar2";
-            this.guna2ProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2ProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2ProgressBar2.ShadowDecoration.Parent = this.guna2ProgressBar2;
-            this.guna2ProgressBar2.Size = new System.Drawing.Size(300, 30);
-            this.guna2ProgressBar2.TabIndex = 21;
-            this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.ChartPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LineWidth = 0;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineWidth = 0;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.AxisX.MajorTickMark.Size = 3F;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LineWidth = 0;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DimGray;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.Name = "ChartArea1";
+            this.ChartPrestamo.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            legend1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            legend1.Name = "Legend1";
+            this.ChartPrestamo.Legends.Add(legend1);
+            this.ChartPrestamo.Location = new System.Drawing.Point(15, 68);
+            this.ChartPrestamo.Name = "ChartPrestamo";
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ChartPrestamo.Series.Add(series1);
+            this.ChartPrestamo.Size = new System.Drawing.Size(730, 257);
+            this.ChartPrestamo.TabIndex = 19;
+            this.ChartPrestamo.Text = "chart1";
+            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            title1.Name = "Title1";
+            title1.Text = "Prestamos";
+            this.ChartPrestamo.Titles.Add(title1);
             // 
-            // label9
+            // guna2DateTimePicker1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(58, 189);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 25);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Total: 350";
+            this.guna2DateTimePicker1.BorderRadius = 8;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(15, 18);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Padding = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(285, 36);
+            this.guna2DateTimePicker1.TabIndex = 11;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
             // 
-            // label10
+            // guna2DateTimePicker2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
-            this.label10.Location = new System.Drawing.Point(108, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(147, 32);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Direcciones";
+            this.guna2DateTimePicker2.BorderRadius = 8;
+            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(327, 18);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Padding = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(285, 36);
+            this.guna2DateTimePicker2.TabIndex = 12;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
             // 
-            // label11
+            // gunaImageButton1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(110, 72);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(175, 21);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Direcciones agregadas";
-            // 
-            // guna2ProgressBar3
-            // 
-            this.guna2ProgressBar3.BorderRadius = 12;
-            this.guna2ProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
-            this.guna2ProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar3.Location = new System.Drawing.Point(48, 153);
-            this.guna2ProgressBar3.Name = "guna2ProgressBar3";
-            this.guna2ProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2ProgressBar3.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2ProgressBar3.ShadowDecoration.Parent = this.guna2ProgressBar3;
-            this.guna2ProgressBar3.Size = new System.Drawing.Size(300, 30);
-            this.guna2ProgressBar3.TabIndex = 27;
-            this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(71, 188);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 25);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "Total: 350";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(123, 71);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(175, 21);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Direcciones agregadas";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
-            this.label14.Location = new System.Drawing.Point(121, 29);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(147, 32);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Direcciones";
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CapaPresentacion.Properties.Resources.verificación_40;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(34, 34);
+            this.gunaImageButton1.Location = new System.Drawing.Point(627, 11);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(3, 3);
+            this.gunaImageButton1.Size = new System.Drawing.Size(51, 51);
+            this.gunaImageButton1.TabIndex = 20;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
             // 
             // gunaTransfarantPictureBox2
             // 
@@ -569,9 +674,11 @@
             this.gunaElipsePanel5.PerformLayout();
             this.gunaElipsePanel7.ResumeLayout(false);
             this.gunaElipsePanel7.PerformLayout();
+            this.gunaElipsePanel6.ResumeLayout(false);
             this.gunaElipsePanel10.ResumeLayout(false);
             this.gunaElipsePanel3.ResumeLayout(false);
             this.gunaElipsePanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();
@@ -626,5 +733,9 @@
         private System.Windows.Forms.Label label14;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox4;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartPrestamo;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }
