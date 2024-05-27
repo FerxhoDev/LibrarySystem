@@ -17,6 +17,7 @@ namespace CapaPresentacion
     {
         librarydbEntities db = new librarydbEntities();
         int modoBusqueda = 0;
+        int stockSec;
         public Libros()
         {
             InitializeComponent();
@@ -56,6 +57,7 @@ namespace CapaPresentacion
 
         private void dataGridButtom_CellContectClick(object sender, DataGridViewCellEventArgs e)
         {
+            stockSec = 0;
             var senderGrid = (DataGridView)sender;
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
@@ -71,7 +73,7 @@ namespace CapaPresentacion
 
                 //Poner datos en las barras:
                 fillData(idLibro, nombreLibro, codigo, idCategoria, stock, nombreCategoria);
-
+                stockSec = stock;
                 
             }
         }
@@ -136,12 +138,13 @@ namespace CapaPresentacion
         }
 
 
-        private void updateLibro(int stock)
+        private void updateLibro(int stockRR)
         {
             int idLibro = Convert.ToInt32(gTxtId.Text);
             string Nombre = gTxtNombre.Text;
             string Codigo = gTxtCodigo.Text;
             int idCategoria = Convert.ToInt32(gCmbCategoria.SelectedValue);
+            int stock = stockSec;
 
             DialogResult result = MessageBox.Show("¿Desea modificar el libro?", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
@@ -159,7 +162,7 @@ namespace CapaPresentacion
             // Validar que los campos no estén vacíos
             if (string.IsNullOrWhiteSpace(gTxtNombre.Text) ||
                 string.IsNullOrWhiteSpace(gTxtCodigo.Text) ||
-                string.IsNullOrWhiteSpace(gTxtStock.Text) ||
+                //string.IsNullOrWhiteSpace(gTxtStock.Text) ||
                 gCmbCategoria.SelectedValue == null)
             {
                 MessageBox.Show("Todos los datos deben ser llenados.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -167,11 +170,7 @@ namespace CapaPresentacion
             }
 
             // Validar que el stock es un número
-            if (!int.TryParse(gTxtStock.Text, out int stock))
-            {
-                MessageBox.Show("El stock debe ser un número válido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            int stock = 0;
 
             if (gTxtId.Text == string.Empty && gTxtIndice.Text == string.Empty)
             {
@@ -366,12 +365,12 @@ namespace CapaPresentacion
                     // Si el valor de "stock" es 0, colorear la fila de rojo
                     if (stockValue == 0)
                     {
-                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.BackColor = Color.PeachPuff;
                     }
                     else
                     {
                         // Restaurar el color de fondo predeterminado si no es 0
-                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.BackColor = Color.Silver;
                     }
                 }
             }
