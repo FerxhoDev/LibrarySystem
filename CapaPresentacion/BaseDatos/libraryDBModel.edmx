@@ -129,7 +129,7 @@
           <Key>
             <PropertyRef Name="idUsuario" />
           </Key>
-          <Property Name="idUsuario" Type="int" Nullable="false" />
+          <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="id_direccion" Type="int" Nullable="false" />
@@ -330,6 +330,17 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_createDireccionReturnID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_sector" Type="int" Mode="In" />
+          <Parameter Name="descripcion" Type="nvarchar" Mode="In" />
+          <Parameter Name="idDireccion" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="sp_createDonacionReturnID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_Donante" Type="int" Mode="In" />
+          <Parameter Name="id_Administrador" Type="int" Mode="In" />
+          <Parameter Name="fecha" Type="date" Mode="In" />
+          <Parameter Name="idDonacion" Type="int" Mode="InOut" />
+        </Function>
         <Function Name="sp_deleteAldea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idAldea" Type="int" Mode="In" />
         </Function>
@@ -455,11 +466,22 @@
           <Parameter Name="id_responsable" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_SelectAllAldeas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_selectAllCategoriaswAldeas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllCatLibro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllCentroEduca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_selectAllDetalleDonacionbyIDwithBooks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
         <Function Name="sp_selectAllDetallePrestamo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllDirecciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllDonacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_selectAllDonacionByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_selectAllDonacioneswithDonanteAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_selectAllDonacioneswithDonanteAdminnoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllDonantes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllestados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllLibros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
@@ -469,6 +491,13 @@
         <Function Name="sp_selectAllSectores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllUsuarios_Admin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_selectAllUsuarios_Prestamistas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_selectAllUsuariosPrestamistasJoints" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_SelectDonatorsByName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="donador" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_SelectLibrosByCodLibros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="code" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="sp_selectUsuarioAdmin_byUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Usuario" Type="nvarchar" Mode="In" />
         </Function>
@@ -1318,6 +1347,36 @@
           <Parameter Name="usuario" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_selectallLibrosCategorias" ReturnType="Collection(librarydbModel.sp_selectallLibrosCategorias_Result)" />
+          <FunctionImport Name="sp_SeleccionarSectores" />
+          <FunctionImport Name="sp_selectAllCategoriaswAldeas" ReturnType="Collection(librarydbModel.sp_selectAllCategoriaswAldeas_Result)" />
+          <FunctionImport Name="sp_createDireccionReturnID">
+            <Parameter Name="id_sector" Mode="In" Type="Int32" />
+            <Parameter Name="descripcion" Mode="In" Type="String" />
+            <Parameter Name="idDireccion" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_selectAllUsuariosPrestamistasJoints" ReturnType="Collection(librarydbModel.sp_selectAllUsuariosPrestamistasJoints_Result)" />
+          <FunctionImport Name="sp_selectAllDonacioneswithDonanteAdmin" ReturnType="Collection(librarydbModel.sp_selectAllDonacioneswithDonanteAdmin_Result)" >
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_selectAllDetalleDonacionbyIDwithBooks" ReturnType="Collection(librarydbModel.sp_selectAllDetalleDonacionbyIDwithBooks_Result)" >
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_selectAllDonacionByID" ReturnType="Collection(librarydbModel.sp_selectAllDonacionByID_Result)" >
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_selectAllDonacioneswithDonanteAdminnoID" ReturnType="Collection(librarydbModel.sp_selectAllDonacioneswithDonanteAdminnoID_Result)" />
+          <FunctionImport Name="sp_SelectDonatorsByName" ReturnType="Collection(librarydbModel.sp_SelectDonatorsByName_Result)">
+          <Parameter Name="donador" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_SelectLibrosByCodLibros" ReturnType="Collection(librarydbModel.sp_SelectLibrosByCodLibros_Result)">
+          <Parameter Name="code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_createDonacionReturnID">
+            <Parameter Name="id_Donante" Mode="In" Type="Int32" />
+            <Parameter Name="id_Administrador" Mode="In" Type="Int32" />
+            <Parameter Name="fecha" Mode="In" Type="DateTime" />
+            <Parameter Name="idDonacion" Mode="InOut" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="sp_SelectAllAldeas_Result">
           <Property Type="Int32" Name="idAldea" Nullable="false" />
@@ -1423,6 +1482,66 @@
           <Property Type="Int32" Name="id_categoria" Nullable="false" />
           <Property Type="Int32" Name="stock" Nullable="false" />
           <Property Type="String" Name="NombreCategoria" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllCategoriaswAldeas_Result">
+          <Property Type="Int32" Name="idSector" Nullable="false" />
+          <Property Type="String" Name="NombreSector" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="idAldea" Nullable="false" />
+          <Property Type="String" Name="NombreAldea" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllUsuariosPrestamistasJoints_Result">
+          <Property Type="Int32" Name="idUsuario" Nullable="false" />
+          <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaNacimiento" Nullable="false" />
+          <Property Type="Boolean" Name="genero" Nullable="false" />
+          <Property Type="Int32" Name="idCentroEducativo" Nullable="false" />
+          <Property Type="String" Name="nombreCentroEducativo" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="idDireccion" Nullable="false" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="idSector" Nullable="false" />
+          <Property Type="String" Name="NombreSector" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="idAldea" Nullable="false" />
+          <Property Type="String" Name="NombreAldea" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="idResponsable" Nullable="false" />
+          <Property Type="String" Name="nombreResponsable" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="telefonoResponsable" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllDonacioneswithDonanteAdmin_Result">
+          <Property Type="Int32" Name="idDonacion" Nullable="false" />
+          <Property Type="DateTime" Name="fecha" Nullable="false" />
+          <Property Type="String" Name="admin" Nullable="true" MaxLength="101" />
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllDetalleDonacionbyIDwithBooks_Result">
+          <Property Type="Int32" Name="idDetalle_donacion" Nullable="false" />
+          <Property Type="Int32" Name="cantidad" Nullable="false" />
+          <Property Type="DateTime" Name="fehcaRegistro" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="codigo" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllDonacionByID_Result">
+          <Property Type="Int32" Name="idDonacion" Nullable="false" />
+          <Property Type="Int32" Name="id_donante" Nullable="false" />
+          <Property Type="Int32" Name="id_admin" Nullable="false" />
+          <Property Type="DateTime" Name="fecha" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_selectAllDonacioneswithDonanteAdminnoID_Result">
+          <Property Type="Int32" Name="idDonacion" Nullable="false" />
+          <Property Type="DateTime" Name="fecha" Nullable="false" />
+          <Property Type="String" Name="admin" Nullable="true" MaxLength="101" />
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_SelectDonatorsByName_Result">
+          <Property Type="Int32" Name="idDonante" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_SelectLibrosByCodLibros_Result">
+          <Property Type="Int32" Name="idLibro" Nullable="false" />
+          <Property Type="Int32" Name="id_categoria" Nullable="false" />
+          <Property Type="String" Name="codigo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="stock" Nullable="false" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1797,6 +1916,100 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectAllCategoriaswAldeas" FunctionName="librarydbModel.Store.sp_selectAllCategoriaswAldeas">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllCategoriaswAldeas_Result">
+                <ScalarProperty Name="idSector" ColumnName="idSector" />
+                <ScalarProperty Name="NombreSector" ColumnName="NombreSector" />
+                <ScalarProperty Name="idAldea" ColumnName="idAldea" />
+                <ScalarProperty Name="NombreAldea" ColumnName="NombreAldea" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_createDireccionReturnID" FunctionName="librarydbModel.Store.sp_createDireccionReturnID" />
+          <FunctionImportMapping FunctionImportName="sp_selectAllUsuariosPrestamistasJoints" FunctionName="librarydbModel.Store.sp_selectAllUsuariosPrestamistasJoints">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllUsuariosPrestamistasJoints_Result">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="genero" ColumnName="genero" />
+                <ScalarProperty Name="idCentroEducativo" ColumnName="idCentroEducativo" />
+                <ScalarProperty Name="nombreCentroEducativo" ColumnName="nombreCentroEducativo" />
+                <ScalarProperty Name="idDireccion" ColumnName="idDireccion" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="idSector" ColumnName="idSector" />
+                <ScalarProperty Name="NombreSector" ColumnName="NombreSector" />
+                <ScalarProperty Name="idAldea" ColumnName="idAldea" />
+                <ScalarProperty Name="NombreAldea" ColumnName="NombreAldea" />
+                <ScalarProperty Name="idResponsable" ColumnName="idResponsable" />
+                <ScalarProperty Name="nombreResponsable" ColumnName="nombreResponsable" />
+                <ScalarProperty Name="telefonoResponsable" ColumnName="telefonoResponsable" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectAllDonacioneswithDonanteAdmin" FunctionName="librarydbModel.Store.sp_selectAllDonacioneswithDonanteAdmin">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllDonacioneswithDonanteAdmin_Result">
+                <ScalarProperty Name="idDonacion" ColumnName="idDonacion" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="admin" ColumnName="admin" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectAllDetalleDonacionbyIDwithBooks" FunctionName="librarydbModel.Store.sp_selectAllDetalleDonacionbyIDwithBooks">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllDetalleDonacionbyIDwithBooks_Result">
+                <ScalarProperty Name="idDetalle_donacion" ColumnName="idDetalle_donacion" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+                <ScalarProperty Name="fehcaRegistro" ColumnName="fehcaRegistro" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectAllDonacionByID" FunctionName="librarydbModel.Store.sp_selectAllDonacionByID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllDonacionByID_Result">
+                <ScalarProperty Name="idDonacion" ColumnName="idDonacion" />
+                <ScalarProperty Name="id_donante" ColumnName="id_donante" />
+                <ScalarProperty Name="id_admin" ColumnName="id_admin" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_selectAllDonacioneswithDonanteAdminnoID" FunctionName="librarydbModel.Store.sp_selectAllDonacioneswithDonanteAdminnoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_selectAllDonacioneswithDonanteAdminnoID_Result">
+                <ScalarProperty Name="idDonacion" ColumnName="idDonacion" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="admin" ColumnName="admin" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_SelectDonatorsByName" FunctionName="librarydbModel.Store.sp_SelectDonatorsByName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_SelectDonatorsByName_Result">
+                <ScalarProperty Name="idDonante" ColumnName="idDonante" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_SelectLibrosByCodLibros" FunctionName="librarydbModel.Store.sp_SelectLibrosByCodLibros">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="librarydbModel.sp_SelectLibrosByCodLibros_Result">
+                <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+                <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="stock" ColumnName="stock" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_createDonacionReturnID" FunctionName="librarydbModel.Store.sp_createDonacionReturnID" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

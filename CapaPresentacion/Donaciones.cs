@@ -14,9 +14,11 @@ namespace CapaPresentacion
 {
     public partial class Donaciones : Form
     {
-        public Donaciones()
+        int Administrador_id;
+        public Donaciones(int id_admin)
         {
             InitializeComponent();
+            Administrador_id = id_admin;
         }
         private static Form FormularioActivo = null;
         private static Guna2GradientButton MenuActiv = null;
@@ -72,7 +74,7 @@ namespace CapaPresentacion
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2GradientButton)sender, new DonacionAdd());
+            AbrirFormulario((Guna2GradientButton)sender, new DonacionAdd(Administrador_id));
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)

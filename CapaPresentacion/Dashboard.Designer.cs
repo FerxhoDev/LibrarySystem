@@ -37,22 +37,34 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaTransfarantPictureBox4 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label14 = new System.Windows.Forms.Label();
+            this.gunaCirclePictureBox4 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.ChartPrestamo = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaElipsePanel10 = new Guna.UI.WinForms.GunaElipsePanel();
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -60,38 +72,26 @@
             this.gPbTotPres = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.ChartPrestamo = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaTransfarantPictureBox4 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gunaCirclePictureBox4 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaElipsePanel2.SuspendLayout();
-            this.gunaElipsePanel4.SuspendLayout();
-            this.gunaElipsePanel5.SuspendLayout();
-            this.gunaElipsePanel7.SuspendLayout();
-            this.gunaElipsePanel6.SuspendLayout();
-            this.gunaElipsePanel10.SuspendLayout();
-            this.gunaElipsePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.gunaElipsePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).BeginInit();
+            this.gunaElipsePanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
+            this.gunaElipsePanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
+            this.gunaElipsePanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).BeginInit();
+            this.gunaElipsePanel10.SuspendLayout();
+            this.gunaElipsePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipsePanel1
@@ -157,6 +157,28 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Realice un seguimiento de todo lo que tiene";
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::CapaPresentacion.Properties.Resources.sammy_man_studying_analytics_on_laptop_1;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(1299, 4);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(192, 184);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 1;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::CapaPresentacion.Properties.Resources.Book_Icon;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(185, 184);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // gunaElipsePanel4
             // 
             this.gunaElipsePanel4.BackColor = System.Drawing.Color.Transparent;
@@ -172,6 +194,18 @@
             this.gunaElipsePanel4.Radius = 20;
             this.gunaElipsePanel4.Size = new System.Drawing.Size(368, 236);
             this.gunaElipsePanel4.TabIndex = 3;
+            // 
+            // gunaTransfarantPictureBox4
+            // 
+            this.gunaTransfarantPictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox4.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox4.Image = global::CapaPresentacion.Properties.Resources.team_64;
+            this.gunaTransfarantPictureBox4.Location = new System.Drawing.Point(39, 19);
+            this.gunaTransfarantPictureBox4.Name = "gunaTransfarantPictureBox4";
+            this.gunaTransfarantPictureBox4.Size = new System.Drawing.Size(63, 63);
+            this.gunaTransfarantPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox4.TabIndex = 25;
+            this.gunaTransfarantPictureBox4.TabStop = false;
             // 
             // label13
             // 
@@ -209,6 +243,17 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "Direcciones";
             // 
+            // gunaCirclePictureBox4
+            // 
+            this.gunaCirclePictureBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
+            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(29, 7);
+            this.gunaCirclePictureBox4.Name = "gunaCirclePictureBox4";
+            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(85, 86);
+            this.gunaCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox4.TabIndex = 28;
+            this.gunaCirclePictureBox4.TabStop = false;
+            this.gunaCirclePictureBox4.UseTransfarantBackground = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -236,6 +281,18 @@
             this.gunaElipsePanel5.Size = new System.Drawing.Size(368, 239);
             this.gunaElipsePanel5.TabIndex = 4;
             // 
+            // gunaTransfarantPictureBox3
+            // 
+            this.gunaTransfarantPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox3.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox3.Image = global::CapaPresentacion.Properties.Resources.gps_64;
+            this.gunaTransfarantPictureBox3.Location = new System.Drawing.Point(35, 30);
+            this.gunaTransfarantPictureBox3.Name = "gunaTransfarantPictureBox3";
+            this.gunaTransfarantPictureBox3.Size = new System.Drawing.Size(51, 43);
+            this.gunaTransfarantPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox3.TabIndex = 19;
+            this.gunaTransfarantPictureBox3.TabStop = false;
+            // 
             // guna2ProgressBar2
             // 
             this.guna2ProgressBar2.BorderRadius = 12;
@@ -249,6 +306,17 @@
             this.guna2ProgressBar2.Size = new System.Drawing.Size(300, 30);
             this.guna2ProgressBar2.TabIndex = 21;
             this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // gunaCirclePictureBox3
+            // 
+            this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(16, 8);
+            this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
+            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(85, 86);
+            this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox3.TabIndex = 22;
+            this.gunaCirclePictureBox3.TabStop = false;
+            this.gunaCirclePictureBox3.UseTransfarantBackground = false;
             // 
             // label9
             // 
@@ -299,6 +367,18 @@
             this.gunaElipsePanel7.Size = new System.Drawing.Size(368, 239);
             this.gunaElipsePanel7.TabIndex = 5;
             // 
+            // gunaTransfarantPictureBox2
+            // 
+            this.gunaTransfarantPictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox2.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox2.Image = global::CapaPresentacion.Properties.Resources.inventario_64;
+            this.gunaTransfarantPictureBox2.Location = new System.Drawing.Point(32, 28);
+            this.gunaTransfarantPictureBox2.Name = "gunaTransfarantPictureBox2";
+            this.gunaTransfarantPictureBox2.Size = new System.Drawing.Size(52, 43);
+            this.gunaTransfarantPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaTransfarantPictureBox2.TabIndex = 13;
+            this.gunaTransfarantPictureBox2.TabStop = false;
+            // 
             // guna2ProgressBar1
             // 
             this.guna2ProgressBar1.BorderRadius = 12;
@@ -346,6 +426,17 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Cantidad de libros en inventario";
             // 
+            // gunaCirclePictureBox2
+            // 
+            this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(99)))), ((int)(((byte)(165)))));
+            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(18, 6);
+            this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
+            this.gunaCirclePictureBox2.Size = new System.Drawing.Size(85, 86);
+            this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox2.TabIndex = 16;
+            this.gunaCirclePictureBox2.TabStop = false;
+            this.gunaCirclePictureBox2.UseTransfarantBackground = false;
+            // 
             // gunaElipsePanel6
             // 
             this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
@@ -359,6 +450,98 @@
             this.gunaElipsePanel6.Radius = 20;
             this.gunaElipsePanel6.Size = new System.Drawing.Size(761, 342);
             this.gunaElipsePanel6.TabIndex = 6;
+            // 
+            // gunaImageButton1
+            // 
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::CapaPresentacion.Properties.Resources.verificación_40;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(34, 34);
+            this.gunaImageButton1.Location = new System.Drawing.Point(627, 11);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(3, 3);
+            this.gunaImageButton1.Size = new System.Drawing.Size(51, 51);
+            this.gunaImageButton1.TabIndex = 20;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.BorderRadius = 8;
+            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(327, 18);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Padding = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(285, 36);
+            this.guna2DateTimePicker2.TabIndex = 12;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
+            // 
+            // ChartPrestamo
+            // 
+            this.ChartPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.AxisX.IsMarginVisible = false;
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LineWidth = 0;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineWidth = 0;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.AxisX.MajorTickMark.Size = 3F;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LineWidth = 0;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DimGray;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            chartArea1.Name = "ChartArea1";
+            this.ChartPrestamo.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            legend1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            legend1.Name = "Legend1";
+            this.ChartPrestamo.Legends.Add(legend1);
+            this.ChartPrestamo.Location = new System.Drawing.Point(15, 68);
+            this.ChartPrestamo.Name = "ChartPrestamo";
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ChartPrestamo.Series.Add(series1);
+            this.ChartPrestamo.Size = new System.Drawing.Size(730, 257);
+            this.ChartPrestamo.TabIndex = 19;
+            this.ChartPrestamo.Text = "chart1";
+            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            title1.Name = "Title1";
+            title1.Text = "Prestamos";
+            this.ChartPrestamo.Titles.Add(title1);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BorderRadius = 8;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(15, 18);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Padding = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(285, 36);
+            this.guna2DateTimePicker1.TabIndex = 11;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
             // 
             // gunaElipsePanel10
             // 
@@ -443,166 +626,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Total Prestamos";
             // 
-            // ChartPrestamo
-            // 
-            this.ChartPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.LineWidth = 0;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.LineWidth = 0;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            chartArea1.AxisX.MajorTickMark.Size = 3F;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea1.AxisY.LineWidth = 0;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
-            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DimGray;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            chartArea1.Name = "ChartArea1";
-            this.ChartPrestamo.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            legend1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            legend1.Name = "Legend1";
-            this.ChartPrestamo.Legends.Add(legend1);
-            this.ChartPrestamo.Location = new System.Drawing.Point(15, 68);
-            this.ChartPrestamo.Name = "ChartPrestamo";
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.ChartPrestamo.Series.Add(series1);
-            this.ChartPrestamo.Size = new System.Drawing.Size(730, 257);
-            this.ChartPrestamo.TabIndex = 19;
-            this.ChartPrestamo.Text = "chart1";
-            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            title1.Name = "Title1";
-            title1.Text = "Prestamos";
-            this.ChartPrestamo.Titles.Add(title1);
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderRadius = 8;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(15, 18);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Padding = new System.Windows.Forms.Padding(2);
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(285, 36);
-            this.guna2DateTimePicker1.TabIndex = 11;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BorderRadius = 8;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(327, 18);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Padding = new System.Windows.Forms.Padding(2);
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(285, 36);
-            this.guna2DateTimePicker2.TabIndex = 12;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 5, 27, 7, 8, 22, 597);
-            // 
-            // gunaImageButton1
-            // 
-            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton1.Image = global::CapaPresentacion.Properties.Resources.verificación_40;
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(34, 34);
-            this.gunaImageButton1.Location = new System.Drawing.Point(627, 11);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = null;
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(3, 3);
-            this.gunaImageButton1.Size = new System.Drawing.Size(51, 51);
-            this.gunaImageButton1.TabIndex = 20;
-            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
-            // 
-            // gunaTransfarantPictureBox2
-            // 
-            this.gunaTransfarantPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox2.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox2.Image = global::CapaPresentacion.Properties.Resources.inventario_64;
-            this.gunaTransfarantPictureBox2.Location = new System.Drawing.Point(32, 28);
-            this.gunaTransfarantPictureBox2.Name = "gunaTransfarantPictureBox2";
-            this.gunaTransfarantPictureBox2.Size = new System.Drawing.Size(52, 43);
-            this.gunaTransfarantPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox2.TabIndex = 13;
-            this.gunaTransfarantPictureBox2.TabStop = false;
-            // 
-            // gunaCirclePictureBox2
-            // 
-            this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(99)))), ((int)(((byte)(165)))));
-            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(18, 6);
-            this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
-            this.gunaCirclePictureBox2.Size = new System.Drawing.Size(85, 86);
-            this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox2.TabIndex = 16;
-            this.gunaCirclePictureBox2.TabStop = false;
-            this.gunaCirclePictureBox2.UseTransfarantBackground = false;
-            // 
-            // gunaTransfarantPictureBox3
-            // 
-            this.gunaTransfarantPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox3.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox3.Image = global::CapaPresentacion.Properties.Resources.gps_64;
-            this.gunaTransfarantPictureBox3.Location = new System.Drawing.Point(35, 30);
-            this.gunaTransfarantPictureBox3.Name = "gunaTransfarantPictureBox3";
-            this.gunaTransfarantPictureBox3.Size = new System.Drawing.Size(51, 43);
-            this.gunaTransfarantPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox3.TabIndex = 19;
-            this.gunaTransfarantPictureBox3.TabStop = false;
-            // 
-            // gunaCirclePictureBox3
-            // 
-            this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(170)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
-            this.gunaCirclePictureBox3.Location = new System.Drawing.Point(16, 8);
-            this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
-            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(85, 86);
-            this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox3.TabIndex = 22;
-            this.gunaCirclePictureBox3.TabStop = false;
-            this.gunaCirclePictureBox3.UseTransfarantBackground = false;
-            // 
-            // gunaTransfarantPictureBox4
-            // 
-            this.gunaTransfarantPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox4.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox4.Image = global::CapaPresentacion.Properties.Resources.team_64;
-            this.gunaTransfarantPictureBox4.Location = new System.Drawing.Point(39, 19);
-            this.gunaTransfarantPictureBox4.Name = "gunaTransfarantPictureBox4";
-            this.gunaTransfarantPictureBox4.Size = new System.Drawing.Size(63, 63);
-            this.gunaTransfarantPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaTransfarantPictureBox4.TabIndex = 25;
-            this.gunaTransfarantPictureBox4.TabStop = false;
-            // 
-            // gunaCirclePictureBox4
-            // 
-            this.gunaCirclePictureBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(194)))));
-            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(29, 7);
-            this.gunaCirclePictureBox4.Name = "gunaCirclePictureBox4";
-            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(85, 86);
-            this.gunaCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox4.TabIndex = 28;
-            this.gunaCirclePictureBox4.TabStop = false;
-            this.gunaCirclePictureBox4.UseTransfarantBackground = false;
-            // 
             // gunaTransfarantPictureBox1
             // 
             this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -626,28 +649,6 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::CapaPresentacion.Properties.Resources.sammy_man_studying_analytics_on_laptop_1;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1299, 4);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(192, 184);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 1;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::CapaPresentacion.Properties.Resources.Book_Icon;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(185, 184);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -668,27 +669,27 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaElipsePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.gunaElipsePanel4.ResumeLayout(false);
             this.gunaElipsePanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).EndInit();
             this.gunaElipsePanel5.ResumeLayout(false);
             this.gunaElipsePanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
             this.gunaElipsePanel7.ResumeLayout(false);
             this.gunaElipsePanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.gunaElipsePanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).EndInit();
             this.gunaElipsePanel10.ResumeLayout(false);
             this.gunaElipsePanel3.ResumeLayout(false);
             this.gunaElipsePanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartPrestamo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

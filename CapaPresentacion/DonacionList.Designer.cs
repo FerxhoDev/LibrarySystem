@@ -38,6 +38,7 @@
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Donante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.admin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.gTxtDonante = new Guna.UI2.WinForms.Guna2TextBox();
             this.gTxtIndice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,8 +47,8 @@
             this.gBtnDetalle = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.gTxtFecha = new Guna.UI2.WinForms.Guna2TextBox();
             this.gBtnLimpiar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gTxtFecha = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,8 @@
             this.btnSeleccionar,
             this.Id,
             this.Fecha,
-            this.Donante});
+            this.Donante,
+            this.admin});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -87,7 +89,8 @@
             this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(30, 83);
+            this.gDgvData.Location = new System.Drawing.Point(20, 54);
+            this.gDgvData.Margin = new System.Windows.Forms.Padding(2);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
@@ -105,7 +108,7 @@
             this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(779, 500);
+            this.gDgvData.Size = new System.Drawing.Size(519, 325);
             this.gDgvData.TabIndex = 62;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -129,6 +132,7 @@
             this.gDgvData.ThemeStyle.RowsStyle.Height = 28;
             this.gDgvData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             // 
             // btnSeleccionar
             // 
@@ -140,6 +144,7 @@
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "idDonacion";
             this.Id.FillWeight = 79.54546F;
             this.Id.HeaderText = "Id";
             this.Id.MinimumWidth = 30;
@@ -149,6 +154,7 @@
             // 
             // Fecha
             // 
+            this.Fecha.DataPropertyName = "fecha";
             this.Fecha.FillWeight = 355.9276F;
             this.Fecha.HeaderText = "Fecha";
             this.Fecha.MinimumWidth = 150;
@@ -157,20 +163,29 @@
             // 
             // Donante
             // 
+            this.Donante.DataPropertyName = "nombre";
             this.Donante.FillWeight = 10.32773F;
             this.Donante.HeaderText = "Donado por:";
             this.Donante.MinimumWidth = 300;
             this.Donante.Name = "Donante";
             this.Donante.ReadOnly = true;
             // 
+            // admin
+            // 
+            this.admin.DataPropertyName = "admin";
+            this.admin.HeaderText = "Administrador";
+            this.admin.Name = "admin";
+            this.admin.ReadOnly = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(41, 35);
+            this.label1.Location = new System.Drawing.Point(27, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 30);
+            this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 102;
             this.label1.Text = "Donaciones";
             // 
@@ -183,18 +198,18 @@
             this.gTxtDonante.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.gTxtDonante.DisabledState.Parent = this.gTxtDonante;
             this.gTxtDonante.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gTxtDonante.Enabled = false;
             this.gTxtDonante.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtDonante.FocusedState.Parent = this.gTxtDonante;
             this.gTxtDonante.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtDonante.HoverState.Parent = this.gTxtDonante;
-            this.gTxtDonante.Location = new System.Drawing.Point(993, 269);
-            this.gTxtDonante.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtDonante.Location = new System.Drawing.Point(662, 175);
             this.gTxtDonante.Name = "gTxtDonante";
             this.gTxtDonante.PasswordChar = '\0';
             this.gTxtDonante.PlaceholderText = "";
             this.gTxtDonante.SelectedText = "";
             this.gTxtDonante.ShadowDecoration.Parent = this.gTxtDonante;
-            this.gTxtDonante.Size = new System.Drawing.Size(300, 39);
+            this.gTxtDonante.Size = new System.Drawing.Size(200, 25);
             this.gTxtDonante.TabIndex = 105;
             // 
             // gTxtIndice
@@ -210,15 +225,14 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(1262, 120);
-            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtIndice.Location = new System.Drawing.Point(841, 78);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
+            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
             this.gTxtIndice.TabIndex = 116;
             this.gTxtIndice.Visible = false;
             // 
@@ -235,15 +249,14 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1305, 120);
-            this.gTxtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtId.Location = new System.Drawing.Point(870, 78);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(35, 32);
+            this.gTxtId.Size = new System.Drawing.Size(23, 21);
             this.gTxtId.TabIndex = 115;
             this.gTxtId.Visible = false;
             // 
@@ -252,9 +265,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1058, 13);
+            this.label7.Location = new System.Drawing.Point(705, 8);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 45);
+            this.label7.Size = new System.Drawing.Size(198, 30);
             this.label7.TabIndex = 111;
             this.label7.Text = "Detalle Donación";
             // 
@@ -268,10 +282,11 @@
             this.gBtnDetalle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnDetalle.ForeColor = System.Drawing.Color.White;
             this.gBtnDetalle.HoverState.Parent = this.gBtnDetalle;
-            this.gBtnDetalle.Location = new System.Drawing.Point(1055, 407);
+            this.gBtnDetalle.Location = new System.Drawing.Point(703, 265);
+            this.gBtnDetalle.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnDetalle.Name = "gBtnDetalle";
             this.gBtnDetalle.ShadowDecoration.Parent = this.gBtnDetalle;
-            this.gBtnDetalle.Size = new System.Drawing.Size(204, 45);
+            this.gBtnDetalle.Size = new System.Drawing.Size(136, 29);
             this.gBtnDetalle.TabIndex = 109;
             this.gBtnDetalle.Text = "Detalle";
             this.gBtnDetalle.Click += new System.EventHandler(this.gBtnDetalle_Click);
@@ -281,9 +296,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(985, 239);
+            this.label3.Location = new System.Drawing.Point(657, 155);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 25);
+            this.label3.Size = new System.Drawing.Size(80, 15);
             this.label3.TabIndex = 106;
             this.label3.Text = "Donacion Por";
             // 
@@ -292,34 +308,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(988, 165);
+            this.label2.Location = new System.Drawing.Point(659, 107);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 25);
+            this.label2.Size = new System.Drawing.Size(38, 15);
             this.label2.TabIndex = 104;
             this.label2.Text = "Fecha";
-            // 
-            // gTxtFecha
-            // 
-            this.gTxtFecha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gTxtFecha.DefaultText = "";
-            this.gTxtFecha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gTxtFecha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gTxtFecha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gTxtFecha.DisabledState.Parent = this.gTxtFecha;
-            this.gTxtFecha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gTxtFecha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gTxtFecha.FocusedState.Parent = this.gTxtFecha;
-            this.gTxtFecha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gTxtFecha.HoverState.Parent = this.gTxtFecha;
-            this.gTxtFecha.Location = new System.Drawing.Point(993, 195);
-            this.gTxtFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gTxtFecha.Name = "gTxtFecha";
-            this.gTxtFecha.PasswordChar = '\0';
-            this.gTxtFecha.PlaceholderText = "";
-            this.gTxtFecha.SelectedText = "";
-            this.gTxtFecha.ShadowDecoration.Parent = this.gTxtFecha;
-            this.gTxtFecha.Size = new System.Drawing.Size(300, 39);
-            this.gTxtFecha.TabIndex = 103;
             // 
             // gBtnLimpiar
             // 
@@ -331,19 +325,44 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(1055, 470);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(703, 306);
+            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
             this.gBtnLimpiar.TabIndex = 114;
             this.gBtnLimpiar.Text = "Limpiar";
+            this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
+            // 
+            // gTxtFecha
+            // 
+            this.gTxtFecha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtFecha.DefaultText = "";
+            this.gTxtFecha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gTxtFecha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gTxtFecha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gTxtFecha.DisabledState.Parent = this.gTxtFecha;
+            this.gTxtFecha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gTxtFecha.Enabled = false;
+            this.gTxtFecha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gTxtFecha.FocusedState.Parent = this.gTxtFecha;
+            this.gTxtFecha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gTxtFecha.HoverState.Parent = this.gTxtFecha;
+            this.gTxtFecha.Location = new System.Drawing.Point(662, 127);
+            this.gTxtFecha.Name = "gTxtFecha";
+            this.gTxtFecha.PasswordChar = '\0';
+            this.gTxtFecha.PlaceholderText = "";
+            this.gTxtFecha.SelectedText = "";
+            this.gTxtFecha.ShadowDecoration.Parent = this.gTxtFecha;
+            this.gTxtFecha.Size = new System.Drawing.Size(200, 25);
+            this.gTxtFecha.TabIndex = 103;
             // 
             // DonacionList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1444, 705);
+            this.ClientSize = new System.Drawing.Size(963, 458);
             this.Controls.Add(this.gTxtFecha);
             this.Controls.Add(this.gTxtDonante);
             this.Controls.Add(this.gTxtIndice);
@@ -356,6 +375,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gDgvData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DonacionList";
             this.Text = "DonacionList";
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).EndInit();
@@ -375,11 +395,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton gBtnDetalle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2GradientButton gBtnLimpiar;
         private Guna.UI2.WinForms.Guna2TextBox gTxtFecha;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Donante;
-        private Guna.UI2.WinForms.Guna2GradientButton gBtnLimpiar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn admin;
     }
 }

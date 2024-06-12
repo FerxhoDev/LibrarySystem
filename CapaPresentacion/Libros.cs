@@ -24,6 +24,7 @@ namespace CapaPresentacion
 
             var categorias = db.sp_selectAllCatLibro().ToList();
             var libros = db.sp_selectAllLibros().ToList();
+            gDgvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             actualizarGrid();
 

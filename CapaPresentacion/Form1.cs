@@ -54,8 +54,9 @@ namespace CapaPresentacion
                         }
                         else
                         {
-                            string nombre = ListaUsuarios[0].nombre + ListaUsuarios[0].apellido;
-                            Initial initial = new Initial(nombre);
+                            string nombre = ListaUsuarios[0].nombre +" "+ ListaUsuarios[0].apellido;
+                            int id = ListaUsuarios[0].idUsuario_Admin;
+                            Initial initial = new Initial(nombre, id);
                             initial.Show();
                             this.Hide();
 

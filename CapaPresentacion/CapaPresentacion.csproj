@@ -124,16 +124,31 @@
     <Compile Include="BaseDatos\sp_SelectAllAldeas_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllCategoriaswAldeas_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllCatLibro_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllCentroEduca_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDetalleDonacionbyIDwithBooks_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllDetallePrestamo_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllDirecciones_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDonacionByID_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDonacioneswithDonanteAdminnoID_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDonacioneswithDonanteAdmin_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllDonacion_Result.cs">
@@ -160,10 +175,19 @@
     <Compile Include="BaseDatos\sp_selectAllSectores_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllUsuariosPrestamistasJoints_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllUsuarios_Admin_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllUsuarios_Prestamistas_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_SelectDonatorsByName_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_SelectLibrosByCodLibros_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectUsuarioAdminbyUsuario_Result.cs">

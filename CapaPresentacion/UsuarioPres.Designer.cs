@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gTxtApellido = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gTxtIndice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,27 +54,35 @@
             this.gCmbBusqueda = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdCentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CentoEducativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaDeNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdResponsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gCmbDireccion = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gCmbAldea = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gCmbCentroEd = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gCmbGenero = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gDtpNacimiento = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gCmbResponsable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gCmbSector = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gtxtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_centro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CentoEducativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.generoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_aldea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aldea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_sector = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sector = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gCmbBusquedaChild = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,14 +99,13 @@
             this.gTxtApellido.FocusedState.Parent = this.gTxtApellido;
             this.gTxtApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtApellido.HoverState.Parent = this.gTxtApellido;
-            this.gTxtApellido.Location = new System.Drawing.Point(1200, 199);
-            this.gTxtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtApellido.Location = new System.Drawing.Point(800, 129);
             this.gTxtApellido.Name = "gTxtApellido";
             this.gTxtApellido.PasswordChar = '\0';
             this.gTxtApellido.PlaceholderText = "";
             this.gTxtApellido.SelectedText = "";
             this.gTxtApellido.ShadowDecoration.Parent = this.gTxtApellido;
-            this.gTxtApellido.Size = new System.Drawing.Size(300, 39);
+            this.gTxtApellido.Size = new System.Drawing.Size(200, 25);
             this.gTxtApellido.TabIndex = 69;
             // 
             // label1
@@ -106,9 +113,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(49, 47);
+            this.label1.Location = new System.Drawing.Point(33, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 45);
+            this.label1.Size = new System.Drawing.Size(102, 30);
             this.label1.TabIndex = 85;
             this.label1.Text = "Usuarios";
             // 
@@ -125,15 +133,14 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(1466, 28);
-            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtIndice.Location = new System.Drawing.Point(977, 18);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
+            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
             this.gTxtIndice.TabIndex = 84;
             this.gTxtIndice.Visible = false;
             // 
@@ -150,15 +157,14 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1509, 28);
-            this.gTxtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtId.Location = new System.Drawing.Point(1006, 18);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(35, 32);
+            this.gTxtId.Size = new System.Drawing.Size(23, 21);
             this.gTxtId.TabIndex = 83;
             this.gTxtId.Visible = false;
             // 
@@ -172,21 +178,24 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(1266, 802);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(844, 521);
+            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
             this.gBtnLimpiar.TabIndex = 82;
             this.gBtnLimpiar.Text = "Limpiar";
+            this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1193, 594);
+            this.label11.Location = new System.Drawing.Point(795, 386);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 25);
+            this.label11.Size = new System.Drawing.Size(45, 15);
             this.label11.TabIndex = 81;
             this.label11.Text = "Genero";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -196,9 +205,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(1196, 521);
+            this.label10.Location = new System.Drawing.Point(797, 339);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(182, 25);
+            this.label10.Size = new System.Drawing.Size(117, 15);
             this.label10.TabIndex = 79;
             this.label10.Text = "Fecha de nacimiento";
             // 
@@ -207,9 +217,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1189, 28);
+            this.label7.Location = new System.Drawing.Point(793, 18);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(261, 45);
+            this.label7.Size = new System.Drawing.Size(179, 30);
             this.label7.TabIndex = 77;
             this.label7.Text = "Detalle Usuario";
             // 
@@ -223,10 +234,11 @@
             this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
             this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(1266, 853);
+            this.gBtnEliminar.Location = new System.Drawing.Point(844, 554);
+            this.gBtnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnEliminar.Name = "gBtnEliminar";
             this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnEliminar.Size = new System.Drawing.Size(136, 29);
             this.gBtnEliminar.TabIndex = 76;
             this.gBtnEliminar.Text = "Eliminar";
             // 
@@ -240,21 +252,24 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(1266, 751);
+            this.gBtnGuardar.Location = new System.Drawing.Point(844, 488);
+            this.gBtnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnGuardar.Size = new System.Drawing.Size(136, 29);
             this.gBtnGuardar.TabIndex = 75;
             this.gBtnGuardar.Text = "Guardar";
+            this.gBtnGuardar.Click += new System.EventHandler(this.gBtnGuardar_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1196, 454);
+            this.label5.Location = new System.Drawing.Point(797, 295);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 25);
+            this.label5.Size = new System.Drawing.Size(97, 15);
             this.label5.TabIndex = 74;
             this.label5.Text = "Centro Educativo";
             // 
@@ -263,9 +278,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(1195, 241);
+            this.label4.Location = new System.Drawing.Point(797, 157);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 25);
+            this.label4.Size = new System.Drawing.Size(37, 15);
             this.label4.TabIndex = 72;
             this.label4.Text = "Aldea";
             // 
@@ -274,9 +290,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1192, 169);
+            this.label3.Location = new System.Drawing.Point(795, 110);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 25);
+            this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 70;
             this.label3.Text = "Apellido";
             // 
@@ -285,9 +302,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1195, 95);
+            this.label2.Location = new System.Drawing.Point(797, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 68;
             this.label2.Text = "Nombre";
             // 
@@ -304,14 +322,13 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(1200, 125);
-            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtNombre.Location = new System.Drawing.Point(800, 81);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.PlaceholderText = "";
             this.gTxtNombre.SelectedText = "";
             this.gTxtNombre.ShadowDecoration.Parent = this.gTxtNombre;
-            this.gTxtNombre.Size = new System.Drawing.Size(300, 39);
+            this.gTxtNombre.Size = new System.Drawing.Size(200, 25);
             this.gTxtNombre.TabIndex = 67;
             // 
             // gBtnLimpiarBusc
@@ -324,10 +341,11 @@
             this.gBtnLimpiarBusc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiarBusc.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiarBusc.HoverState.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(939, 811);
+            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(626, 527);
+            this.gBtnLimpiarBusc.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnLimpiarBusc.Name = "gBtnLimpiarBusc";
             this.gBtnLimpiarBusc.ShadowDecoration.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(112, 45);
+            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(75, 29);
             this.gBtnLimpiarBusc.TabIndex = 66;
             this.gBtnLimpiarBusc.Text = "Limpiar";
             // 
@@ -341,12 +359,14 @@
             this.gBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnBuscar.ForeColor = System.Drawing.Color.White;
             this.gBtnBuscar.HoverState.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Location = new System.Drawing.Point(794, 811);
+            this.gBtnBuscar.Location = new System.Drawing.Point(529, 527);
+            this.gBtnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.gBtnBuscar.Name = "gBtnBuscar";
             this.gBtnBuscar.ShadowDecoration.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Size = new System.Drawing.Size(130, 45);
+            this.gBtnBuscar.Size = new System.Drawing.Size(87, 29);
             this.gBtnBuscar.TabIndex = 65;
             this.gBtnBuscar.Text = "Buscar";
+            this.gBtnBuscar.Click += new System.EventHandler(this.gBtnBuscar_Click);
             // 
             // gTxtBusqueda
             // 
@@ -361,14 +381,13 @@
             this.gTxtBusqueda.FocusedState.Parent = this.gTxtBusqueda;
             this.gTxtBusqueda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtBusqueda.HoverState.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Location = new System.Drawing.Point(484, 811);
-            this.gTxtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtBusqueda.Location = new System.Drawing.Point(323, 527);
             this.gTxtBusqueda.Name = "gTxtBusqueda";
             this.gTxtBusqueda.PasswordChar = '\0';
             this.gTxtBusqueda.PlaceholderText = "";
             this.gTxtBusqueda.SelectedText = "";
             this.gTxtBusqueda.ShadowDecoration.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Size = new System.Drawing.Size(273, 39);
+            this.gTxtBusqueda.Size = new System.Drawing.Size(182, 25);
             this.gTxtBusqueda.TabIndex = 64;
             // 
             // gCmbBusqueda
@@ -386,20 +405,23 @@
             this.gCmbBusqueda.HoverState.Parent = this.gCmbBusqueda;
             this.gCmbBusqueda.ItemHeight = 30;
             this.gCmbBusqueda.ItemsAppearance.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Location = new System.Drawing.Point(247, 814);
+            this.gCmbBusqueda.Location = new System.Drawing.Point(165, 529);
+            this.gCmbBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.gCmbBusqueda.Name = "gCmbBusqueda";
             this.gCmbBusqueda.ShadowDecoration.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Size = new System.Drawing.Size(226, 36);
+            this.gCmbBusqueda.Size = new System.Drawing.Size(152, 36);
             this.gCmbBusqueda.TabIndex = 63;
+            this.gCmbBusqueda.SelectedIndexChanged += new System.EventHandler(this.gCmbBusqueda_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(96, 815);
+            this.label12.Location = new System.Drawing.Point(64, 530);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 32);
+            this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 62;
             this.label12.Text = "Buscar por:";
             // 
@@ -407,64 +429,72 @@
             // 
             this.gDgvData.AllowUserToAddRows = false;
             this.gDgvData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gDgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDgvData.BackgroundColor = System.Drawing.Color.Silver;
             this.gDgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gDgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
-            this.Id,
-            this.Nombre,
+            this.Idusuario,
+            this.NombreUsuario,
             this.Apellido,
-            this.idDireccion,
-            this.Direccion,
-            this.IdCentro,
+            this.FechaNacimiento,
+            this.id_centro,
             this.CentoEducativo,
-            this.FechaDeNacimiento,
-            this.IdResponsable,
-            this.Responsable});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
+            this.genero,
+            this.generoNombre,
+            this.id_aldea,
+            this.Aldea,
+            this.id_sector,
+            this.Sector,
+            this.id_direccion,
+            this.Descripcion,
+            this.id_responsable,
+            this.Responsable,
+            this.telefono});
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle13;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(35, 121);
+            this.gDgvData.Location = new System.Drawing.Point(23, 79);
+            this.gDgvData.Margin = new System.Windows.Forms.Padding(2);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.gDgvData.RowHeadersVisible = false;
             this.gDgvData.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(1106, 634);
+            this.gDgvData.Size = new System.Drawing.Size(737, 412);
             this.gDgvData.TabIndex = 61;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -488,113 +518,31 @@
             this.gDgvData.ThemeStyle.RowsStyle.Height = 28;
             this.gDgvData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
+            this.gDgvData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gDgvData_DataBindingComplete);
             // 
-            // btnSeleccionar
+            // gCmbAldea
             // 
-            this.btnSeleccionar.FillWeight = 0.02217987F;
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 50;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            // 
-            // Id
-            // 
-            this.Id.FillWeight = 79.54546F;
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 30;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // Nombre
-            // 
-            this.Nombre.FillWeight = 355.9276F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 150;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Apellido
-            // 
-            this.Apellido.FillWeight = 10.32773F;
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.MinimumWidth = 150;
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
-            // 
-            // idDireccion
-            // 
-            this.idDireccion.HeaderText = "IdDireccion";
-            this.idDireccion.MinimumWidth = 8;
-            this.idDireccion.Name = "idDireccion";
-            this.idDireccion.ReadOnly = true;
-            this.idDireccion.Visible = false;
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.MinimumWidth = 200;
-            this.Direccion.Name = "Direccion";
-            this.Direccion.ReadOnly = true;
-            // 
-            // IdCentro
-            // 
-            this.IdCentro.HeaderText = "IdCento";
-            this.IdCentro.MinimumWidth = 8;
-            this.IdCentro.Name = "IdCentro";
-            this.IdCentro.ReadOnly = true;
-            this.IdCentro.Visible = false;
-            // 
-            // CentoEducativo
-            // 
-            this.CentoEducativo.HeaderText = "Centro Educativo";
-            this.CentoEducativo.MinimumWidth = 300;
-            this.CentoEducativo.Name = "CentoEducativo";
-            this.CentoEducativo.ReadOnly = true;
-            // 
-            // FechaDeNacimiento
-            // 
-            this.FechaDeNacimiento.HeaderText = "Nacimiento";
-            this.FechaDeNacimiento.MinimumWidth = 200;
-            this.FechaDeNacimiento.Name = "FechaDeNacimiento";
-            this.FechaDeNacimiento.ReadOnly = true;
-            // 
-            // IdResponsable
-            // 
-            this.IdResponsable.HeaderText = "IdResponsable";
-            this.IdResponsable.MinimumWidth = 8;
-            this.IdResponsable.Name = "IdResponsable";
-            this.IdResponsable.ReadOnly = true;
-            this.IdResponsable.Visible = false;
-            // 
-            // Responsable
-            // 
-            this.Responsable.HeaderText = "Responsable";
-            this.Responsable.MinimumWidth = 8;
-            this.Responsable.Name = "Responsable";
-            this.Responsable.ReadOnly = true;
-            this.Responsable.Visible = false;
-            // 
-            // gCmbDireccion
-            // 
-            this.gCmbDireccion.Animated = true;
-            this.gCmbDireccion.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbDireccion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbDireccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbDireccion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbDireccion.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbDireccion.FocusedState.Parent = this.gCmbDireccion;
-            this.gCmbDireccion.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbDireccion.FormattingEnabled = true;
-            this.gCmbDireccion.HoverState.Parent = this.gCmbDireccion;
-            this.gCmbDireccion.ItemHeight = 30;
-            this.gCmbDireccion.ItemsAppearance.Parent = this.gCmbDireccion;
-            this.gCmbDireccion.Location = new System.Drawing.Point(1200, 269);
-            this.gCmbDireccion.Name = "gCmbDireccion";
-            this.gCmbDireccion.ShadowDecoration.Parent = this.gCmbDireccion;
-            this.gCmbDireccion.Size = new System.Drawing.Size(300, 36);
-            this.gCmbDireccion.TabIndex = 86;
+            this.gCmbAldea.Animated = true;
+            this.gCmbAldea.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbAldea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbAldea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbAldea.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbAldea.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbAldea.FocusedState.Parent = this.gCmbAldea;
+            this.gCmbAldea.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbAldea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbAldea.FormattingEnabled = true;
+            this.gCmbAldea.HoverState.Parent = this.gCmbAldea;
+            this.gCmbAldea.ItemHeight = 30;
+            this.gCmbAldea.ItemsAppearance.Parent = this.gCmbAldea;
+            this.gCmbAldea.Location = new System.Drawing.Point(800, 175);
+            this.gCmbAldea.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbAldea.Name = "gCmbAldea";
+            this.gCmbAldea.ShadowDecoration.Parent = this.gCmbAldea;
+            this.gCmbAldea.Size = new System.Drawing.Size(201, 36);
+            this.gCmbAldea.TabIndex = 86;
+            this.gCmbAldea.SelectedIndexChanged += new System.EventHandler(this.gCmbAldea_SelectedIndexChanged);
             // 
             // gCmbCentroEd
             // 
@@ -611,10 +559,11 @@
             this.gCmbCentroEd.HoverState.Parent = this.gCmbCentroEd;
             this.gCmbCentroEd.ItemHeight = 30;
             this.gCmbCentroEd.ItemsAppearance.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.Location = new System.Drawing.Point(1201, 482);
+            this.gCmbCentroEd.Location = new System.Drawing.Point(801, 313);
+            this.gCmbCentroEd.Margin = new System.Windows.Forms.Padding(2);
             this.gCmbCentroEd.Name = "gCmbCentroEd";
             this.gCmbCentroEd.ShadowDecoration.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.Size = new System.Drawing.Size(303, 36);
+            this.gCmbCentroEd.Size = new System.Drawing.Size(203, 36);
             this.gCmbCentroEd.TabIndex = 87;
             // 
             // gCmbGenero
@@ -632,10 +581,11 @@
             this.gCmbGenero.HoverState.Parent = this.gCmbGenero;
             this.gCmbGenero.ItemHeight = 30;
             this.gCmbGenero.ItemsAppearance.Parent = this.gCmbGenero;
-            this.gCmbGenero.Location = new System.Drawing.Point(1198, 622);
+            this.gCmbGenero.Location = new System.Drawing.Point(799, 404);
+            this.gCmbGenero.Margin = new System.Windows.Forms.Padding(2);
             this.gCmbGenero.Name = "gCmbGenero";
             this.gCmbGenero.ShadowDecoration.Parent = this.gCmbGenero;
-            this.gCmbGenero.Size = new System.Drawing.Size(303, 36);
+            this.gCmbGenero.Size = new System.Drawing.Size(203, 36);
             this.gCmbGenero.TabIndex = 88;
             // 
             // gDtpNacimiento
@@ -647,7 +597,8 @@
             this.gDtpNacimiento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gDtpNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gDtpNacimiento.ForeColor = System.Drawing.Color.Black;
-            this.gDtpNacimiento.Location = new System.Drawing.Point(1201, 549);
+            this.gDtpNacimiento.Location = new System.Drawing.Point(801, 357);
+            this.gDtpNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.gDtpNacimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gDtpNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gDtpNacimiento.Name = "gDtpNacimiento";
@@ -655,9 +606,9 @@
             this.gDtpNacimiento.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gDtpNacimiento.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gDtpNacimiento.OnPressedColor = System.Drawing.Color.Black;
-            this.gDtpNacimiento.Size = new System.Drawing.Size(300, 30);
+            this.gDtpNacimiento.Size = new System.Drawing.Size(200, 20);
             this.gDtpNacimiento.TabIndex = 89;
-            this.gDtpNacimiento.Text = "miércoles, 15 de mayo de 2024";
+            this.gDtpNacimiento.Text = "Wednesday, May 15, 2024";
             this.gDtpNacimiento.Value = new System.DateTime(2024, 5, 15, 13, 12, 42, 121);
             // 
             // gCmbResponsable
@@ -675,10 +626,11 @@
             this.gCmbResponsable.HoverState.Parent = this.gCmbResponsable;
             this.gCmbResponsable.ItemHeight = 30;
             this.gCmbResponsable.ItemsAppearance.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.Location = new System.Drawing.Point(1198, 698);
+            this.gCmbResponsable.Location = new System.Drawing.Point(799, 454);
+            this.gCmbResponsable.Margin = new System.Windows.Forms.Padding(2);
             this.gCmbResponsable.Name = "gCmbResponsable";
             this.gCmbResponsable.ShadowDecoration.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.Size = new System.Drawing.Size(303, 36);
+            this.gCmbResponsable.Size = new System.Drawing.Size(203, 36);
             this.gCmbResponsable.TabIndex = 91;
             // 
             // label6
@@ -686,94 +638,266 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(1193, 670);
+            this.label6.Location = new System.Drawing.Point(795, 435);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 25);
+            this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 90;
             this.label6.Text = "Responsable";
             // 
-            // guna2ComboBox1
+            // gCmbSector
             // 
-            this.guna2ComboBox1.Animated = true;
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1200, 338);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(300, 36);
-            this.guna2ComboBox1.TabIndex = 93;
+            this.gCmbSector.Animated = true;
+            this.gCmbSector.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbSector.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbSector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbSector.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbSector.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbSector.FocusedState.Parent = this.gCmbSector;
+            this.gCmbSector.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbSector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbSector.FormattingEnabled = true;
+            this.gCmbSector.HoverState.Parent = this.gCmbSector;
+            this.gCmbSector.ItemHeight = 30;
+            this.gCmbSector.ItemsAppearance.Parent = this.gCmbSector;
+            this.gCmbSector.Location = new System.Drawing.Point(800, 220);
+            this.gCmbSector.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbSector.Name = "gCmbSector";
+            this.gCmbSector.ShadowDecoration.Parent = this.gCmbSector;
+            this.gCmbSector.Size = new System.Drawing.Size(201, 36);
+            this.gCmbSector.TabIndex = 93;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(1195, 310);
+            this.label8.Location = new System.Drawing.Point(797, 202);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 25);
+            this.label8.Size = new System.Drawing.Size(41, 15);
             this.label8.TabIndex = 92;
             this.label8.Text = "Sector";
             // 
-            // guna2TextBox1
+            // gtxtDireccion
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(1201, 410);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(300, 39);
-            this.guna2TextBox1.TabIndex = 94;
+            this.gtxtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtDireccion.DefaultText = "";
+            this.gtxtDireccion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gtxtDireccion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gtxtDireccion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gtxtDireccion.DisabledState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gtxtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gtxtDireccion.FocusedState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gtxtDireccion.HoverState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.Location = new System.Drawing.Point(801, 266);
+            this.gtxtDireccion.Name = "gtxtDireccion";
+            this.gtxtDireccion.PasswordChar = '\0';
+            this.gtxtDireccion.PlaceholderText = "";
+            this.gtxtDireccion.SelectedText = "";
+            this.gtxtDireccion.ShadowDecoration.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.Size = new System.Drawing.Size(200, 25);
+            this.gtxtDireccion.TabIndex = 94;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(1193, 380);
+            this.label9.Location = new System.Drawing.Point(795, 247);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(194, 25);
+            this.label9.Size = new System.Drawing.Size(124, 15);
             this.label9.TabIndex = 95;
             this.label9.Text = "Direccion / Referencia";
             // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.FillWeight = 0.02217987F;
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 50;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            // 
+            // Idusuario
+            // 
+            this.Idusuario.DataPropertyName = "idUsuario";
+            this.Idusuario.FillWeight = 79.54546F;
+            this.Idusuario.HeaderText = "Id";
+            this.Idusuario.MinimumWidth = 30;
+            this.Idusuario.Name = "Idusuario";
+            this.Idusuario.ReadOnly = true;
+            this.Idusuario.Visible = false;
+            // 
+            // NombreUsuario
+            // 
+            this.NombreUsuario.DataPropertyName = "NombreUsuario";
+            this.NombreUsuario.FillWeight = 355.9276F;
+            this.NombreUsuario.HeaderText = "Nombre";
+            this.NombreUsuario.MinimumWidth = 150;
+            this.NombreUsuario.Name = "NombreUsuario";
+            this.NombreUsuario.ReadOnly = true;
+            // 
+            // Apellido
+            // 
+            this.Apellido.DataPropertyName = "Apellido";
+            this.Apellido.FillWeight = 10.32773F;
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.MinimumWidth = 150;
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.DataPropertyName = "fechaNacimiento";
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            this.FechaNacimiento.ReadOnly = true;
+            // 
+            // id_centro
+            // 
+            this.id_centro.DataPropertyName = "idCentroEducativo";
+            this.id_centro.HeaderText = "IdCento";
+            this.id_centro.MinimumWidth = 8;
+            this.id_centro.Name = "id_centro";
+            this.id_centro.ReadOnly = true;
+            this.id_centro.Visible = false;
+            // 
+            // CentoEducativo
+            // 
+            this.CentoEducativo.DataPropertyName = "nombreCentroEducativo";
+            this.CentoEducativo.HeaderText = "Centro Educativo";
+            this.CentoEducativo.MinimumWidth = 300;
+            this.CentoEducativo.Name = "CentoEducativo";
+            this.CentoEducativo.ReadOnly = true;
+            // 
+            // genero
+            // 
+            this.genero.DataPropertyName = "genero";
+            this.genero.HeaderText = "Genero";
+            this.genero.Name = "genero";
+            this.genero.ReadOnly = true;
+            this.genero.Visible = false;
+            // 
+            // generoNombre
+            // 
+            this.generoNombre.HeaderText = "Genero";
+            this.generoNombre.Name = "generoNombre";
+            this.generoNombre.ReadOnly = true;
+            // 
+            // id_aldea
+            // 
+            this.id_aldea.DataPropertyName = "idAldea";
+            this.id_aldea.HeaderText = "idAldea";
+            this.id_aldea.Name = "id_aldea";
+            this.id_aldea.ReadOnly = true;
+            this.id_aldea.Visible = false;
+            // 
+            // Aldea
+            // 
+            this.Aldea.DataPropertyName = "NombreAldea";
+            this.Aldea.HeaderText = "Aldea";
+            this.Aldea.Name = "Aldea";
+            this.Aldea.ReadOnly = true;
+            // 
+            // id_sector
+            // 
+            this.id_sector.DataPropertyName = "idSector";
+            this.id_sector.HeaderText = "idSector";
+            this.id_sector.Name = "id_sector";
+            this.id_sector.ReadOnly = true;
+            this.id_sector.Visible = false;
+            // 
+            // Sector
+            // 
+            this.Sector.DataPropertyName = "NombreSector";
+            this.Sector.HeaderText = "Sector";
+            this.Sector.Name = "Sector";
+            this.Sector.ReadOnly = true;
+            // 
+            // id_direccion
+            // 
+            this.id_direccion.DataPropertyName = "idDireccion";
+            this.id_direccion.HeaderText = "IdDireccion";
+            this.id_direccion.MinimumWidth = 8;
+            this.id_direccion.Name = "id_direccion";
+            this.id_direccion.ReadOnly = true;
+            this.id_direccion.Visible = false;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "descripcion";
+            this.Descripcion.HeaderText = "Direccion";
+            this.Descripcion.MinimumWidth = 200;
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // id_responsable
+            // 
+            this.id_responsable.DataPropertyName = "idResponsable";
+            this.id_responsable.HeaderText = "IdResponsable";
+            this.id_responsable.MinimumWidth = 8;
+            this.id_responsable.Name = "id_responsable";
+            this.id_responsable.ReadOnly = true;
+            this.id_responsable.Visible = false;
+            // 
+            // Responsable
+            // 
+            this.Responsable.DataPropertyName = "nombreResponsable";
+            this.Responsable.HeaderText = "Responsable";
+            this.Responsable.MinimumWidth = 8;
+            this.Responsable.Name = "Responsable";
+            this.Responsable.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.DataPropertyName = "telefonoResponsable";
+            this.telefono.HeaderText = "Telefono Responsable";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // gCmbBusquedaChild
+            // 
+            this.gCmbBusquedaChild.Animated = true;
+            this.gCmbBusquedaChild.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbBusquedaChild.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbBusquedaChild.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbBusquedaChild.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbBusquedaChild.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbBusquedaChild.FocusedState.Parent = this.gCmbBusquedaChild;
+            this.gCmbBusquedaChild.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbBusquedaChild.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbBusquedaChild.FormattingEnabled = true;
+            this.gCmbBusquedaChild.HoverState.Parent = this.gCmbBusquedaChild;
+            this.gCmbBusquedaChild.ItemHeight = 30;
+            this.gCmbBusquedaChild.ItemsAppearance.Parent = this.gCmbBusquedaChild;
+            this.gCmbBusquedaChild.Location = new System.Drawing.Point(323, 529);
+            this.gCmbBusquedaChild.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbBusquedaChild.Name = "gCmbBusquedaChild";
+            this.gCmbBusquedaChild.ShadowDecoration.Parent = this.gCmbBusquedaChild;
+            this.gCmbBusquedaChild.Size = new System.Drawing.Size(182, 36);
+            this.gCmbBusquedaChild.TabIndex = 96;
+            this.gCmbBusquedaChild.Visible = false;
+            // 
             // UsuarioPres
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1575, 919);
-            this.Controls.Add(this.guna2TextBox1);
+            this.ClientSize = new System.Drawing.Size(1050, 597);
+            this.Controls.Add(this.gCmbBusquedaChild);
+            this.Controls.Add(this.gtxtDireccion);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.gCmbSector);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.gCmbResponsable);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.gDtpNacimiento);
             this.Controls.Add(this.gCmbGenero);
             this.Controls.Add(this.gCmbCentroEd);
-            this.Controls.Add(this.gCmbDireccion);
+            this.Controls.Add(this.gCmbAldea);
             this.Controls.Add(this.gTxtApellido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gTxtIndice);
@@ -796,6 +920,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gDgvData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UsuarioPres";
             this.Text = "UsuarioPres";
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).EndInit();
@@ -826,26 +951,34 @@
         private Guna.UI2.WinForms.Guna2ComboBox gCmbBusqueda;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2DataGridView gDgvData;
-        private Guna.UI2.WinForms.Guna2ComboBox gCmbDireccion;
+        private Guna.UI2.WinForms.Guna2ComboBox gCmbAldea;
         private Guna.UI2.WinForms.Guna2ComboBox gCmbCentroEd;
         private Guna.UI2.WinForms.Guna2ComboBox gCmbGenero;
         private Guna.UI.WinForms.GunaDateTimePicker gDtpNacimiento;
         private Guna.UI2.WinForms.Guna2ComboBox gCmbResponsable;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDireccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCentro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CentoEducativo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaDeNacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdResponsable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Responsable;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox gCmbSector;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox gtxtDireccion;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Idusuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreUsuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_centro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CentoEducativo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn generoNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_aldea;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aldea;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_sector;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sector;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_responsable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Responsable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private Guna.UI2.WinForms.Guna2ComboBox gCmbBusquedaChild;
     }
 }

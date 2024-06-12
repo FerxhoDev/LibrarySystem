@@ -21,9 +21,9 @@ namespace CapaPresentacion
 
             var AdminUsers = db.sp_selectAllUsuarios_Admin().ToList();
             gDgvData.DataSource = AdminUsers;
+            gDgvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
-            
-            
+
 
             gTxtId.Clear();
             gTxtIndice.Clear();

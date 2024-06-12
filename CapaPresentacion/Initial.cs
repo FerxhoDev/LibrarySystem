@@ -14,12 +14,14 @@ namespace CapaPresentacion
 {
     public partial class Initial : Form
     {
-        public Initial(string nombreUsuario)
+        public int Administrador_id;
+        public Initial(string nombreUsuario, int id_admin)
         {
             InitializeComponent();
             lblNombre.Text = nombreUsuario;
             string nombre1Letra = nombreUsuario.First().ToString();
             lblSingleLetterName.Text = nombre1Letra;
+            Administrador_id = id_admin;
         }
         private static Form FormularioActivo = null;
         private static Guna2Button MenuActiv = null;
@@ -111,7 +113,7 @@ namespace CapaPresentacion
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2Button)sender, new Mantenedor());
+            AbrirFormulario((Guna2Button)sender, new Mantenedor(Administrador_id));
         }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)

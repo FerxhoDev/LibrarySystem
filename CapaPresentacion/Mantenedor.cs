@@ -15,9 +15,11 @@ namespace CapaPresentacion
 {
     public partial class Mantenedor : Form
     {
-        public Mantenedor()
+        int Administrador_id;
+        public Mantenedor(int id_admin)
         {
             InitializeComponent();
+            Administrador_id = id_admin;
         }
 
         private static Form FormularioActivo = null;
@@ -57,7 +59,7 @@ namespace CapaPresentacion
 
         private void gBtnCategoria_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((Guna2GradientButton)sender, new Donaciones());
+            AbrirFormulario((Guna2GradientButton)sender, new Donaciones(Administrador_id));
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -84,7 +86,7 @@ namespace CapaPresentacion
             // Asignar el botón actual a MenuActiv
             MenuActiv = gBtnDonaciones;
 
-            Donaciones donaciones = new Donaciones();
+            Donaciones donaciones = new Donaciones(Administrador_id);
 
             if (FormularioActivo != null)
             {

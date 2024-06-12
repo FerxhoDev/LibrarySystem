@@ -845,5 +845,100 @@ namespace CapaPresentacion.BaseDatos
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectallLibrosCategorias_Result>("sp_selectallLibrosCategorias");
         }
+    
+        public virtual int sp_SeleccionarSectores()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_SeleccionarSectores");
+        }
+    
+        public virtual ObjectResult<sp_selectAllCategoriaswAldeas_Result> sp_selectAllCategoriaswAldeas()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllCategoriaswAldeas_Result>("sp_selectAllCategoriaswAldeas");
+        }
+    
+        public virtual int sp_createDireccionReturnID(Nullable<int> id_sector, string descripcion, ObjectParameter idDireccion)
+        {
+            var id_sectorParameter = id_sector.HasValue ?
+                new ObjectParameter("id_sector", id_sector) :
+                new ObjectParameter("id_sector", typeof(int));
+    
+            var descripcionParameter = descripcion != null ?
+                new ObjectParameter("descripcion", descripcion) :
+                new ObjectParameter("descripcion", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDireccionReturnID", id_sectorParameter, descripcionParameter, idDireccion);
+        }
+    
+        public virtual ObjectResult<sp_selectAllUsuariosPrestamistasJoints_Result> sp_selectAllUsuariosPrestamistasJoints()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsuariosPrestamistasJoints_Result>("sp_selectAllUsuariosPrestamistasJoints");
+        }
+    
+        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdmin_Result> sp_selectAllDonacioneswithDonanteAdmin(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdmin_Result>("sp_selectAllDonacioneswithDonanteAdmin", idParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectAllDetalleDonacionbyIDwithBooks_Result> sp_selectAllDetalleDonacionbyIDwithBooks(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDetalleDonacionbyIDwithBooks_Result>("sp_selectAllDetalleDonacionbyIDwithBooks", idParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectAllDonacionByID_Result> sp_selectAllDonacionByID(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacionByID_Result>("sp_selectAllDonacionByID", idParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdminnoID_Result> sp_selectAllDonacioneswithDonanteAdminnoID()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdminnoID_Result>("sp_selectAllDonacioneswithDonanteAdminnoID");
+        }
+    
+        public virtual ObjectResult<sp_SelectDonatorsByName_Result> sp_SelectDonatorsByName(string donador)
+        {
+            var donadorParameter = donador != null ?
+                new ObjectParameter("donador", donador) :
+                new ObjectParameter("donador", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectDonatorsByName_Result>("sp_SelectDonatorsByName", donadorParameter);
+        }
+    
+        public virtual ObjectResult<sp_SelectLibrosByCodLibros_Result> sp_SelectLibrosByCodLibros(string code)
+        {
+            var codeParameter = code != null ?
+                new ObjectParameter("code", code) :
+                new ObjectParameter("code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectLibrosByCodLibros_Result>("sp_SelectLibrosByCodLibros", codeParameter);
+        }
+    
+        public virtual int sp_createDonacionReturnID(Nullable<int> id_Donante, Nullable<int> id_Administrador, Nullable<System.DateTime> fecha, ObjectParameter idDonacion)
+        {
+            var id_DonanteParameter = id_Donante.HasValue ?
+                new ObjectParameter("id_Donante", id_Donante) :
+                new ObjectParameter("id_Donante", typeof(int));
+    
+            var id_AdministradorParameter = id_Administrador.HasValue ?
+                new ObjectParameter("id_Administrador", id_Administrador) :
+                new ObjectParameter("id_Administrador", typeof(int));
+    
+            var fechaParameter = fecha.HasValue ?
+                new ObjectParameter("fecha", fecha) :
+                new ObjectParameter("fecha", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDonacionReturnID", id_DonanteParameter, id_AdministradorParameter, fechaParameter, idDonacion);
+        }
     }
 }

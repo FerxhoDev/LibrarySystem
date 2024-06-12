@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.gTxtNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.gBtnLimpiar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gBtnEliminar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gBtnGuardar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gTxtIndice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gTxtId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,9 +53,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(83, 54);
+            this.label1.Location = new System.Drawing.Point(55, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 30);
+            this.label1.Size = new System.Drawing.Size(138, 20);
             this.label1.TabIndex = 110;
             this.label1.Text = "Centros Educativos";
             // 
@@ -72,14 +73,13 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(1124, 253);
-            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtNombre.Location = new System.Drawing.Point(749, 164);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.PlaceholderText = "";
             this.gTxtNombre.SelectedText = "";
             this.gTxtNombre.ShadowDecoration.Parent = this.gTxtNombre;
-            this.gTxtNombre.Size = new System.Drawing.Size(300, 39);
+            this.gTxtNombre.Size = new System.Drawing.Size(200, 25);
             this.gTxtNombre.TabIndex = 103;
             // 
             // gBtnLimpiar
@@ -92,12 +92,14 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(1172, 478);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(781, 311);
+            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
             this.gBtnLimpiar.TabIndex = 109;
             this.gBtnLimpiar.Text = "Limpiar";
+            this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
             // 
             // gBtnEliminar
             // 
@@ -109,67 +111,70 @@
             this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
             this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(1172, 529);
+            this.gBtnEliminar.Location = new System.Drawing.Point(781, 344);
+            this.gBtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnEliminar.Name = "gBtnEliminar";
             this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnEliminar.Size = new System.Drawing.Size(136, 29);
             this.gBtnEliminar.TabIndex = 108;
             this.gBtnEliminar.Text = "Eliminar";
+            this.gBtnEliminar.Click += new System.EventHandler(this.gBtnEliminar_Click);
             // 
             // gDgvData
             // 
             this.gDgvData.AllowUserToAddRows = false;
             this.gDgvData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.gDgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDgvData.BackgroundColor = System.Drawing.Color.Silver;
             this.gDgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gDgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
             this.Id,
             this.Nombre});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle18;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(88, 120);
+            this.gDgvData.Location = new System.Drawing.Point(59, 78);
+            this.gDgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gDgvData.RowHeadersVisible = false;
             this.gDgvData.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(898, 533);
+            this.gDgvData.Size = new System.Drawing.Size(599, 346);
             this.gDgvData.TabIndex = 102;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -193,31 +198,7 @@
             this.gDgvData.ThemeStyle.RowsStyle.Height = 28;
             this.gDgvData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.FillWeight = 0.02217987F;
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 50;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            // 
-            // Id
-            // 
-            this.Id.FillWeight = 79.54546F;
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 30;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // Nombre
-            // 
-            this.Nombre.FillWeight = 355.9276F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 150;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
+            this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             // 
             // gBtnGuardar
             // 
@@ -229,12 +210,14 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(1172, 427);
+            this.gBtnGuardar.Location = new System.Drawing.Point(781, 278);
+            this.gBtnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
+            this.gBtnGuardar.Size = new System.Drawing.Size(136, 29);
             this.gBtnGuardar.TabIndex = 107;
             this.gBtnGuardar.Text = "Guardar";
+            this.gBtnGuardar.Click += new System.EventHandler(this.gBtnGuardar_Click);
             // 
             // gTxtIndice
             // 
@@ -249,15 +232,14 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(1368, 154);
-            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtIndice.Location = new System.Drawing.Point(912, 100);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(35, 32);
+            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
             this.gTxtIndice.TabIndex = 106;
             this.gTxtIndice.Visible = false;
             // 
@@ -266,9 +248,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1119, 204);
+            this.label2.Location = new System.Drawing.Point(746, 133);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 25);
+            this.label2.Size = new System.Drawing.Size(119, 15);
             this.label2.TabIndex = 104;
             this.label2.Text = "Nombre / Institución";
             // 
@@ -285,24 +268,50 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1411, 154);
-            this.gTxtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gTxtId.Location = new System.Drawing.Point(941, 100);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(35, 32);
+            this.gTxtId.Size = new System.Drawing.Size(23, 21);
             this.gTxtId.TabIndex = 105;
             this.gTxtId.Visible = false;
             // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.FillWeight = 0.02217987F;
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 50;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "idCentroEducativo";
+            this.Id.FillWeight = 79.54546F;
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 30;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "nombreCentroEducativo";
+            this.Nombre.FillWeight = 355.9276F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 150;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
             // CentrosEducativos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1533, 837);
+            this.ClientSize = new System.Drawing.Size(1022, 544);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gTxtNombre);
             this.Controls.Add(this.gBtnLimpiar);
@@ -313,6 +322,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gTxtId);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CentrosEducativos";
             this.Text = "CentrosEducativos";
             this.Load += new System.EventHandler(this.CentrosEducativos_Load);
@@ -329,12 +339,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton gBtnLimpiar;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnEliminar;
         private Guna.UI2.WinForms.Guna2DataGridView gDgvData;
-        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private Guna.UI2.WinForms.Guna2GradientButton gBtnGuardar;
         private Guna.UI2.WinForms.Guna2TextBox gTxtIndice;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox gTxtId;
+        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
     }
 }
