@@ -63,6 +63,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizar_50 {
+            get {
+                object obj = ResourceManager.GetObject("actualizar-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ajustes_25 {
             get {
                 object obj = ResourceManager.GetObject("ajustes-25", resourceCulture);
@@ -153,6 +163,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Check_50_white {
+            get {
+                object obj = ResourceManager.GetObject("Check-50-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colegio_40 {
             get {
                 object obj = ResourceManager.GetObject("colegio-40", resourceCulture);
@@ -166,6 +186,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap donación_40 {
             get {
                 object obj = ResourceManager.GetObject("donación-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap estrella_30 {
+            get {
+                object obj = ResourceManager.GetObject("estrella-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +226,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap gps_64 {
             get {
                 object obj = ResourceManager.GetObject("gps-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardar_50 {
+            get {
+                object obj = ResourceManager.GetObject("guardar-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap lista_40 {
             get {
                 object obj = ResourceManager.GetObject("lista-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lista_50_white {
+            get {
+                object obj = ResourceManager.GetObject("lista-50-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +376,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap notebook_dynamic_color {
             get {
                 object obj = ResourceManager.GetObject("notebook-dynamic-color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ojo_60_white {
+            get {
+                object obj = ResourceManager.GetObject("ojo-60-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

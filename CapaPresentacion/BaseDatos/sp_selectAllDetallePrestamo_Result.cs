@@ -17,5 +17,6 @@ namespace CapaPresentacion.BaseDatos
         public int id_prestamo { get; set; }
         public int id_estado { get; set; }
         public int id_libro { get; set; }
+        public Nullable<System.DateTime> fecha_devuelto { get; set; }
     }
 }

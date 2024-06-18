@@ -40,8 +40,106 @@ namespace CapaPresentacion.BaseDatos
         public virtual DbSet<prestamo> prestamoes { get; set; }
         public virtual DbSet<responsable> responsables { get; set; }
         public virtual DbSet<sector> sectors { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<usuarios_admin> usuarios_admin { get; set; }
         public virtual DbSet<usuariosPrestamista> usuariosPrestamistas { get; set; }
+    
+        public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_alterdiagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_creatediagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_creatediagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_createDireccionReturnID(Nullable<int> id_sector, string descripcion, ObjectParameter idDireccion)
+        {
+            var id_sectorParameter = id_sector.HasValue ?
+                new ObjectParameter("id_sector", id_sector) :
+                new ObjectParameter("id_sector", typeof(int));
+    
+            var descripcionParameter = descripcion != null ?
+                new ObjectParameter("descripcion", descripcion) :
+                new ObjectParameter("descripcion", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDireccionReturnID", id_sectorParameter, descripcionParameter, idDireccion);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> sp_createDonacionReturnID(Nullable<int> id_Donante, Nullable<int> id_Administrador, Nullable<System.DateTime> fecha, ObjectParameter idDonacion)
+        {
+            var id_DonanteParameter = id_Donante.HasValue ?
+                new ObjectParameter("id_Donante", id_Donante) :
+                new ObjectParameter("id_Donante", typeof(int));
+    
+            var id_AdministradorParameter = id_Administrador.HasValue ?
+                new ObjectParameter("id_Administrador", id_Administrador) :
+                new ObjectParameter("id_Administrador", typeof(int));
+    
+            var fechaParameter = fecha.HasValue ?
+                new ObjectParameter("fecha", fecha) :
+                new ObjectParameter("fecha", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_createDonacionReturnID", id_DonanteParameter, id_AdministradorParameter, fechaParameter, idDonacion);
+        }
+    
+        public virtual int sp_createPrestamoReturnID(Nullable<int> id_usuario, Nullable<int> id_Administrador, Nullable<System.DateTime> fecha_prestamo, Nullable<System.DateTime> fecha_devolucion, Nullable<int> id_estado, ObjectParameter idPrestamo)
+        {
+            var id_usuarioParameter = id_usuario.HasValue ?
+                new ObjectParameter("id_usuario", id_usuario) :
+                new ObjectParameter("id_usuario", typeof(int));
+    
+            var id_AdministradorParameter = id_Administrador.HasValue ?
+                new ObjectParameter("id_Administrador", id_Administrador) :
+                new ObjectParameter("id_Administrador", typeof(int));
+    
+            var fecha_prestamoParameter = fecha_prestamo.HasValue ?
+                new ObjectParameter("fecha_prestamo", fecha_prestamo) :
+                new ObjectParameter("fecha_prestamo", typeof(System.DateTime));
+    
+            var fecha_devolucionParameter = fecha_devolucion.HasValue ?
+                new ObjectParameter("fecha_devolucion", fecha_devolucion) :
+                new ObjectParameter("fecha_devolucion", typeof(System.DateTime));
+    
+            var id_estadoParameter = id_estado.HasValue ?
+                new ObjectParameter("id_estado", id_estado) :
+                new ObjectParameter("id_estado", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createPrestamoReturnID", id_usuarioParameter, id_AdministradorParameter, fecha_prestamoParameter, fecha_devolucionParameter, id_estadoParameter, idPrestamo);
+        }
     
         public virtual int sp_deleteAldea(Nullable<int> idAldea)
         {
@@ -176,6 +274,45 @@ namespace CapaPresentacion.BaseDatos
                 new ObjectParameter("idUsuario_prestamista", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_deleteUsuarios_Prestamista", idUsuario_prestamistaParameter);
+        }
+    
+        public virtual int sp_dropdiagram(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_dropdiagram", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagramdefinition_Result> sp_helpdiagramdefinition(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagramdefinition_Result>("sp_helpdiagramdefinition", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagrams_Result> sp_helpdiagrams(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagrams_Result>("sp_helpdiagrams", diagramnameParameter, owner_idParameter);
         }
     
         public virtual int sp_InsertAldea(string nombre)
@@ -446,9 +583,31 @@ namespace CapaPresentacion.BaseDatos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_insertUsuario_Prestamista", nombreParameter, apellidoParameter, id_direccionParameter, id_centroEducativoParameter, fechaNacimientoParameter, generoParameter, id_responsableParameter);
         }
     
+        public virtual int sp_renamediagram(string diagramname, Nullable<int> owner_id, string new_diagramname)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var new_diagramnameParameter = new_diagramname != null ?
+                new ObjectParameter("new_diagramname", new_diagramname) :
+                new ObjectParameter("new_diagramname", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_renamediagram", diagramnameParameter, owner_idParameter, new_diagramnameParameter);
+        }
+    
         public virtual ObjectResult<sp_SelectAllAldeas_Result> sp_SelectAllAldeas()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectAllAldeas_Result>("sp_SelectAllAldeas");
+        }
+    
+        public virtual ObjectResult<sp_selectAllCategoriaswAldeas_Result> sp_selectAllCategoriaswAldeas()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllCategoriaswAldeas_Result>("sp_selectAllCategoriaswAldeas");
         }
     
         public virtual ObjectResult<sp_selectAllCatLibro_Result> sp_selectAllCatLibro()
@@ -459,6 +618,15 @@ namespace CapaPresentacion.BaseDatos
         public virtual ObjectResult<sp_selectAllCentroEduca_Result> sp_selectAllCentroEduca()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllCentroEduca_Result>("sp_selectAllCentroEduca");
+        }
+    
+        public virtual ObjectResult<sp_selectAllDetalleDonacionbyIDwithBooks_Result> sp_selectAllDetalleDonacionbyIDwithBooks(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDetalleDonacionbyIDwithBooks_Result>("sp_selectAllDetalleDonacionbyIDwithBooks", idParameter);
         }
     
         public virtual ObjectResult<sp_selectAllDetallePrestamo_Result> sp_selectAllDetallePrestamo()
@@ -476,6 +644,29 @@ namespace CapaPresentacion.BaseDatos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacion_Result>("sp_selectAllDonacion");
         }
     
+        public virtual ObjectResult<sp_selectAllDonacionByID_Result> sp_selectAllDonacionByID(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacionByID_Result>("sp_selectAllDonacionByID", idParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdmin_Result> sp_selectAllDonacioneswithDonanteAdmin(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdmin_Result>("sp_selectAllDonacioneswithDonanteAdmin", idParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdminnoID_Result> sp_selectAllDonacioneswithDonanteAdminnoID()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdminnoID_Result>("sp_selectAllDonacioneswithDonanteAdminnoID");
+        }
+    
         public virtual ObjectResult<sp_selectAllDonantes_Result> sp_selectAllDonantes()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonantes_Result>("sp_selectAllDonantes");
@@ -489,6 +680,11 @@ namespace CapaPresentacion.BaseDatos
         public virtual ObjectResult<sp_selectAllLibros_Result> sp_selectAllLibros()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllLibros_Result>("sp_selectAllLibros");
+        }
+    
+        public virtual ObjectResult<sp_selectallLibrosCategorias_Result> sp_selectallLibrosCategorias()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectallLibrosCategorias_Result>("sp_selectallLibrosCategorias");
         }
     
         public virtual ObjectResult<sp_selectAllPrestamos_Result> sp_selectAllPrestamos()
@@ -506,6 +702,11 @@ namespace CapaPresentacion.BaseDatos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllSectores_Result>("sp_selectAllSectores");
         }
     
+        public virtual ObjectResult<sp_selectAllUsersWithEstadoOfPrestamo_Result> sp_selectAllUsersWithEstadoOfPrestamo()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsersWithEstadoOfPrestamo_Result>("sp_selectAllUsersWithEstadoOfPrestamo");
+        }
+    
         public virtual ObjectResult<sp_selectAllUsuarios_Admin_Result> sp_selectAllUsuarios_Admin()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsuarios_Admin_Result>("sp_selectAllUsuarios_Admin");
@@ -516,6 +717,38 @@ namespace CapaPresentacion.BaseDatos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsuarios_Prestamistas_Result>("sp_selectAllUsuarios_Prestamistas");
         }
     
+        public virtual ObjectResult<sp_selectAllUsuariosPrestamistasJoints_Result> sp_selectAllUsuariosPrestamistasJoints()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsuariosPrestamistasJoints_Result>("sp_selectAllUsuariosPrestamistasJoints");
+        }
+    
+        public virtual ObjectResult<sp_selectAvaliableLibro_Result> sp_selectAvaliableLibro(string codigo)
+        {
+            var codigoParameter = codigo != null ?
+                new ObjectParameter("codigo", codigo) :
+                new ObjectParameter("codigo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAvaliableLibro_Result>("sp_selectAvaliableLibro", codigoParameter);
+        }
+    
+        public virtual ObjectResult<sp_SelectDonatorsByName_Result> sp_SelectDonatorsByName(string donador)
+        {
+            var donadorParameter = donador != null ?
+                new ObjectParameter("donador", donador) :
+                new ObjectParameter("donador", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectDonatorsByName_Result>("sp_SelectDonatorsByName", donadorParameter);
+        }
+    
+        public virtual ObjectResult<sp_SelectLibrosByCodLibros_Result> sp_SelectLibrosByCodLibros(string code)
+        {
+            var codeParameter = code != null ?
+                new ObjectParameter("code", code) :
+                new ObjectParameter("code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectLibrosByCodLibros_Result>("sp_SelectLibrosByCodLibros", codeParameter);
+        }
+    
         public virtual ObjectResult<sp_selectUsuarioAdmin_byUser_Result> sp_selectUsuarioAdmin_byUser(string usuario)
         {
             var usuarioParameter = usuario != null ?
@@ -523,6 +756,15 @@ namespace CapaPresentacion.BaseDatos
                 new ObjectParameter("Usuario", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectUsuarioAdmin_byUser_Result>("sp_selectUsuarioAdmin_byUser", usuarioParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectUsuarioAdminbyUsuario_Result> sp_selectUsuarioAdminbyUsuario(string usuario)
+        {
+            var usuarioParameter = usuario != null ?
+                new ObjectParameter("usuario", usuario) :
+                new ObjectParameter("usuario", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectUsuarioAdminbyUsuario_Result>("sp_selectUsuarioAdminbyUsuario", usuarioParameter);
         }
     
         public virtual int sp_updateAldea(Nullable<int> idAldea, string nombre)
@@ -832,99 +1074,58 @@ namespace CapaPresentacion.BaseDatos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_updateUsuarioPrestamista", idUsuarioParameter, nombreParameter, apellidoParameter, id_DireccionParameter, idCentroEducativoParameter, fechaNacimientoParameter, generoParameter, idResponsableParameter);
         }
     
-        public virtual ObjectResult<sp_selectUsuarioAdminbyUsuario_Result> sp_selectUsuarioAdminbyUsuario(string usuario)
+        public virtual int sp_upgraddiagrams()
         {
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("usuario", usuario) :
-                new ObjectParameter("usuario", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectUsuarioAdminbyUsuario_Result>("sp_selectUsuarioAdminbyUsuario", usuarioParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
         }
     
-        public virtual ObjectResult<sp_selectallLibrosCategorias_Result> sp_selectallLibrosCategorias()
+        public virtual ObjectResult<sp_selectAllPrestamoswithUserAndEstado_Result> sp_selectAllPrestamoswithUserAndEstado()
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectallLibrosCategorias_Result>("sp_selectallLibrosCategorias");
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllPrestamoswithUserAndEstado_Result>("sp_selectAllPrestamoswithUserAndEstado");
         }
     
-        public virtual int sp_SeleccionarSectores()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_SeleccionarSectores");
-        }
-    
-        public virtual ObjectResult<sp_selectAllCategoriaswAldeas_Result> sp_selectAllCategoriaswAldeas()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllCategoriaswAldeas_Result>("sp_selectAllCategoriaswAldeas");
-        }
-    
-        public virtual int sp_createDireccionReturnID(Nullable<int> id_sector, string descripcion, ObjectParameter idDireccion)
-        {
-            var id_sectorParameter = id_sector.HasValue ?
-                new ObjectParameter("id_sector", id_sector) :
-                new ObjectParameter("id_sector", typeof(int));
-    
-            var descripcionParameter = descripcion != null ?
-                new ObjectParameter("descripcion", descripcion) :
-                new ObjectParameter("descripcion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDireccionReturnID", id_sectorParameter, descripcionParameter, idDireccion);
-        }
-    
-        public virtual ObjectResult<sp_selectAllUsuariosPrestamistasJoints_Result> sp_selectAllUsuariosPrestamistasJoints()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllUsuariosPrestamistasJoints_Result>("sp_selectAllUsuariosPrestamistasJoints");
-        }
-    
-        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdmin_Result> sp_selectAllDonacioneswithDonanteAdmin(Nullable<int> id)
+        public virtual ObjectResult<sp_selectAllDetallePrestamobyIDPrestamo_Result> sp_selectAllDetallePrestamobyIDPrestamo(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("id", id) :
                 new ObjectParameter("id", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdmin_Result>("sp_selectAllDonacioneswithDonanteAdmin", idParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDetallePrestamobyIDPrestamo_Result>("sp_selectAllDetallePrestamobyIDPrestamo", idParameter);
         }
     
-        public virtual ObjectResult<sp_selectAllDetalleDonacionbyIDwithBooks_Result> sp_selectAllDetalleDonacionbyIDwithBooks(Nullable<int> id)
+        public virtual ObjectResult<sp_selectAllDevolucioneswithUserAndEstado_Result> sp_selectAllDevolucioneswithUserAndEstado()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDevolucioneswithUserAndEstado_Result>("sp_selectAllDevolucioneswithUserAndEstado");
+        }
+    
+        public virtual ObjectResult<sp_selectAllDetalleDevolucioneswithUserAndEstado_Result> sp_selectAllDetalleDevolucioneswithUserAndEstado()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDetalleDevolucioneswithUserAndEstado_Result>("sp_selectAllDetalleDevolucioneswithUserAndEstado");
+        }
+    
+        public virtual ObjectResult<sp_SelectPrestamobyIDforDevolucion_Result> sp_SelectPrestamobyIDforDevolucion(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("id", id) :
                 new ObjectParameter("id", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDetalleDonacionbyIDwithBooks_Result>("sp_selectAllDetalleDonacionbyIDwithBooks", idParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectPrestamobyIDforDevolucion_Result>("sp_SelectPrestamobyIDforDevolucion", idParameter);
         }
     
-        public virtual ObjectResult<sp_selectAllDonacionByID_Result> sp_selectAllDonacionByID(Nullable<int> id)
+        public virtual int sp_UpdateFechaDevueltoDetallePrestamoDevol(Nullable<System.DateTime> fechaDevuelto, Nullable<int> idDetallePrestamo)
         {
-            var idParameter = id.HasValue ?
-                new ObjectParameter("id", id) :
-                new ObjectParameter("id", typeof(int));
+            var fechaDevueltoParameter = fechaDevuelto.HasValue ?
+                new ObjectParameter("fechaDevuelto", fechaDevuelto) :
+                new ObjectParameter("fechaDevuelto", typeof(System.DateTime));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacionByID_Result>("sp_selectAllDonacionByID", idParameter);
+            var idDetallePrestamoParameter = idDetallePrestamo.HasValue ?
+                new ObjectParameter("idDetallePrestamo", idDetallePrestamo) :
+                new ObjectParameter("idDetallePrestamo", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_UpdateFechaDevueltoDetallePrestamoDevol", fechaDevueltoParameter, idDetallePrestamoParameter);
         }
     
-        public virtual ObjectResult<sp_selectAllDonacioneswithDonanteAdminnoID_Result> sp_selectAllDonacioneswithDonanteAdminnoID()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectAllDonacioneswithDonanteAdminnoID_Result>("sp_selectAllDonacioneswithDonanteAdminnoID");
-        }
-    
-        public virtual ObjectResult<sp_SelectDonatorsByName_Result> sp_SelectDonatorsByName(string donador)
-        {
-            var donadorParameter = donador != null ?
-                new ObjectParameter("donador", donador) :
-                new ObjectParameter("donador", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectDonatorsByName_Result>("sp_SelectDonatorsByName", donadorParameter);
-        }
-    
-        public virtual ObjectResult<sp_SelectLibrosByCodLibros_Result> sp_SelectLibrosByCodLibros(string code)
-        {
-            var codeParameter = code != null ?
-                new ObjectParameter("code", code) :
-                new ObjectParameter("code", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_SelectLibrosByCodLibros_Result>("sp_SelectLibrosByCodLibros", codeParameter);
-        }
-    
-        public virtual int sp_createDonacionReturnID(Nullable<int> id_Donante, Nullable<int> id_Administrador, Nullable<System.DateTime> fecha, ObjectParameter idDonacion)
+        public virtual int sp_createDonacionReturnID1(Nullable<int> id_Donante, Nullable<int> id_Administrador, Nullable<System.DateTime> fecha, ObjectParameter idDonacion)
         {
             var id_DonanteParameter = id_Donante.HasValue ?
                 new ObjectParameter("id_Donante", id_Donante) :
@@ -938,7 +1139,50 @@ namespace CapaPresentacion.BaseDatos
                 new ObjectParameter("fecha", fecha) :
                 new ObjectParameter("fecha", typeof(System.DateTime));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDonacionReturnID", id_DonanteParameter, id_AdministradorParameter, fechaParameter, idDonacion);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_createDonacionReturnID1", id_DonanteParameter, id_AdministradorParameter, fechaParameter, idDonacion);
+        }
+    
+        public virtual ObjectResult<sp_selectPrestamosLibrosBetweenDates_Result> sp_selectPrestamosLibrosBetweenDates(Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate)
+        {
+            var startDateParameter = startDate.HasValue ?
+                new ObjectParameter("StartDate", startDate) :
+                new ObjectParameter("StartDate", typeof(System.DateTime));
+    
+            var endDateParameter = endDate.HasValue ?
+                new ObjectParameter("EndDate", endDate) :
+                new ObjectParameter("EndDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectPrestamosLibrosBetweenDates_Result>("sp_selectPrestamosLibrosBetweenDates", startDateParameter, endDateParameter);
+        }
+    
+        public virtual ObjectResult<sp_selectTop3LibrosPopulares_Result> sp_selectTop3LibrosPopulares()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectTop3LibrosPopulares_Result>("sp_selectTop3LibrosPopulares");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> sp_selectTotalDirecciones()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_selectTotalDirecciones");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> sp_selectTotalDonaciones()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_selectTotalDonaciones");
+        }
+    
+        public virtual ObjectResult<sp_selectTotalPrestamosRatioDevoluciones_Result> sp_selectTotalPrestamosRatioDevoluciones()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_selectTotalPrestamosRatioDevoluciones_Result>("sp_selectTotalPrestamosRatioDevoluciones");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> sp_selectTotalStockLibros()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_selectTotalStockLibros");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> sp_selectTotalUsuarios()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_selectTotalUsuarios");
         }
     }
 }

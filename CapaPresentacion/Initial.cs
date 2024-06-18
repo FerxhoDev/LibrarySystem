@@ -118,12 +118,22 @@ namespace CapaPresentacion
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2Button)sender, new Prestamos(Administrador_id));
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((Guna2Button)sender, new Devoluciones(Administrador_id));
         }
     }
 }

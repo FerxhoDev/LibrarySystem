@@ -51,7 +51,6 @@
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Libro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
@@ -63,30 +62,26 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(331, 110);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(496, 169);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(217, 79);
+            this.groupBox2.Size = new System.Drawing.Size(326, 122);
             this.groupBox2.TabIndex = 73;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información Donante";
             // 
             // txtNomDonan
             // 
-            this.txtNomDonan.Location = new System.Drawing.Point(7, 44);
-            this.txtNomDonan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomDonan.Location = new System.Drawing.Point(10, 68);
             this.txtNomDonan.Name = "txtNomDonan";
-            this.txtNomDonan.Size = new System.Drawing.Size(142, 23);
+            this.txtNomDonan.Size = new System.Drawing.Size(211, 31);
             this.txtNomDonan.TabIndex = 2;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 19);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(6, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 15);
+            this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 0;
             this.label8.Text = "Nombre";
             // 
@@ -96,30 +91,26 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(107, 110);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(160, 169);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(187, 79);
+            this.groupBox1.Size = new System.Drawing.Size(280, 122);
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información Donación";
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(7, 44);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFecha.Location = new System.Drawing.Point(10, 68);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(142, 23);
+            this.txtFecha.Size = new System.Drawing.Size(211, 31);
             this.txtFecha.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 19);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(6, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.Size = new System.Drawing.Size(58, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Fecha";
             // 
@@ -128,20 +119,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(31, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(46, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 20);
+            this.label1.Size = new System.Drawing.Size(198, 30);
             this.label1.TabIndex = 69;
             this.label1.Text = "Detalle Donación";
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(439, 61);
-            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBusqueda.Location = new System.Drawing.Point(658, 94);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.ReadOnly = true;
-            this.txtBusqueda.Size = new System.Drawing.Size(142, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(211, 26);
             this.txtBusqueda.TabIndex = 68;
             // 
             // label2
@@ -149,10 +138,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(285, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(428, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 15);
+            this.label2.Size = new System.Drawing.Size(210, 25);
             this.label2.TabIndex = 67;
             this.label2.Text = "Numero de Documento";
             // 
@@ -172,7 +160,7 @@
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(57)))), ((int)(((byte)(88)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -181,8 +169,7 @@
             this.Idproducto,
             this.Codigo,
             this.Libro,
-            this.Cantidad,
-            this.btnEliminar});
+            this.Cantidad});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -193,8 +180,7 @@
             this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(52, 210);
-            this.gDgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gDgvData.Location = new System.Drawing.Point(78, 323);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
@@ -212,7 +198,7 @@
             this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(811, 246);
+            this.gDgvData.Size = new System.Drawing.Size(1216, 378);
             this.gDgvData.TabIndex = 86;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -248,12 +234,11 @@
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = global::CapaPresentacion.Properties.Resources.minimizar_30;
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(916, 13);
-            this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(1374, 20);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(17, 17);
+            this.guna2CircleButton2.Size = new System.Drawing.Size(26, 26);
             this.guna2CircleButton2.TabIndex = 88;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
@@ -268,12 +253,11 @@
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Image = global::CapaPresentacion.Properties.Resources.cerrar_30;
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(937, 14);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1406, 22);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(17, 17);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(26, 26);
             this.guna2CircleButton1.TabIndex = 87;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
@@ -297,7 +281,7 @@
             this.Codigo.DataPropertyName = "codigo";
             this.Codigo.FillWeight = 355.9276F;
             this.Codigo.HeaderText = "Código";
-            this.Codigo.MinimumWidth = 150;
+            this.Codigo.MinimumWidth = 500;
             this.Codigo.Name = "Codigo";
             this.Codigo.ReadOnly = true;
             // 
@@ -315,24 +299,16 @@
             this.Cantidad.DataPropertyName = "cantidad";
             this.Cantidad.FillWeight = 31.52491F;
             this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 200;
+            this.Cantidad.MinimumWidth = 100;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.FillWeight = 0.02217987F;
-            this.btnEliminar.HeaderText = "";
-            this.btnEliminar.MinimumWidth = 30;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ReadOnly = true;
-            // 
             // ModDetalleDonacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(963, 493);
+            this.ClientSize = new System.Drawing.Size(1444, 758);
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.gDgvData);
@@ -342,7 +318,6 @@
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ModDetalleDonacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModDetalleDonacion";
@@ -374,6 +349,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Libro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
     }
 }

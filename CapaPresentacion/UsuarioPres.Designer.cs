@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gTxtApellido = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gTxtIndice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,16 +54,6 @@
             this.gCmbBusqueda = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.gDgvData = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gCmbAldea = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gCmbCentroEd = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gCmbGenero = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gDtpNacimiento = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.gCmbResponsable = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.gCmbSector = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.gtxtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +72,16 @@
             this.id_responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gCmbAldea = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gCmbCentroEd = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gCmbGenero = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gDtpNacimiento = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gCmbResponsable = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.gCmbSector = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.gtxtDireccion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.gCmbBusquedaChild = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).BeginInit();
             this.SuspendLayout();
@@ -99,13 +99,14 @@
             this.gTxtApellido.FocusedState.Parent = this.gTxtApellido;
             this.gTxtApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtApellido.HoverState.Parent = this.gTxtApellido;
-            this.gTxtApellido.Location = new System.Drawing.Point(800, 129);
+            this.gTxtApellido.Location = new System.Drawing.Point(1200, 198);
+            this.gTxtApellido.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtApellido.Name = "gTxtApellido";
             this.gTxtApellido.PasswordChar = '\0';
             this.gTxtApellido.PlaceholderText = "";
             this.gTxtApellido.SelectedText = "";
             this.gTxtApellido.ShadowDecoration.Parent = this.gTxtApellido;
-            this.gTxtApellido.Size = new System.Drawing.Size(200, 25);
+            this.gTxtApellido.Size = new System.Drawing.Size(300, 38);
             this.gTxtApellido.TabIndex = 69;
             // 
             // label1
@@ -113,10 +114,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(33, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(50, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 30);
+            this.label1.Size = new System.Drawing.Size(149, 45);
             this.label1.TabIndex = 85;
             this.label1.Text = "Usuarios";
             // 
@@ -133,14 +133,15 @@
             this.gTxtIndice.FocusedState.Parent = this.gTxtIndice;
             this.gTxtIndice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtIndice.HoverState.Parent = this.gTxtIndice;
-            this.gTxtIndice.Location = new System.Drawing.Point(977, 18);
+            this.gTxtIndice.Location = new System.Drawing.Point(1466, 28);
+            this.gTxtIndice.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtIndice.Name = "gTxtIndice";
             this.gTxtIndice.PasswordChar = '\0';
             this.gTxtIndice.PlaceholderText = "";
             this.gTxtIndice.SelectedText = "";
             this.gTxtIndice.SelectionStart = 2;
             this.gTxtIndice.ShadowDecoration.Parent = this.gTxtIndice;
-            this.gTxtIndice.Size = new System.Drawing.Size(23, 21);
+            this.gTxtIndice.Size = new System.Drawing.Size(34, 32);
             this.gTxtIndice.TabIndex = 84;
             this.gTxtIndice.Visible = false;
             // 
@@ -157,14 +158,15 @@
             this.gTxtId.FocusedState.Parent = this.gTxtId;
             this.gTxtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtId.HoverState.Parent = this.gTxtId;
-            this.gTxtId.Location = new System.Drawing.Point(1006, 18);
+            this.gTxtId.Location = new System.Drawing.Point(1509, 28);
+            this.gTxtId.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtId.Name = "gTxtId";
             this.gTxtId.PasswordChar = '\0';
             this.gTxtId.PlaceholderText = "";
             this.gTxtId.SelectedText = "";
             this.gTxtId.SelectionStart = 1;
             this.gTxtId.ShadowDecoration.Parent = this.gTxtId;
-            this.gTxtId.Size = new System.Drawing.Size(23, 21);
+            this.gTxtId.Size = new System.Drawing.Size(34, 32);
             this.gTxtId.TabIndex = 83;
             this.gTxtId.Visible = false;
             // 
@@ -178,11 +180,10 @@
             this.gBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiar.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiar.HoverState.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Location = new System.Drawing.Point(844, 521);
-            this.gBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.gBtnLimpiar.Location = new System.Drawing.Point(1266, 802);
             this.gBtnLimpiar.Name = "gBtnLimpiar";
             this.gBtnLimpiar.ShadowDecoration.Parent = this.gBtnLimpiar;
-            this.gBtnLimpiar.Size = new System.Drawing.Size(136, 29);
+            this.gBtnLimpiar.Size = new System.Drawing.Size(204, 45);
             this.gBtnLimpiar.TabIndex = 82;
             this.gBtnLimpiar.Text = "Limpiar";
             this.gBtnLimpiar.Click += new System.EventHandler(this.gBtnLimpiar_Click);
@@ -192,10 +193,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(795, 386);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(1192, 594);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 15);
+            this.label11.Size = new System.Drawing.Size(74, 25);
             this.label11.TabIndex = 81;
             this.label11.Text = "Genero";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -205,10 +205,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(797, 339);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(1196, 522);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 15);
+            this.label10.Size = new System.Drawing.Size(182, 25);
             this.label10.TabIndex = 79;
             this.label10.Text = "Fecha de nacimiento";
             // 
@@ -217,10 +216,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(793, 18);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1190, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 30);
+            this.label7.Size = new System.Drawing.Size(261, 45);
             this.label7.TabIndex = 77;
             this.label7.Text = "Detalle Usuario";
             // 
@@ -234,11 +232,10 @@
             this.gBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnEliminar.ForeColor = System.Drawing.Color.White;
             this.gBtnEliminar.HoverState.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Location = new System.Drawing.Point(844, 554);
-            this.gBtnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.gBtnEliminar.Location = new System.Drawing.Point(1266, 852);
             this.gBtnEliminar.Name = "gBtnEliminar";
             this.gBtnEliminar.ShadowDecoration.Parent = this.gBtnEliminar;
-            this.gBtnEliminar.Size = new System.Drawing.Size(136, 29);
+            this.gBtnEliminar.Size = new System.Drawing.Size(204, 45);
             this.gBtnEliminar.TabIndex = 76;
             this.gBtnEliminar.Text = "Eliminar";
             // 
@@ -252,11 +249,10 @@
             this.gBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnGuardar.ForeColor = System.Drawing.Color.White;
             this.gBtnGuardar.HoverState.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Location = new System.Drawing.Point(844, 488);
-            this.gBtnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.gBtnGuardar.Location = new System.Drawing.Point(1266, 751);
             this.gBtnGuardar.Name = "gBtnGuardar";
             this.gBtnGuardar.ShadowDecoration.Parent = this.gBtnGuardar;
-            this.gBtnGuardar.Size = new System.Drawing.Size(136, 29);
+            this.gBtnGuardar.Size = new System.Drawing.Size(204, 45);
             this.gBtnGuardar.TabIndex = 75;
             this.gBtnGuardar.Text = "Guardar";
             this.gBtnGuardar.Click += new System.EventHandler(this.gBtnGuardar_Click);
@@ -266,10 +262,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(797, 295);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1196, 454);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 15);
+            this.label5.Size = new System.Drawing.Size(154, 25);
             this.label5.TabIndex = 74;
             this.label5.Text = "Centro Educativo";
             // 
@@ -278,10 +273,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(797, 157);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1196, 242);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 15);
+            this.label4.Size = new System.Drawing.Size(59, 25);
             this.label4.TabIndex = 72;
             this.label4.Text = "Aldea";
             // 
@@ -290,10 +284,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(795, 110);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(1192, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 70;
             this.label3.Text = "Apellido";
             // 
@@ -302,10 +295,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(797, 62);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(1196, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 15);
+            this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 68;
             this.label2.Text = "Nombre";
             // 
@@ -322,13 +314,14 @@
             this.gTxtNombre.FocusedState.Parent = this.gTxtNombre;
             this.gTxtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtNombre.HoverState.Parent = this.gTxtNombre;
-            this.gTxtNombre.Location = new System.Drawing.Point(800, 81);
+            this.gTxtNombre.Location = new System.Drawing.Point(1200, 125);
+            this.gTxtNombre.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtNombre.Name = "gTxtNombre";
             this.gTxtNombre.PasswordChar = '\0';
             this.gTxtNombre.PlaceholderText = "";
             this.gTxtNombre.SelectedText = "";
             this.gTxtNombre.ShadowDecoration.Parent = this.gTxtNombre;
-            this.gTxtNombre.Size = new System.Drawing.Size(200, 25);
+            this.gTxtNombre.Size = new System.Drawing.Size(300, 38);
             this.gTxtNombre.TabIndex = 67;
             // 
             // gBtnLimpiarBusc
@@ -341,11 +334,10 @@
             this.gBtnLimpiarBusc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnLimpiarBusc.ForeColor = System.Drawing.Color.White;
             this.gBtnLimpiarBusc.HoverState.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(626, 527);
-            this.gBtnLimpiarBusc.Margin = new System.Windows.Forms.Padding(2);
+            this.gBtnLimpiarBusc.Location = new System.Drawing.Point(939, 811);
             this.gBtnLimpiarBusc.Name = "gBtnLimpiarBusc";
             this.gBtnLimpiarBusc.ShadowDecoration.Parent = this.gBtnLimpiarBusc;
-            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(75, 29);
+            this.gBtnLimpiarBusc.Size = new System.Drawing.Size(112, 45);
             this.gBtnLimpiarBusc.TabIndex = 66;
             this.gBtnLimpiarBusc.Text = "Limpiar";
             // 
@@ -359,11 +351,10 @@
             this.gBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gBtnBuscar.ForeColor = System.Drawing.Color.White;
             this.gBtnBuscar.HoverState.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Location = new System.Drawing.Point(529, 527);
-            this.gBtnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.gBtnBuscar.Location = new System.Drawing.Point(794, 811);
             this.gBtnBuscar.Name = "gBtnBuscar";
             this.gBtnBuscar.ShadowDecoration.Parent = this.gBtnBuscar;
-            this.gBtnBuscar.Size = new System.Drawing.Size(87, 29);
+            this.gBtnBuscar.Size = new System.Drawing.Size(130, 45);
             this.gBtnBuscar.TabIndex = 65;
             this.gBtnBuscar.Text = "Buscar";
             this.gBtnBuscar.Click += new System.EventHandler(this.gBtnBuscar_Click);
@@ -381,13 +372,14 @@
             this.gTxtBusqueda.FocusedState.Parent = this.gTxtBusqueda;
             this.gTxtBusqueda.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtBusqueda.HoverState.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Location = new System.Drawing.Point(323, 527);
+            this.gTxtBusqueda.Location = new System.Drawing.Point(484, 811);
+            this.gTxtBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtBusqueda.Name = "gTxtBusqueda";
             this.gTxtBusqueda.PasswordChar = '\0';
             this.gTxtBusqueda.PlaceholderText = "";
             this.gTxtBusqueda.SelectedText = "";
             this.gTxtBusqueda.ShadowDecoration.Parent = this.gTxtBusqueda;
-            this.gTxtBusqueda.Size = new System.Drawing.Size(182, 25);
+            this.gTxtBusqueda.Size = new System.Drawing.Size(273, 38);
             this.gTxtBusqueda.TabIndex = 64;
             // 
             // gCmbBusqueda
@@ -405,11 +397,10 @@
             this.gCmbBusqueda.HoverState.Parent = this.gCmbBusqueda;
             this.gCmbBusqueda.ItemHeight = 30;
             this.gCmbBusqueda.ItemsAppearance.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Location = new System.Drawing.Point(165, 529);
-            this.gCmbBusqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbBusqueda.Location = new System.Drawing.Point(248, 814);
             this.gCmbBusqueda.Name = "gCmbBusqueda";
             this.gCmbBusqueda.ShadowDecoration.Parent = this.gCmbBusqueda;
-            this.gCmbBusqueda.Size = new System.Drawing.Size(152, 36);
+            this.gCmbBusqueda.Size = new System.Drawing.Size(226, 36);
             this.gCmbBusqueda.TabIndex = 63;
             this.gCmbBusqueda.SelectedIndexChanged += new System.EventHandler(this.gCmbBusqueda_SelectedIndexChanged);
             // 
@@ -418,10 +409,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(64, 530);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(96, 815);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 21);
+            this.label12.Size = new System.Drawing.Size(145, 32);
             this.label12.TabIndex = 62;
             this.label12.Text = "Buscar por:";
             // 
@@ -429,22 +419,22 @@
             // 
             this.gDgvData.AllowUserToAddRows = false;
             this.gDgvData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gDgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gDgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDgvData.BackgroundColor = System.Drawing.Color.Silver;
             this.gDgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gDgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gDgvData.ColumnHeadersHeight = 32;
             this.gDgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -465,36 +455,35 @@
             this.id_responsable,
             this.Responsable,
             this.telefono});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDgvData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gDgvData.EnableHeadersVisualStyles = false;
             this.gDgvData.GridColor = System.Drawing.Color.White;
-            this.gDgvData.Location = new System.Drawing.Point(23, 79);
-            this.gDgvData.Margin = new System.Windows.Forms.Padding(2);
+            this.gDgvData.Location = new System.Drawing.Point(34, 122);
             this.gDgvData.MultiSelect = false;
             this.gDgvData.Name = "gDgvData";
             this.gDgvData.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gDgvData.RowHeadersVisible = false;
             this.gDgvData.RowHeadersWidth = 62;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            this.gDgvData.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gDgvData.RowTemplate.Height = 28;
             this.gDgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDgvData.Size = new System.Drawing.Size(737, 412);
+            this.gDgvData.Size = new System.Drawing.Size(1106, 634);
             this.gDgvData.TabIndex = 61;
             this.gDgvData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gDgvData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -520,198 +509,6 @@
             this.gDgvData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gDgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gDgvData_CellContentClick);
             this.gDgvData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gDgvData_DataBindingComplete);
-            // 
-            // gCmbAldea
-            // 
-            this.gCmbAldea.Animated = true;
-            this.gCmbAldea.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbAldea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbAldea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbAldea.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbAldea.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbAldea.FocusedState.Parent = this.gCmbAldea;
-            this.gCmbAldea.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbAldea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbAldea.FormattingEnabled = true;
-            this.gCmbAldea.HoverState.Parent = this.gCmbAldea;
-            this.gCmbAldea.ItemHeight = 30;
-            this.gCmbAldea.ItemsAppearance.Parent = this.gCmbAldea;
-            this.gCmbAldea.Location = new System.Drawing.Point(800, 175);
-            this.gCmbAldea.Margin = new System.Windows.Forms.Padding(2);
-            this.gCmbAldea.Name = "gCmbAldea";
-            this.gCmbAldea.ShadowDecoration.Parent = this.gCmbAldea;
-            this.gCmbAldea.Size = new System.Drawing.Size(201, 36);
-            this.gCmbAldea.TabIndex = 86;
-            this.gCmbAldea.SelectedIndexChanged += new System.EventHandler(this.gCmbAldea_SelectedIndexChanged);
-            // 
-            // gCmbCentroEd
-            // 
-            this.gCmbCentroEd.Animated = true;
-            this.gCmbCentroEd.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbCentroEd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbCentroEd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbCentroEd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbCentroEd.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbCentroEd.FocusedState.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbCentroEd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbCentroEd.FormattingEnabled = true;
-            this.gCmbCentroEd.HoverState.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.ItemHeight = 30;
-            this.gCmbCentroEd.ItemsAppearance.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.Location = new System.Drawing.Point(801, 313);
-            this.gCmbCentroEd.Margin = new System.Windows.Forms.Padding(2);
-            this.gCmbCentroEd.Name = "gCmbCentroEd";
-            this.gCmbCentroEd.ShadowDecoration.Parent = this.gCmbCentroEd;
-            this.gCmbCentroEd.Size = new System.Drawing.Size(203, 36);
-            this.gCmbCentroEd.TabIndex = 87;
-            // 
-            // gCmbGenero
-            // 
-            this.gCmbGenero.Animated = true;
-            this.gCmbGenero.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbGenero.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbGenero.FocusedState.Parent = this.gCmbGenero;
-            this.gCmbGenero.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbGenero.FormattingEnabled = true;
-            this.gCmbGenero.HoverState.Parent = this.gCmbGenero;
-            this.gCmbGenero.ItemHeight = 30;
-            this.gCmbGenero.ItemsAppearance.Parent = this.gCmbGenero;
-            this.gCmbGenero.Location = new System.Drawing.Point(799, 404);
-            this.gCmbGenero.Margin = new System.Windows.Forms.Padding(2);
-            this.gCmbGenero.Name = "gCmbGenero";
-            this.gCmbGenero.ShadowDecoration.Parent = this.gCmbGenero;
-            this.gCmbGenero.Size = new System.Drawing.Size(203, 36);
-            this.gCmbGenero.TabIndex = 88;
-            // 
-            // gDtpNacimiento
-            // 
-            this.gDtpNacimiento.BaseColor = System.Drawing.Color.White;
-            this.gDtpNacimiento.BorderColor = System.Drawing.Color.Silver;
-            this.gDtpNacimiento.CustomFormat = null;
-            this.gDtpNacimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gDtpNacimiento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gDtpNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gDtpNacimiento.ForeColor = System.Drawing.Color.Black;
-            this.gDtpNacimiento.Location = new System.Drawing.Point(801, 357);
-            this.gDtpNacimiento.Margin = new System.Windows.Forms.Padding(2);
-            this.gDtpNacimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gDtpNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gDtpNacimiento.Name = "gDtpNacimiento";
-            this.gDtpNacimiento.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gDtpNacimiento.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gDtpNacimiento.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gDtpNacimiento.OnPressedColor = System.Drawing.Color.Black;
-            this.gDtpNacimiento.Size = new System.Drawing.Size(200, 20);
-            this.gDtpNacimiento.TabIndex = 89;
-            this.gDtpNacimiento.Text = "Wednesday, May 15, 2024";
-            this.gDtpNacimiento.Value = new System.DateTime(2024, 5, 15, 13, 12, 42, 121);
-            // 
-            // gCmbResponsable
-            // 
-            this.gCmbResponsable.Animated = true;
-            this.gCmbResponsable.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbResponsable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbResponsable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbResponsable.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbResponsable.FocusedState.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbResponsable.FormattingEnabled = true;
-            this.gCmbResponsable.HoverState.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.ItemHeight = 30;
-            this.gCmbResponsable.ItemsAppearance.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.Location = new System.Drawing.Point(799, 454);
-            this.gCmbResponsable.Margin = new System.Windows.Forms.Padding(2);
-            this.gCmbResponsable.Name = "gCmbResponsable";
-            this.gCmbResponsable.ShadowDecoration.Parent = this.gCmbResponsable;
-            this.gCmbResponsable.Size = new System.Drawing.Size(203, 36);
-            this.gCmbResponsable.TabIndex = 91;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(795, 435);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 15);
-            this.label6.TabIndex = 90;
-            this.label6.Text = "Responsable";
-            // 
-            // gCmbSector
-            // 
-            this.gCmbSector.Animated = true;
-            this.gCmbSector.BackColor = System.Drawing.Color.Transparent;
-            this.gCmbSector.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gCmbSector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gCmbSector.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gCmbSector.FocusedColor = System.Drawing.Color.Empty;
-            this.gCmbSector.FocusedState.Parent = this.gCmbSector;
-            this.gCmbSector.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gCmbSector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gCmbSector.FormattingEnabled = true;
-            this.gCmbSector.HoverState.Parent = this.gCmbSector;
-            this.gCmbSector.ItemHeight = 30;
-            this.gCmbSector.ItemsAppearance.Parent = this.gCmbSector;
-            this.gCmbSector.Location = new System.Drawing.Point(800, 220);
-            this.gCmbSector.Margin = new System.Windows.Forms.Padding(2);
-            this.gCmbSector.Name = "gCmbSector";
-            this.gCmbSector.ShadowDecoration.Parent = this.gCmbSector;
-            this.gCmbSector.Size = new System.Drawing.Size(201, 36);
-            this.gCmbSector.TabIndex = 93;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(797, 202);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 15);
-            this.label8.TabIndex = 92;
-            this.label8.Text = "Sector";
-            // 
-            // gtxtDireccion
-            // 
-            this.gtxtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtxtDireccion.DefaultText = "";
-            this.gtxtDireccion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtxtDireccion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtxtDireccion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtxtDireccion.DisabledState.Parent = this.gtxtDireccion;
-            this.gtxtDireccion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtxtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtxtDireccion.FocusedState.Parent = this.gtxtDireccion;
-            this.gtxtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtxtDireccion.HoverState.Parent = this.gtxtDireccion;
-            this.gtxtDireccion.Location = new System.Drawing.Point(801, 266);
-            this.gtxtDireccion.Name = "gtxtDireccion";
-            this.gtxtDireccion.PasswordChar = '\0';
-            this.gtxtDireccion.PlaceholderText = "";
-            this.gtxtDireccion.SelectedText = "";
-            this.gtxtDireccion.ShadowDecoration.Parent = this.gtxtDireccion;
-            this.gtxtDireccion.Size = new System.Drawing.Size(200, 25);
-            this.gtxtDireccion.TabIndex = 94;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(795, 247);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 15);
-            this.label9.TabIndex = 95;
-            this.label9.Text = "Direccion / Referencia";
             // 
             // btnSeleccionar
             // 
@@ -753,6 +550,7 @@
             // 
             this.FechaNacimiento.DataPropertyName = "fechaNacimiento";
             this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.MinimumWidth = 8;
             this.FechaNacimiento.Name = "FechaNacimiento";
             this.FechaNacimiento.ReadOnly = true;
             // 
@@ -777,6 +575,7 @@
             // 
             this.genero.DataPropertyName = "genero";
             this.genero.HeaderText = "Genero";
+            this.genero.MinimumWidth = 8;
             this.genero.Name = "genero";
             this.genero.ReadOnly = true;
             this.genero.Visible = false;
@@ -784,6 +583,7 @@
             // generoNombre
             // 
             this.generoNombre.HeaderText = "Genero";
+            this.generoNombre.MinimumWidth = 8;
             this.generoNombre.Name = "generoNombre";
             this.generoNombre.ReadOnly = true;
             // 
@@ -791,6 +591,7 @@
             // 
             this.id_aldea.DataPropertyName = "idAldea";
             this.id_aldea.HeaderText = "idAldea";
+            this.id_aldea.MinimumWidth = 8;
             this.id_aldea.Name = "id_aldea";
             this.id_aldea.ReadOnly = true;
             this.id_aldea.Visible = false;
@@ -799,6 +600,7 @@
             // 
             this.Aldea.DataPropertyName = "NombreAldea";
             this.Aldea.HeaderText = "Aldea";
+            this.Aldea.MinimumWidth = 8;
             this.Aldea.Name = "Aldea";
             this.Aldea.ReadOnly = true;
             // 
@@ -806,6 +608,7 @@
             // 
             this.id_sector.DataPropertyName = "idSector";
             this.id_sector.HeaderText = "idSector";
+            this.id_sector.MinimumWidth = 8;
             this.id_sector.Name = "id_sector";
             this.id_sector.ReadOnly = true;
             this.id_sector.Visible = false;
@@ -814,6 +617,7 @@
             // 
             this.Sector.DataPropertyName = "NombreSector";
             this.Sector.HeaderText = "Sector";
+            this.Sector.MinimumWidth = 8;
             this.Sector.Name = "Sector";
             this.Sector.ReadOnly = true;
             // 
@@ -855,8 +659,193 @@
             // 
             this.telefono.DataPropertyName = "telefonoResponsable";
             this.telefono.HeaderText = "Telefono Responsable";
+            this.telefono.MinimumWidth = 8;
             this.telefono.Name = "telefono";
             this.telefono.ReadOnly = true;
+            // 
+            // gCmbAldea
+            // 
+            this.gCmbAldea.Animated = true;
+            this.gCmbAldea.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbAldea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbAldea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbAldea.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbAldea.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbAldea.FocusedState.Parent = this.gCmbAldea;
+            this.gCmbAldea.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbAldea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbAldea.FormattingEnabled = true;
+            this.gCmbAldea.HoverState.Parent = this.gCmbAldea;
+            this.gCmbAldea.ItemHeight = 30;
+            this.gCmbAldea.ItemsAppearance.Parent = this.gCmbAldea;
+            this.gCmbAldea.Location = new System.Drawing.Point(1200, 269);
+            this.gCmbAldea.Name = "gCmbAldea";
+            this.gCmbAldea.ShadowDecoration.Parent = this.gCmbAldea;
+            this.gCmbAldea.Size = new System.Drawing.Size(300, 36);
+            this.gCmbAldea.TabIndex = 86;
+            this.gCmbAldea.SelectedIndexChanged += new System.EventHandler(this.gCmbAldea_SelectedIndexChanged);
+            // 
+            // gCmbCentroEd
+            // 
+            this.gCmbCentroEd.Animated = true;
+            this.gCmbCentroEd.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbCentroEd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbCentroEd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbCentroEd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbCentroEd.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbCentroEd.FocusedState.Parent = this.gCmbCentroEd;
+            this.gCmbCentroEd.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbCentroEd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbCentroEd.FormattingEnabled = true;
+            this.gCmbCentroEd.HoverState.Parent = this.gCmbCentroEd;
+            this.gCmbCentroEd.ItemHeight = 30;
+            this.gCmbCentroEd.ItemsAppearance.Parent = this.gCmbCentroEd;
+            this.gCmbCentroEd.Location = new System.Drawing.Point(1202, 482);
+            this.gCmbCentroEd.Name = "gCmbCentroEd";
+            this.gCmbCentroEd.ShadowDecoration.Parent = this.gCmbCentroEd;
+            this.gCmbCentroEd.Size = new System.Drawing.Size(302, 36);
+            this.gCmbCentroEd.TabIndex = 87;
+            // 
+            // gCmbGenero
+            // 
+            this.gCmbGenero.Animated = true;
+            this.gCmbGenero.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbGenero.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbGenero.FocusedState.Parent = this.gCmbGenero;
+            this.gCmbGenero.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbGenero.FormattingEnabled = true;
+            this.gCmbGenero.HoverState.Parent = this.gCmbGenero;
+            this.gCmbGenero.ItemHeight = 30;
+            this.gCmbGenero.ItemsAppearance.Parent = this.gCmbGenero;
+            this.gCmbGenero.Location = new System.Drawing.Point(1198, 622);
+            this.gCmbGenero.Name = "gCmbGenero";
+            this.gCmbGenero.ShadowDecoration.Parent = this.gCmbGenero;
+            this.gCmbGenero.Size = new System.Drawing.Size(302, 36);
+            this.gCmbGenero.TabIndex = 88;
+            // 
+            // gDtpNacimiento
+            // 
+            this.gDtpNacimiento.BaseColor = System.Drawing.Color.White;
+            this.gDtpNacimiento.BorderColor = System.Drawing.Color.Silver;
+            this.gDtpNacimiento.CustomFormat = null;
+            this.gDtpNacimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gDtpNacimiento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gDtpNacimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gDtpNacimiento.ForeColor = System.Drawing.Color.Black;
+            this.gDtpNacimiento.Location = new System.Drawing.Point(1202, 549);
+            this.gDtpNacimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gDtpNacimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gDtpNacimiento.Name = "gDtpNacimiento";
+            this.gDtpNacimiento.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gDtpNacimiento.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gDtpNacimiento.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gDtpNacimiento.OnPressedColor = System.Drawing.Color.Black;
+            this.gDtpNacimiento.Size = new System.Drawing.Size(300, 31);
+            this.gDtpNacimiento.TabIndex = 89;
+            this.gDtpNacimiento.Text = "miércoles, 15 de mayo de 2024";
+            this.gDtpNacimiento.Value = new System.DateTime(2024, 5, 15, 13, 12, 42, 121);
+            // 
+            // gCmbResponsable
+            // 
+            this.gCmbResponsable.Animated = true;
+            this.gCmbResponsable.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbResponsable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbResponsable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbResponsable.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbResponsable.FocusedState.Parent = this.gCmbResponsable;
+            this.gCmbResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbResponsable.FormattingEnabled = true;
+            this.gCmbResponsable.HoverState.Parent = this.gCmbResponsable;
+            this.gCmbResponsable.ItemHeight = 30;
+            this.gCmbResponsable.ItemsAppearance.Parent = this.gCmbResponsable;
+            this.gCmbResponsable.Location = new System.Drawing.Point(1198, 698);
+            this.gCmbResponsable.Name = "gCmbResponsable";
+            this.gCmbResponsable.ShadowDecoration.Parent = this.gCmbResponsable;
+            this.gCmbResponsable.Size = new System.Drawing.Size(302, 36);
+            this.gCmbResponsable.TabIndex = 91;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(1192, 669);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 25);
+            this.label6.TabIndex = 90;
+            this.label6.Text = "Responsable";
+            // 
+            // gCmbSector
+            // 
+            this.gCmbSector.Animated = true;
+            this.gCmbSector.BackColor = System.Drawing.Color.Transparent;
+            this.gCmbSector.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gCmbSector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gCmbSector.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gCmbSector.FocusedColor = System.Drawing.Color.Empty;
+            this.gCmbSector.FocusedState.Parent = this.gCmbSector;
+            this.gCmbSector.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gCmbSector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.gCmbSector.FormattingEnabled = true;
+            this.gCmbSector.HoverState.Parent = this.gCmbSector;
+            this.gCmbSector.ItemHeight = 30;
+            this.gCmbSector.ItemsAppearance.Parent = this.gCmbSector;
+            this.gCmbSector.Location = new System.Drawing.Point(1200, 338);
+            this.gCmbSector.Name = "gCmbSector";
+            this.gCmbSector.ShadowDecoration.Parent = this.gCmbSector;
+            this.gCmbSector.Size = new System.Drawing.Size(300, 36);
+            this.gCmbSector.TabIndex = 93;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(1196, 311);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 25);
+            this.label8.TabIndex = 92;
+            this.label8.Text = "Sector";
+            // 
+            // gtxtDireccion
+            // 
+            this.gtxtDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtDireccion.DefaultText = "";
+            this.gtxtDireccion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gtxtDireccion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gtxtDireccion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gtxtDireccion.DisabledState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gtxtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gtxtDireccion.FocusedState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gtxtDireccion.HoverState.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.Location = new System.Drawing.Point(1202, 409);
+            this.gtxtDireccion.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.gtxtDireccion.Name = "gtxtDireccion";
+            this.gtxtDireccion.PasswordChar = '\0';
+            this.gtxtDireccion.PlaceholderText = "";
+            this.gtxtDireccion.SelectedText = "";
+            this.gtxtDireccion.ShadowDecoration.Parent = this.gtxtDireccion;
+            this.gtxtDireccion.Size = new System.Drawing.Size(300, 38);
+            this.gtxtDireccion.TabIndex = 94;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(1192, 380);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(194, 25);
+            this.label9.TabIndex = 95;
+            this.label9.Text = "Direccion / Referencia";
             // 
             // gCmbBusquedaChild
             // 
@@ -873,20 +862,19 @@
             this.gCmbBusquedaChild.HoverState.Parent = this.gCmbBusquedaChild;
             this.gCmbBusquedaChild.ItemHeight = 30;
             this.gCmbBusquedaChild.ItemsAppearance.Parent = this.gCmbBusquedaChild;
-            this.gCmbBusquedaChild.Location = new System.Drawing.Point(323, 529);
-            this.gCmbBusquedaChild.Margin = new System.Windows.Forms.Padding(2);
+            this.gCmbBusquedaChild.Location = new System.Drawing.Point(484, 814);
             this.gCmbBusquedaChild.Name = "gCmbBusquedaChild";
             this.gCmbBusquedaChild.ShadowDecoration.Parent = this.gCmbBusquedaChild;
-            this.gCmbBusquedaChild.Size = new System.Drawing.Size(182, 36);
+            this.gCmbBusquedaChild.Size = new System.Drawing.Size(271, 36);
             this.gCmbBusquedaChild.TabIndex = 96;
             this.gCmbBusquedaChild.Visible = false;
             // 
             // UsuarioPres
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1050, 597);
+            this.ClientSize = new System.Drawing.Size(1575, 918);
             this.Controls.Add(this.gCmbBusquedaChild);
             this.Controls.Add(this.gtxtDireccion);
             this.Controls.Add(this.label9);
@@ -920,7 +908,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gDgvData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UsuarioPres";
             this.Text = "UsuarioPres";
             ((System.ComponentModel.ISupportInitialize)(this.gDgvData)).EndInit();

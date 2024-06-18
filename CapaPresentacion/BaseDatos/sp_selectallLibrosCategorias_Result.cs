@@ -19,5 +19,6 @@ namespace CapaPresentacion.BaseDatos
         public int id_categoria { get; set; }
         public int stock { get; set; }
         public string NombreCategoria { get; set; }
+        public Nullable<int> disponible { get; set; }
     }
 }

@@ -140,7 +140,7 @@ namespace CapaPresentacion
                 int idDonante = Convert.ToInt32(txtIdDn.Text);
                 ObjectParameter idDonacionParam = new ObjectParameter("idDonacion", typeof(int));
 
-                db.sp_createDonacionReturnID(idDonante, Administrador_id, DateTime.Now.Date, idDonacionParam);
+                db.sp_createDonacionReturnID1(idDonante, Administrador_id, DateTime.Now.Date, idDonacionParam);
 
                 int idDonacion = (int)idDonacionParam.Value;
 
@@ -170,6 +170,7 @@ namespace CapaPresentacion
                 }
 
                 MessageBox.Show("Se ha ingresado la donacion Exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                booksTable.Clear();
             }
         }
 

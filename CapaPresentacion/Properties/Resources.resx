@@ -139,6 +139,9 @@
   <data name="cerrar-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lista-50-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lista-50-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="libros-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\libros-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,6 +172,9 @@
   <data name="peoplesD-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peoplesD-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="guardar-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tablero-20 red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tablero-20 red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,8 +196,14 @@
   <data name="prest-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prest-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="actualizar-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actualizar-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="return-book-20 grayL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\return-book-20 grayL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verificación-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\verificación-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="place-marker-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\place-marker-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +229,14 @@
   <data name="gps-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gps-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Check-50-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check-50-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="más-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\más-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ojo-60-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ojo-60-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Character-working-laptop-sitting-chair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Character-working-laptop-sitting-chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,7 +253,7 @@
   <data name="caja-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caja-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="verificación-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\verificación-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="estrella-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estrella-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

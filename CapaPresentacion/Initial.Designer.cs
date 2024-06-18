@@ -125,6 +125,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(268, 57);
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "Devoluciones";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 
@@ -145,6 +146,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(268, 57);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Prestmos";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -388,7 +390,7 @@
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Image = global::CapaPresentacion.Properties.Resources.cerrar_30;
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1848, 5);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1851, 7);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
@@ -407,7 +409,7 @@
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = global::CapaPresentacion.Properties.Resources.minimizar_30;
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(1816, 4);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(1819, 6);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;

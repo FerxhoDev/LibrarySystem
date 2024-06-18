@@ -17,5 +17,6 @@ namespace CapaPresentacion.BaseDatos
         public int id_donante { get; set; }
         public int id_admin { get; set; }
         public System.DateTime fecha { get; set; }
+        public string nombre { get; set; }
     }
 }

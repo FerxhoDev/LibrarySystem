@@ -37,7 +37,15 @@ namespace CapaPresentacion
 
         public void clearData()
         {
-            gCmbAldea.SelectedIndex = 0;
+            try
+            {
+                gCmbAldea.SelectedIndex = 0;
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Por favor agregue una Aldea.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+
             gTxtNombreSec.Clear();
             gTxtNombreAldea.Clear();
             gTxtidAldea.Clear();

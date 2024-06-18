@@ -57,21 +57,19 @@
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(95)))), ((int)(((byte)(31)))));
             this.gunaElipsePanel1.Controls.Add(this.gunaPictureBox2);
             this.gunaElipsePanel1.Controls.Add(this.gunaPictureBox1);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(316, -1);
-            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(474, -2);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 8;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(242, 305);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(363, 469);
             this.gunaElipsePanel1.TabIndex = 0;
             // 
             // gunaPictureBox2
             // 
             this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(155, 100);
-            this.gunaPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPictureBox2.Location = new System.Drawing.Point(232, 154);
             this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(57, 126);
+            this.gunaPictureBox2.Size = new System.Drawing.Size(86, 194);
             this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox2.TabIndex = 1;
             this.gunaPictureBox2.TabStop = false;
@@ -80,10 +78,9 @@
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(2, 42);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(3, 65);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(167, 162);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(250, 249);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 0;
             this.gunaPictureBox1.TabStop = false;
@@ -93,31 +90,29 @@
             this.guna2Button1.BorderRadius = 21;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(200)))), ((int)(((byte)(130)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(229)))), ((int)(((byte)(95)))), ((int)(((byte)(31)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(87, 231);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(130, 355);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(120, 29);
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Iniciar Sesión";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ToggleSwitch1
             // 
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(95)))), ((int)(((byte)(31)))));
+            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(95)))), ((int)(((byte)(31)))));
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(50, 196);
-            this.guna2ToggleSwitch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(75, 302);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
             this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(23, 13);
+            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(34, 20);
             this.guna2ToggleSwitch1.TabIndex = 2;
             this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -131,10 +126,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Location = new System.Drawing.Point(106, 196);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(159, 302);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 15);
+            this.label1.Size = new System.Drawing.Size(186, 22);
             this.label1.TabIndex = 15;
             this.label1.Text = "Mostrar Contraseña";
             // 
@@ -153,14 +147,15 @@
             this.gTxtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtPass.HoverState.Parent = this.gTxtPass;
             this.gTxtPass.IconLeft = ((System.Drawing.Image)(resources.GetObject("gTxtPass.IconLeft")));
-            this.gTxtPass.Location = new System.Drawing.Point(50, 149);
+            this.gTxtPass.Location = new System.Drawing.Point(75, 229);
+            this.gTxtPass.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtPass.Name = "gTxtPass";
             this.gTxtPass.PasswordChar = '\0';
             this.gTxtPass.PlaceholderForeColor = System.Drawing.Color.White;
             this.gTxtPass.PlaceholderText = "Contraseña";
             this.gTxtPass.SelectedText = "";
             this.gTxtPass.ShadowDecoration.Parent = this.gTxtPass;
-            this.gTxtPass.Size = new System.Drawing.Size(200, 31);
+            this.gTxtPass.Size = new System.Drawing.Size(300, 48);
             this.gTxtPass.TabIndex = 17;
             this.gTxtPass.UseSystemPasswordChar = true;
             // 
@@ -179,24 +174,24 @@
             this.gTxtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gTxtUser.HoverState.Parent = this.gTxtUser;
             this.gTxtUser.IconLeft = ((System.Drawing.Image)(resources.GetObject("gTxtUser.IconLeft")));
-            this.gTxtUser.Location = new System.Drawing.Point(50, 105);
+            this.gTxtUser.Location = new System.Drawing.Point(75, 162);
+            this.gTxtUser.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.gTxtUser.Name = "gTxtUser";
             this.gTxtUser.PasswordChar = '\0';
             this.gTxtUser.PlaceholderForeColor = System.Drawing.Color.Red;
             this.gTxtUser.PlaceholderText = "Usuario";
             this.gTxtUser.SelectedText = "";
             this.gTxtUser.ShadowDecoration.Parent = this.gTxtUser;
-            this.gTxtUser.Size = new System.Drawing.Size(200, 31);
+            this.gTxtUser.Size = new System.Drawing.Size(300, 48);
             this.gTxtUser.TabIndex = 18;
             // 
             // gunaCirclePictureBox1
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(19, 8);
-            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(28, 12);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(80, 78);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(120, 120);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 19;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -204,9 +199,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 304);
+            this.ClientSize = new System.Drawing.Size(837, 468);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.gTxtUser);
             this.Controls.Add(this.gTxtPass);
@@ -215,7 +210,6 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.gunaElipsePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

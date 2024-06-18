@@ -50,9 +50,20 @@ namespace CapaPresentacion
             gtxtDireccion.Clear();
             gDtpNacimiento.Value = DateTime.Now;
             //gCmbBusqueda.SelectedIndex = 0;
-            gCmbCentroEd.SelectedIndex = 0;
-            gCmbGenero.SelectedIndex = 0;
-            gCmbResponsable.SelectedIndex = 0;
+            if (gCmbCentroEd.DataSource != null && gCmbCentroEd.Items.Count > 0)
+            {
+                gCmbCentroEd.SelectedIndex = 0;
+            }
+
+            if (gCmbGenero.DataSource != null && gCmbGenero.Items.Count > 0)
+            {
+                gCmbGenero.SelectedIndex = 0;
+            }
+
+            if (gCmbResponsable.DataSource != null && gCmbResponsable.Items.Count > 0)
+            {
+                gCmbResponsable.SelectedIndex = 0;
+            }
 
         }
 

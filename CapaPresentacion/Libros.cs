@@ -192,32 +192,45 @@ namespace CapaPresentacion
         {
             int indiceSeleccionad = gCmbBusqueda.SelectedIndex;
 
-            switch(indiceSeleccionad)
+            switch (indiceSeleccionad)
             {
                 case 0:
                     modoBusqueda = 0;
                     gTxtBusqueda.Visible = true;
                     gTxtBusqueda.Clear();
                     gCmbBusquedaCategoria.Visible = false;
-                    gCmbBusquedaCategoria.SelectedIndex = 0;
+                    if (gCmbBusquedaCategoria.DataSource != null && gCmbBusquedaCategoria.Items.Count > 0)
+                    {
+                        gCmbBusquedaCategoria.SelectedIndex = 0;
+                    }
+
                     break;
-                case 1: 
+                case 1:
                     modoBusqueda = 1;
                     gTxtBusqueda.Visible = true;
                     gTxtBusqueda.Clear();
                     gCmbBusquedaCategoria.Visible = false;
-                    gCmbBusquedaCategoria.SelectedIndex = 0;
+                    if (gCmbBusquedaCategoria.DataSource != null && gCmbBusquedaCategoria.Items.Count > 0)
+                    {
+                        gCmbBusquedaCategoria.SelectedIndex = 0;
+                    }
                     break;
-                case 2: 
+                case 2:
                     modoBusqueda = 2;
                     gTxtBusqueda.Visible = false;
                     gTxtBusqueda.Clear();
                     gCmbBusquedaCategoria.Visible = true;
-                    gCmbBusquedaCategoria.SelectedIndex = 0;
+                    if (gCmbBusquedaCategoria.DataSource != null && gCmbBusquedaCategoria.Items.Count > 0)
+                    {
+                        gCmbBusquedaCategoria.SelectedIndex = 0;
+                    }
                     break;
                 default:
-                    gCmbBusqueda.SelectedIndex = 0; 
-                break;
+                    if (gCmbBusquedaCategoria.DataSource != null && gCmbBusquedaCategoria.Items.Count > 0)
+                    {
+                        gCmbBusquedaCategoria.SelectedIndex = 0;
+                    }
+                    break;
 
 
             }

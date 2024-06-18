@@ -121,6 +121,12 @@
     <Compile Include="BaseDatos\sector.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_helpdiagrams_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_SelectAllAldeas_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
@@ -133,10 +139,19 @@
     <Compile Include="BaseDatos\sp_selectAllCentroEduca_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDetalleDevolucioneswithUserAndEstado_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllDetalleDonacionbyIDwithBooks_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDetallePrestamobyIDPrestamo_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllDetallePrestamo_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllDevolucioneswithUserAndEstado_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllDirecciones_Result.cs">
@@ -166,6 +181,9 @@
     <Compile Include="BaseDatos\sp_selectAllLibros_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAllPrestamoswithUserAndEstado_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectAllPrestamos_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
@@ -173,6 +191,9 @@
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllSectores_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectAllUsersWithEstadoOfPrestamo_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectAllUsuariosPrestamistasJoints_Result.cs">
@@ -184,16 +205,34 @@
     <Compile Include="BaseDatos\sp_selectAllUsuarios_Prestamistas_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_selectAvaliableLibro_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_SelectDonatorsByName_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_SelectLibrosByCodLibros_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatos\sp_SelectPrestamobyIDforDevolucion_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectPrestamosLibrosBetweenDates_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectTop3LibrosPopulares_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sp_selectTotalPrestamosRatioDevoluciones_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\sp_selectUsuarioAdminbyUsuario_Result.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\sp_selectUsuarioAdmin_byUser_Result.cs">
+      <DependentUpon>libraryDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatos\sysdiagram.cs">
       <DependentUpon>libraryDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos\usuariosPrestamista.cs">
@@ -219,6 +258,24 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones.Designer.cs">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolucionesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionesAdd.Designer.cs">
+      <DependentUpon>DevolucionesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolucionesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionesList.Designer.cs">
+      <DependentUpon>DevolucionesList.cs</DependentUpon>
     </Compile>
     <Compile Include="Direcciones.cs">
       <SubType>Form</SubType>
@@ -280,6 +337,36 @@
     <Compile Include="ModDetalleDonacion.Designer.cs">
       <DependentUpon>ModDetalleDonacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModDetallePrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModDetallePrestamo.Designer.cs">
+      <DependentUpon>ModDetallePrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModUsuarioPrest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModUsuarioPrest.Designer.cs">
+      <DependentUpon>ModUsuarioPrest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos.Designer.cs">
+      <DependentUpon>Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrestamosAdd.Designer.cs">
+      <DependentUpon>PrestamosAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrestamosList.Designer.cs">
+      <DependentUpon>PrestamosList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responsables.cs">
@@ -310,6 +397,15 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones.resx">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionesAdd.resx">
+      <DependentUpon>DevolucionesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionesList.resx">
+      <DependentUpon>DevolucionesList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Direcciones.resx">
       <DependentUpon>Direcciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,6 +435,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModDetalleDonacion.resx">
       <DependentUpon>ModDetalleDonacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModDetallePrestamo.resx">
+      <DependentUpon>ModDetallePrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModUsuarioPrest.resx">
+      <DependentUpon>ModUsuarioPrest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos.resx">
+      <DependentUpon>Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrestamosAdd.resx">
+      <DependentUpon>PrestamosAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrestamosList.resx">
+      <DependentUpon>PrestamosList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -452,7 +563,6 @@
   <ItemGroup>
     <None Include="Resources\carpeta-40.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="BaseDatos\libraryDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -464,6 +574,14 @@
       <DependentUpon>libraryDBModel.edmx</DependentUpon>
       <LastGenOutput>libraryDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\estrella-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-50.png" />
+    <None Include="Resources\actualizar-50.png" />
+    <None Include="Resources\ojo-60-white.png" />
+    <None Include="Resources\Check-50-white.png" />
+    <None Include="Resources\lista-50-white.png" />
     <None Include="Resources\verificación-40.png" />
     <None Include="Resources\team-64.png" />
     <None Include="Resources\gps-64.png" />

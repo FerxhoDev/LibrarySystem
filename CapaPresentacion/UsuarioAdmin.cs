@@ -315,5 +315,15 @@ namespace CapaPresentacion
                 currencyManager.ResumeBinding();
             }
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
